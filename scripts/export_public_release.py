@@ -116,7 +116,7 @@ def copy_tree(src_rel: str, dst_rel: str, output: Path) -> int:
 
 def write_public_gitignore(output: Path) -> None:
     (output / ".gitignore").write_text(
-        """.env\n.venv/\nnode_modules/\ndist/\nruntime/\n.private/\n__pycache__/\n.pytest_cache/\n*.pyc\n*.mp4\n*.pt\n*.pth\n*.onnx\n""",
+        """.env\n.venv/\nnode_modules/\ndist/\nruntime/\n.private/\n__pycache__/\n.pytest_cache/\n*.pyc\n*.egg-info/\n*.mp4\n*.pt\n*.pth\n*.onnx\n""",
         encoding="utf-8",
     )
 
@@ -149,6 +149,9 @@ def audit(output: Path) -> dict:
                     secrets.append({"path": rel, "kind": name})
     total = sum(p.stat().st_size for p in files)
     listing = [{"path": p.relative_to(output).as_posix(), "size_bytes": p.stat().st_size, "sha256": sha256(p)} for p in sorted(files)]
+    content_digest = hashlib.sha256(
+        json.dumps(listing, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
     checks = {
         "no_personal_absolute_paths": not identity,
         "no_secret_patterns": not secrets,
@@ -169,6 +172,7 @@ def audit(output: Path) -> dict:
         "schema_version": "opk-rag.public-release.snapshot-manifest.v1",
         "file_count": len(files),
         "total_bytes": total,
+        "snapshot_content_sha256": content_digest,
         "max_file_bytes_policy": MAX_FILE_BYTES,
         "checks": checks,
         "identity_findings": identity,
@@ -201,6 +205,7 @@ def export(output: Path) -> dict:
     manifest = audit(output)
     manifest["sanitized_replacement_count"] = replacements
     manifest["development_git_head"] = _git_head()
+    manifest.update(_git_worktree_state())
     manifest["output"] = str(output)
     (output / "public_release_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if not manifest["release_snapshot_valid"]:
@@ -212,6 +217,26 @@ def _git_head() -> str | None:
     import subprocess
     p = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True, capture_output=True)
     return p.stdout.strip() if p.returncode == 0 else None
+
+
+def _git_worktree_state() -> dict[str, object]:
+    import subprocess
+    p = subprocess.run(
+        ["git", "status", "--porcelain"],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+    )
+    if p.returncode != 0:
+        return {
+            "development_worktree_clean": None,
+            "development_worktree_change_count": None,
+        }
+    changed = [line for line in p.stdout.splitlines() if line.strip()]
+    return {
+        "development_worktree_clean": not changed,
+        "development_worktree_change_count": len(changed),
+    }
 
 
 def main() -> int:

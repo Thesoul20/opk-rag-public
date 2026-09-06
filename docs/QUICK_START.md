@@ -57,7 +57,7 @@ uv run opk-rag doctor
 uv run opk-rag index examples/public-demo --format json
 ```
 
-Save the returned `knowledge_base_id`.
+Save the returned `knowledge_base_id`. When `OPK_RAG_VECTOR_BACKEND=qdrant`, the same command reconciles the current knowledge base into the configured Qdrant collection and reports `vector_records_written`, `vector_records_deleted`, and `vector_records_final`. A Qdrant materialization failure makes indexing fail closed instead of reporting a misleading successful index.
 
 ## 7. Search
 

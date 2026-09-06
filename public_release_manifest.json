@@ -1,7 +1,8 @@
 {
   "schema_version": "opk-rag.public-release.snapshot-manifest.v1",
-  "file_count": 605,
-  "total_bytes": 13052125,
+  "file_count": 609,
+  "total_bytes": 13081712,
+  "snapshot_content_sha256": "5549ba9bf817a6d0c16942759064925a1c32f9a4caacf9ee7e19b0318f028097",
   "max_file_bytes_policy": 5242880,
   "checks": {
     "no_personal_absolute_paths": true,
@@ -42,8 +43,8 @@
     },
     {
       "path": ".gitignore",
-      "size_bytes": 109,
-      "sha256": "48631b8aa9ae7d8687dced28330a037e65a1703f618fcaebb3d21d74323259ad"
+      "size_bytes": 121,
+      "sha256": "e5d2b240969cc0bacc6d42b9b2e9486a5a7c559dc1d4a676f77ebdfffa16d40d"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -72,8 +73,8 @@
     },
     {
       "path": "docs/QUICK_START.md",
-      "size_bytes": 2892,
-      "sha256": "9c8126b943fdc9498d2e852babd9ed4038f0f4abf8fdcaf25375d44259409571"
+      "size_bytes": 3227,
+      "sha256": "7d330e30352552e8a285dc5e7268677384834352d3947857def76a642c884581"
     },
     {
       "path": "docs/THIRD_PARTY.md",
@@ -617,8 +618,8 @@
     },
     {
       "path": "opk_rag/cli.py",
-      "size_bytes": 52881,
-      "sha256": "6e8ecae98deba0eab63028a81799998bba3800ece4b985b1cd6db8fb82755733"
+      "size_bytes": 53373,
+      "sha256": "85d27aca40455f06d3bd4785384a67c73129dc853c8ed1e329f1010f3d0d4c98"
     },
     {
       "path": "opk_rag/conversation/__init__.py",
@@ -2116,6 +2117,16 @@
       "sha256": "6e6c6924482bfe3475b13b84e60a374c147a83cccb428e111e9104e5e74b1874"
     },
     {
+      "path": "opk_rag/evaluation/task0283_open_source_release_final_acceptance_and_rc_freeze.py",
+      "size_bytes": 8587,
+      "sha256": "aa648c382ca3cfaa6c679cd60c06e180f694dbb4951eb5eaf4902de7200eb10e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0284_github_release_candidate_packaging_and_portfolio_delivery.py",
+      "size_bytes": 10187,
+      "sha256": "72c2f403b0134a54bde531076d68a4cd7a1a59e72d225428b7c129e473c58992"
+    },
+    {
       "path": "opk_rag/indexing/__init__.py",
       "size_bytes": 687,
       "sha256": "2e683fe28c2dad3e47c114280f16209f0d6f7f1d564bf503a9bab8c524d13c82"
@@ -2132,8 +2143,8 @@
     },
     {
       "path": "opk_rag/indexing/orchestrator.py",
-      "size_bytes": 8075,
-      "sha256": "256fdea404bc74ee25b320ca77b69670a9407ee966538d0a6dddea38cf23ea61"
+      "size_bytes": 9631,
+      "sha256": "b8aeb8e0a777c2b6c6c36cbddf5939ecf5a7ba9744a13482d0067b5c78b68c80"
     },
     {
       "path": "opk_rag/indexing/planner.py",
@@ -2491,6 +2502,11 @@
       "sha256": "25a794f96c63a99b95b0cbd1e31011a15057b5d3fe9876137c855ba7341dd3b6"
     },
     {
+      "path": "opk_rag/vector_backends/materialization.py",
+      "size_bytes": 5681,
+      "sha256": "12ed6b40a0fe85152752b3b5adf7e9a0f179f9181704c416303feeac996bc1ee"
+    },
+    {
       "path": "opk_rag/vector_backends/qdrant_backend.py",
       "size_bytes": 9866,
       "sha256": "4272b819f7a6fc65eecdabb6797f7b32656bff7a40d1beace5d5f24c9fdff474"
@@ -2517,8 +2533,8 @@
     },
     {
       "path": "scripts/export_public_release.py",
-      "size_bytes": 9576,
-      "sha256": "844a9c8ee01d633f9b032c5598628c653050527e3d024233a9855d5db179b889"
+      "size_bytes": 10391,
+      "sha256": "4c624ea49221e503eb45d528c64757dfbc6bc4d6943e83e9b3aeb950207cc0a6"
     },
     {
       "path": "scripts/validate_public_release_snapshot.py",
@@ -3046,6 +3062,11 @@
       "sha256": "681bfd2ebdebea4bc3aad0e40aaadef48ebbc04b4cb9305122986db92448c9b9"
     },
     {
+      "path": "tests/public/test_qdrant_materialization.py",
+      "size_bytes": 1922,
+      "sha256": "78532e35c9a747e72cbe4b4b3c36635eebe9a0c6f04ba29030bf2f9f30c3a4d3"
+    },
+    {
       "path": "uv.lock",
       "size_bytes": 624245,
       "sha256": "186c779d9b0ce1c27c1433407424fe8752d79808d8bdf09b3ab82fcc5404ffcd"
@@ -3053,6 +3074,8 @@
   ],
   "release_snapshot_valid": true,
   "sanitized_replacement_count": 15,
-  "development_git_head": "5042052fda479b75600d090c2bee492add092716",
-  "output": "/data/envs/opk-rag/dist/opk-rag-public-release"
+  "development_git_head": "64dfec14b4fbd14c4125ec6a2219aa409979159a",
+  "development_worktree_clean": false,
+  "development_worktree_change_count": 1,
+  "output": "/tmp/opk-rag-public-export"
 }

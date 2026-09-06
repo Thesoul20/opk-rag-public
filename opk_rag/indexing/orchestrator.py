@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import os
 from pathlib import Path
 from time import monotonic
 from uuid import UUID
@@ -17,6 +18,10 @@ from opk_rag.indexing.sync import sync_vault_documents
 from opk_rag.lexical.config import LexicalIndexConfig
 from opk_rag.lexical.service import LexicalIndexRunResult, index_knowledge_base_lexical
 from opk_rag.vault import normalize_vault_root
+from opk_rag.vector_backends.materialization import (
+    QdrantMaterializationResult,
+    materialize_knowledge_base_qdrant,
+)
 
 
 @dataclass(frozen=True)
@@ -49,6 +54,10 @@ class EndToEndIndexReport:
     lexical_ready: bool
     duration_seconds: float
     failures: tuple[IndexFailureSummary, ...]
+    vector_backend: str = "postgres_pgvector"
+    vector_records_written: int = 0
+    vector_records_deleted: int = 0
+    vector_records_final: int = 0
 
     @property
     def successful(self) -> bool:
@@ -99,6 +108,19 @@ def index_vault_end_to_end(
         config=embedding_config,
         knowledge_base_id=sync_result.knowledge_base_id,
     )
+    vector_backend = os.environ.get("OPK_RAG_VECTOR_BACKEND", "postgres_pgvector").strip() or "postgres_pgvector"
+    qdrant_materialization: QdrantMaterializationResult | None = None
+    if vector_backend == "qdrant":
+        qdrant_materialization = materialize_knowledge_base_qdrant(
+            database_url,
+            knowledge_base_id=sync_result.knowledge_base_id,
+            embedding_revision=fingerprint,
+            vector_size=embedding_config.dimension,
+            env=os.environ,
+        )
+    elif vector_backend != "postgres_pgvector":
+        raise ValueError(f"Unsupported OPK_RAG_VECTOR_BACKEND: {vector_backend}")
+
     lexical_result = index_knowledge_base_lexical(
         database_url,
         knowledge_base_id=sync_result.knowledge_base_id,
@@ -130,6 +152,10 @@ def index_vault_end_to_end(
         lexical_ready=lexical_result.ready,
         duration_seconds=monotonic() - started,
         failures=failures,
+        vector_backend=vector_backend,
+        vector_records_written=(qdrant_materialization.upserted_point_count if qdrant_materialization else 0),
+        vector_records_deleted=(qdrant_materialization.deleted_stale_point_count if qdrant_materialization else 0),
+        vector_records_final=(qdrant_materialization.final_knowledge_base_point_count if qdrant_materialization else 0),
     )
     _finish_index_run(database_url, report)
     return report
@@ -167,6 +193,10 @@ def _finish_index_run(database_url: str, report: EndToEndIndexReport) -> None:
         "lexical_records_updated": report.lexical_records_updated,
         "lexical_records_removed": report.lexical_records_removed,
         "lexical_ready": report.lexical_ready,
+        "vector_backend": report.vector_backend,
+        "vector_records_written": report.vector_records_written,
+        "vector_records_deleted": report.vector_records_deleted,
+        "vector_records_final": report.vector_records_final,
     }
     with connect_postgres(database_url) as connection:
         with connection.transaction():

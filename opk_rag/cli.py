@@ -947,6 +947,10 @@ def _index_report_to_json(report: EndToEndIndexReport) -> dict:
         "lexical_records_updated": report.lexical_records_updated,
         "lexical_records_removed": report.lexical_records_removed,
         "lexical_ready": report.lexical_ready,
+        "vector_backend": report.vector_backend,
+        "vector_records_written": report.vector_records_written,
+        "vector_records_deleted": report.vector_records_deleted,
+        "vector_records_final": report.vector_records_final,
         "duration_seconds": round(report.duration_seconds, 3),
         "failures": [
             {"relative_path": failure.relative_path, "stage": failure.stage, "message": failure.message}
@@ -979,6 +983,10 @@ def _index_report_to_text(report: EndToEndIndexReport) -> str:
         f"Lexical records updated: {report.lexical_records_updated}",
         f"Lexical records removed: {report.lexical_records_removed}",
         f"Lexical ready: {str(report.lexical_ready).lower()}",
+        f"Vector backend: {report.vector_backend}",
+        f"Vector records written: {report.vector_records_written}",
+        f"Vector records deleted: {report.vector_records_deleted}",
+        f"Vector records final: {report.vector_records_final}",
         "",
         f"Duration: {report.duration_seconds:.3f}s",
     ]
