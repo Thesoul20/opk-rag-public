@@ -1,0 +1,106 @@
+{
+  "schema_version": "opk-rag.public-release.third-party-license-inventory.v1",
+  "python": [
+    {
+      "package": "psycopg",
+      "version": "3.3.4",
+      "license_expression": "LGPL-3.0-only",
+      "license": null
+    },
+    {
+      "package": "qdrant-client",
+      "version": "1.19.0",
+      "license_expression": null,
+      "license": "Apache-2.0"
+    },
+    {
+      "package": "sentence-transformers",
+      "version": "5.4.0",
+      "license_expression": null,
+      "license": "Apache 2.0"
+    },
+    {
+      "package": "PyYAML",
+      "version": "6.0.2",
+      "license_expression": null,
+      "license": "MIT"
+    },
+    {
+      "package": "supabase",
+      "version": "2.31.0",
+      "license_expression": "MIT",
+      "license": null
+    },
+    {
+      "package": "jieba",
+      "version": "0.42.1",
+      "license_expression": null,
+      "license": "MIT"
+    },
+    {
+      "package": "python-dotenv",
+      "version": "1.2.2",
+      "license_expression": null,
+      "license": "BSD-3-Clause"
+    },
+    {
+      "package": "ipython",
+      "version": "8.39.0",
+      "license_expression": null,
+      "license": "BSD-3-Clause"
+    },
+    {
+      "package": "fastapi",
+      "version": "0.141.1",
+      "license_expression": "MIT",
+      "license": null
+    },
+    {
+      "package": "uvicorn",
+      "version": "0.52.4",
+      "license_expression": "BSD-3-Clause",
+      "license": null
+    },
+    {
+      "package": "pydantic",
+      "version": "2.13.4",
+      "license_expression": "MIT",
+      "license": null
+    },
+    {
+      "package": "pytest",
+      "version": "9.1.1",
+      "license_expression": "MIT",
+      "license": null
+    }
+  ],
+  "frontend": [
+    {
+      "package": "react",
+      "license": "MIT"
+    },
+    {
+      "package": "react-dom",
+      "license": "MIT"
+    },
+    {
+      "package": "vite",
+      "license": "MIT"
+    },
+    {
+      "package": "typescript",
+      "license": "Apache-2.0"
+    },
+    {
+      "package": "tailwindcss",
+      "license": "MIT"
+    },
+    {
+      "package": "lucide-react",
+      "license": "ISC"
+    }
+  ],
+  "model_weights_redistributed": false,
+  "dependency_source_vendored": false,
+  "note": "Inventory is informational, not legal advice; upstream package/model terms remain authoritative."
+}

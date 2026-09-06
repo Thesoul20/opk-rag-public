@@ -1,0 +1,3058 @@
+{
+  "schema_version": "opk-rag.public-release.snapshot-manifest.v1",
+  "file_count": 605,
+  "total_bytes": 13052125,
+  "max_file_bytes_policy": 5242880,
+  "checks": {
+    "no_personal_absolute_paths": true,
+    "no_secret_patterns": true,
+    "no_oversized_files": true,
+    "no_forbidden_binary_extensions": true,
+    "no_forbidden_top_level_content": true,
+    "private_kb_absent": true,
+    "historical_evaluation_absent": true,
+    "task_history_absent": true,
+    "git_history_absent": true,
+    "license_present": true,
+    "readme_present": true,
+    "quick_start_present": true,
+    "public_demo_present": true,
+    "ci_present": true
+  },
+  "identity_findings": [],
+  "secret_findings": [],
+  "oversized_files": [],
+  "forbidden_binary_files": [],
+  "forbidden_root_files": [],
+  "files": [
+    {
+      "path": ".env.example",
+      "size_bytes": 877,
+      "sha256": "f868c07a490b7e3c51734a0c657e51485b0ab0703e210c4341ff3f7655c1bb52"
+    },
+    {
+      "path": ".env.public.example",
+      "size_bytes": 877,
+      "sha256": "f868c07a490b7e3c51734a0c657e51485b0ab0703e210c4341ff3f7655c1bb52"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "size_bytes": 777,
+      "sha256": "539f2dfc0d75de1f0494e03a463f422b26341ec4003f0cfcf279019714045595"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 109,
+      "sha256": "48631b8aa9ae7d8687dced28330a037e65a1703f618fcaebb3d21d74323259ad"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size_bytes": 973,
+      "sha256": "eec5f0c5fd7780a21cb516139a4c837ecccf8495b364c50fe94a1d16c930b04e"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 1077,
+      "sha256": "24fbda6b6a8908b0c308bf56bc62dee029c1efaa4daf7c1061e7432ba60abd9e"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 6499,
+      "sha256": "a1cbaa48676819be65da4b739fb57d12d04c8838b220d0a9b9bf4b110f354efe"
+    },
+    {
+      "path": "SECURITY.md",
+      "size_bytes": 1145,
+      "sha256": "3aac66bbd98496b439776c2396449f078f5c763aacbd6fde4c5d21cb70070590"
+    },
+    {
+      "path": "docs/OPEN_SOURCE_RELEASE.md",
+      "size_bytes": 2366,
+      "sha256": "0854c71eec7cda879992087ff0f8027275055c55b26c4cc890f44c105d6c316e"
+    },
+    {
+      "path": "docs/QUICK_START.md",
+      "size_bytes": 2892,
+      "sha256": "9c8126b943fdc9498d2e852babd9ed4038f0f4abf8fdcaf25375d44259409571"
+    },
+    {
+      "path": "docs/THIRD_PARTY.md",
+      "size_bytes": 1227,
+      "sha256": "6723e0d7d4241b8a284ac5aebabe59d6fc16fabc3ebc25251cb3f97279bfbe06"
+    },
+    {
+      "path": "docs/assets/control-center-executive.jpg",
+      "size_bytes": 180841,
+      "sha256": "0b551b9e0382eba53fca4c1b0e19d5cf8f0761462baf4172e4f61e02b016ab4c"
+    },
+    {
+      "path": "docs/assets/video-cover.jpg",
+      "size_bytes": 180841,
+      "sha256": "0b551b9e0382eba53fca4c1b0e19d5cf8f0761462baf4172e4f61e02b016ab4c"
+    },
+    {
+      "path": "docs/diagrams/current_opk_rag_selective_agent_architecture_v2.drawio",
+      "size_bytes": 28580,
+      "sha256": "b1e8c7adf3c8b9d134809f069ba8f9ceaf383d8bcfc3f207ff49ac6148f449ff"
+    },
+    {
+      "path": "docs/diagrams/current_opk_rag_selective_agent_architecture_v2.mmd",
+      "size_bytes": 2169,
+      "sha256": "111bde405da1532a70508a6aa6f33436f2e3f249e30f666c504643d0bb5bb413"
+    },
+    {
+      "path": "docs/diagrams/current_opk_rag_selective_agent_architecture_v2.png",
+      "size_bytes": 304544,
+      "sha256": "b55ed304a39de5c4904c4cb47b7f7ce81dc37539a356e7f585e1bccae106f34b"
+    },
+    {
+      "path": "docs/diagrams/current_opk_rag_selective_agent_architecture_v2_zh.drawio",
+      "size_bytes": 28778,
+      "sha256": "4e72d09fb36919caccabc93986940f5a732452f04390302889b5e8063b42d9af"
+    },
+    {
+      "path": "docs/diagrams/current_opk_rag_selective_agent_architecture_v2_zh.mmd",
+      "size_bytes": 2207,
+      "sha256": "cf848e192139031c3533eaaa46286e2289fc8a221c518afdefa2b41cda0240a7"
+    },
+    {
+      "path": "docs/diagrams/current_opk_rag_selective_agent_architecture_v2_zh.png",
+      "size_bytes": 310662,
+      "sha256": "876ebb76eb279dea1211161d584d58b21d2778c61f902af7d19565b53b74cb0f"
+    },
+    {
+      "path": "examples/public-demo/README.md",
+      "size_bytes": 248,
+      "sha256": "f6f6e60bde5f415d55a9850576a0de934851e7e5a753de5dda89b5eec8d9350c"
+    },
+    {
+      "path": "examples/public-demo/agent_control.md",
+      "size_bytes": 488,
+      "sha256": "9ba797cbd2c7e57a4b95f64edfcca8d6990b3b9a7180926828935ebd4c1dae4f"
+    },
+    {
+      "path": "examples/public-demo/rag_governance.md",
+      "size_bytes": 542,
+      "sha256": "1b621d10ef4d200a79c6de0dad39b3232cd486309af78d6da8d39e588ab39419"
+    },
+    {
+      "path": "examples/public-demo/vector_backend.md",
+      "size_bytes": 428,
+      "sha256": "4c788c5d4c438eb309ba1285e63d4dba4757d75d1ebcce9f3e94247ba61bad79"
+    },
+    {
+      "path": "infra/public/docker-compose.yml",
+      "size_bytes": 719,
+      "sha256": "475752a1d787028e1a864afde107560b1b0c16259b34e436a481bda93c09920c"
+    },
+    {
+      "path": "opk_rag/__init__.py",
+      "size_bytes": 31,
+      "sha256": "7d450a49d81c736092f33cf0b4eb37f9e72c43a2e3a2e65b86491d91fec1412e"
+    },
+    {
+      "path": "opk_rag/agent/__init__.py",
+      "size_bytes": 3964,
+      "sha256": "59be0c5f06388b35d20364f59df3e6d700bb8c6b79db2c094551cf941a83650c"
+    },
+    {
+      "path": "opk_rag/agent/baseline_policy.py",
+      "size_bytes": 3266,
+      "sha256": "cd6536cb290ba7c3da39781fa0c1f0f307317f3005ad8b2cd931146b8ac19926"
+    },
+    {
+      "path": "opk_rag/agent/contracts.py",
+      "size_bytes": 3753,
+      "sha256": "2c769bff29da571815d0bae199171a5647d2e6056da69344c8e5ffb1b716daf1"
+    },
+    {
+      "path": "opk_rag/agent/errors.py",
+      "size_bytes": 2141,
+      "sha256": "5fd26e8eb03f70bff26fbbb34afd673e9910aa0101bd712d085293c2986b9aac"
+    },
+    {
+      "path": "opk_rag/agent/evidence_comparison.py",
+      "size_bytes": 7740,
+      "sha256": "11a16754fb7424f77a24ba5ce691d49fc0a96eb04c3b1c7d6cde288a2224859e"
+    },
+    {
+      "path": "opk_rag/agent/evidence_merge.py",
+      "size_bytes": 4946,
+      "sha256": "3e28ba5f633e5fd6eb9a35f2f7d8889f567bfc311eedaf99f23fc8886b9175d1"
+    },
+    {
+      "path": "opk_rag/agent/generation_retry.py",
+      "size_bytes": 16699,
+      "sha256": "0d20496faec3e73a1f4b095ed46e984b10fa0155f13b933c36cc5feaa3ca59d4"
+    },
+    {
+      "path": "opk_rag/agent/generation_retry_contracts.py",
+      "size_bytes": 9256,
+      "sha256": "08dc46c519c56586d500d69418e3bcc01b743ec5a4364fee7ddb5181b8f6f657"
+    },
+    {
+      "path": "opk_rag/agent/model_policy.py",
+      "size_bytes": 6991,
+      "sha256": "13d5861b7a1d21557ec8e673ca74ce4404cc8d7b591a3d2f8be2bd4c6b3b38c4"
+    },
+    {
+      "path": "opk_rag/agent/policy.py",
+      "size_bytes": 261,
+      "sha256": "bcbb374f2f003d31548bb510e33e55f51e834e530d7775c47fba5061f27e7abe"
+    },
+    {
+      "path": "opk_rag/agent/policy_contracts.py",
+      "size_bytes": 5308,
+      "sha256": "2c92f040e40a75eddc9553efd77241a3eaf96f21b54a9a3c6d8ab5de301e70c0"
+    },
+    {
+      "path": "opk_rag/agent/policy_metrics.py",
+      "size_bytes": 3586,
+      "sha256": "618b84dd9b4b1a3b7f1d411667d6b6d83f24d887ef5f5d2e102861839b58285f"
+    },
+    {
+      "path": "opk_rag/agent/policy_prompt.py",
+      "size_bytes": 12357,
+      "sha256": "aa9d54e4c0f64722eb5457ff695d28b41d83430a400d5c226a1ee9b55c48e6d0"
+    },
+    {
+      "path": "opk_rag/agent/policy_provider.py",
+      "size_bytes": 11050,
+      "sha256": "f542dfa3a4c3882c3fbeddccb222716d8fcfb2be6bd0da15a58ce885117f4772"
+    },
+    {
+      "path": "opk_rag/agent/policy_validation.py",
+      "size_bytes": 9560,
+      "sha256": "78a5e73273279f5cf67e186ad5d5675ba8317f0195d40ab7b8eaf49d855e0113"
+    },
+    {
+      "path": "opk_rag/agent/query_plan.py",
+      "size_bytes": 12310,
+      "sha256": "ca433fdff6bc9f5285526ff72eda967af2e811e351c0bdfa1a25d50eb0fc13a9"
+    },
+    {
+      "path": "opk_rag/agent/query_privacy.py",
+      "size_bytes": 4088,
+      "sha256": "56cc388ed79ccbb3c75686cf78e7834171996be68c54a204750c8a50098b87ea"
+    },
+    {
+      "path": "opk_rag/agent/query_reformulation.py",
+      "size_bytes": 18134,
+      "sha256": "82351e676a28c718221f56428d9cbcec329a1aefddc021cf64d6b79f2db8c928"
+    },
+    {
+      "path": "opk_rag/agent/recovery_contracts.py",
+      "size_bytes": 8634,
+      "sha256": "e1c40082169c9240e65eb90abb952ccf2f5d095fea237ded04a55ce9a362dc37"
+    },
+    {
+      "path": "opk_rag/agent/recovery_loop.py",
+      "size_bytes": 41805,
+      "sha256": "f65055e0c56dbe43d03c7b7ef017cf96edc9658e23dc9baacc68b6ae394a47b7"
+    },
+    {
+      "path": "opk_rag/agent/recovery_state.py",
+      "size_bytes": 6465,
+      "sha256": "ef6f7e624f44e6ce3eabe47c352922ab76148866de4e73cb526493ee31e36ff4"
+    },
+    {
+      "path": "opk_rag/agent/recovery_trace.py",
+      "size_bytes": 2053,
+      "sha256": "eb88bb0de83f7aaf44ab0adfb71c93da872931cc688b5a4804abb08fa0a1a12c"
+    },
+    {
+      "path": "opk_rag/agent/replay.py",
+      "size_bytes": 7980,
+      "sha256": "210d49e7da81226ef764cdd3501eeacf8316ae3426a4880cc8e1409d4cbf41b8"
+    },
+    {
+      "path": "opk_rag/agent/retrieval_metrics.py",
+      "size_bytes": 5235,
+      "sha256": "370ac7bd70b7406ce4b98eaead0bbb26e8e6f621218975e5318b59b3e6bd609d"
+    },
+    {
+      "path": "opk_rag/agent/retrieval_policy.py",
+      "size_bytes": 13066,
+      "sha256": "33db204c5bb0bf9a78ac6f82e8bd04dcdc7e666660b0a2f94737ccbfe1bed3bf"
+    },
+    {
+      "path": "opk_rag/agent/retrieval_round.py",
+      "size_bytes": 3560,
+      "sha256": "758a3ad346616d8dad5719076a46c95b22a402def904adceaca558fc8129b46d"
+    },
+    {
+      "path": "opk_rag/agent/runtime.py",
+      "size_bytes": 16612,
+      "sha256": "15fed00c0739969f9673636f2752b85bf1349a902a23a009bea3d200149f833a"
+    },
+    {
+      "path": "opk_rag/agent/tool_registry.py",
+      "size_bytes": 14956,
+      "sha256": "1a6a16133ff8455b8bf6fff0c52747a15890ea6f3cf1da73a142d09d4834b82c"
+    },
+    {
+      "path": "opk_rag/agent/trace.py",
+      "size_bytes": 3387,
+      "sha256": "eda6ac8d5696964c4100011c128233319dc055cd105906ad206ab015654681cd"
+    },
+    {
+      "path": "opk_rag/agent/transition.py",
+      "size_bytes": 10580,
+      "sha256": "ba4e10fda11e1b32d8c5255da348e9ba5846459d8ddc1e57a3d68ec7b2a76be3"
+    },
+    {
+      "path": "opk_rag/agentic_v2/__init__.py",
+      "size_bytes": 62,
+      "sha256": "29b40b18333b600c3fa6b35e5b9cec8356fb4d4cacdc821ab69b4045818f10b8"
+    },
+    {
+      "path": "opk_rag/agentic_v2/action.py",
+      "size_bytes": 3012,
+      "sha256": "315e2e6f00f4899626e3645fc8c8f98f36b7d3a8c049c2c5cfede52bdc25ab85"
+    },
+    {
+      "path": "opk_rag/agentic_v2/allowed_actions.py",
+      "size_bytes": 2288,
+      "sha256": "7b14f3518a5abad5c47f4dcf18598196dc51685f0d6105ff4a1ad42654ddb64c"
+    },
+    {
+      "path": "opk_rag/agentic_v2/base.py",
+      "size_bytes": 634,
+      "sha256": "1f34fdc3b345b51914ce056230ddbea0d89ec78d6edc181cbb4e6ecab92e6310"
+    },
+    {
+      "path": "opk_rag/agentic_v2/budget.py",
+      "size_bytes": 778,
+      "sha256": "2ea1ab7c84e970812192ef2d67e7c69b7709d0dc04120f7cfc5f588743595825"
+    },
+    {
+      "path": "opk_rag/agentic_v2/contracts.py",
+      "size_bytes": 2578,
+      "sha256": "27653585dccbfb0bf4864baf68a8e032c4dddcd82d2855c5e4d615378bd906bd"
+    },
+    {
+      "path": "opk_rag/agentic_v2/decision.py",
+      "size_bytes": 2331,
+      "sha256": "2d13f7ec68aabcb6adb88166ca12aa0344cfb2bd8e9a988f4478ba307ff2bc36"
+    },
+    {
+      "path": "opk_rag/agentic_v2/guard.py",
+      "size_bytes": 11654,
+      "sha256": "daed200d9ca199ded420c04f73c3d001fec2f9a1512d71848cb03c2ac32c1300"
+    },
+    {
+      "path": "opk_rag/agentic_v2/guard_contracts.py",
+      "size_bytes": 1105,
+      "sha256": "492a52ec99ebceb825bed1e2ff7e09db201b117cf332654915bde6b6af7be45c"
+    },
+    {
+      "path": "opk_rag/agentic_v2/guard_metrics.py",
+      "size_bytes": 2023,
+      "sha256": "9b44eaf7e2f1885b9521b658116b4ded3cd8983f5259be502dd629e15069c66b"
+    },
+    {
+      "path": "opk_rag/agentic_v2/guard_trace.py",
+      "size_bytes": 2106,
+      "sha256": "baf4d984d52105d465b01ff031122214bf4b3079fba31b29de0cb649db141f66"
+    },
+    {
+      "path": "opk_rag/agentic_v2/observation.py",
+      "size_bytes": 2227,
+      "sha256": "54b0fd0ff0a61247bf3c4e6a390b73387b93cb63ddd11b0a891c35662d13c1f0"
+    },
+    {
+      "path": "opk_rag/agentic_v2/policy.py",
+      "size_bytes": 717,
+      "sha256": "2c88d175442361b6c42a9c42e8050522f086b5c4407c4b2f4915408711b3700d"
+    },
+    {
+      "path": "opk_rag/agentic_v2/policy_diagnostics.py",
+      "size_bytes": 4563,
+      "sha256": "9f7ed71d7531978b9fd88be91aefe58da298a1103d6fe445787f64e540bd1f46"
+    },
+    {
+      "path": "opk_rag/agentic_v2/policy_errors.py",
+      "size_bytes": 361,
+      "sha256": "ec27e3667d3e2d88ec14b8ebb91a893b8890ef5ef1643407bdd1f917edf5a43f"
+    },
+    {
+      "path": "opk_rag/agentic_v2/policy_input.py",
+      "size_bytes": 2349,
+      "sha256": "28b49366d9910a2b0bc2d99e54a1532a99ff0d00d87426f516d85b0303e18e5a"
+    },
+    {
+      "path": "opk_rag/agentic_v2/policy_metrics.py",
+      "size_bytes": 2324,
+      "sha256": "d8ed16c9101284295aeb9e122b57bc86b92abf5e1ad666cafe5ddfd6972aaaf3"
+    },
+    {
+      "path": "opk_rag/agentic_v2/policy_prompt.py",
+      "size_bytes": 7836,
+      "sha256": "26e615da611dd28c37ad9c33a3c7debf551ba2cd294c6a19fbb51b294b33b805"
+    },
+    {
+      "path": "opk_rag/agentic_v2/policy_provider.py",
+      "size_bytes": 6490,
+      "sha256": "6feee2b94853fb86f6014745e1df0450735364316cdad88a999ae9065d1d2e88"
+    },
+    {
+      "path": "opk_rag/agentic_v2/policy_runtime.py",
+      "size_bytes": 11653,
+      "sha256": "4896c5eb6701924b70d0a45bb685e6fdbdd407de24be735eb5ecac77197a9e7d"
+    },
+    {
+      "path": "opk_rag/agentic_v2/policy_trace.py",
+      "size_bytes": 1203,
+      "sha256": "ee2758458a7a020a6e2400f1ca15f7d1a89fb1c827a4600190b11aaeb552e930"
+    },
+    {
+      "path": "opk_rag/agentic_v2/run_contracts.py",
+      "size_bytes": 2878,
+      "sha256": "c6cfe4673cb3083c4608f584ebeee16d99c661991a813d73ae21d1857b71f690"
+    },
+    {
+      "path": "opk_rag/agentic_v2/run_metrics.py",
+      "size_bytes": 2604,
+      "sha256": "162a816af69b2dda957d26fd871db6428fedcd8490e36764b632d95f9ba72037"
+    },
+    {
+      "path": "opk_rag/agentic_v2/run_trace.py",
+      "size_bytes": 1867,
+      "sha256": "37f3ded769cf5f4cadc7d80a79400475eb9ba357ab196289f69f9288278ebac9"
+    },
+    {
+      "path": "opk_rag/agentic_v2/runtime.py",
+      "size_bytes": 18518,
+      "sha256": "b5373175a30958750712a2fead5bae729c0ae578f258d42d67307b884fc75e66"
+    },
+    {
+      "path": "opk_rag/agentic_v2/runtime_context.py",
+      "size_bytes": 893,
+      "sha256": "415f163cedb546e5a4d09319d9a6ff607ec5e8f1536b8adfc6a2beb867cc6160"
+    },
+    {
+      "path": "opk_rag/agentic_v2/schemas.py",
+      "size_bytes": 1738,
+      "sha256": "067208ffe9007ff37a25e8f6f32a6a75ac271f6efd9c95c6f987540753dc8e8e"
+    },
+    {
+      "path": "opk_rag/agentic_v2/state.py",
+      "size_bytes": 2867,
+      "sha256": "111a5a90b23fdc3608bc7ae9ad4c1add172087ca4e5782c2be32ff0786fd9762"
+    },
+    {
+      "path": "opk_rag/agentic_v2/state_transition.py",
+      "size_bytes": 16569,
+      "sha256": "e0723d911f9a682d9de64fd17538ee98929365745e02f5325356889f234f6d00"
+    },
+    {
+      "path": "opk_rag/agentic_v2/state_transition_contracts.py",
+      "size_bytes": 3072,
+      "sha256": "1f72d36a83a41f10f8c5e2f91fa31510d50b654d4df2cf59ca3d78050ca400f1"
+    },
+    {
+      "path": "opk_rag/agentic_v2/state_transition_metrics.py",
+      "size_bytes": 2396,
+      "sha256": "6d6d74009b044a207219c202b34c9ff9c70f2a90e0bc36975afc30af3a939043"
+    },
+    {
+      "path": "opk_rag/agentic_v2/state_transition_trace.py",
+      "size_bytes": 2496,
+      "sha256": "d75e1a1bfc41ee9e607105f8bed6ee6d2419c7354b8434fff2fcc16356d7357d"
+    },
+    {
+      "path": "opk_rag/agentic_v2/termination.py",
+      "size_bytes": 1026,
+      "sha256": "696f8e1bcd3ce6279fd704cb5889ee086a411b72a10ddb3d118d17b463842251"
+    },
+    {
+      "path": "opk_rag/agentic_v2/tool_contracts.py",
+      "size_bytes": 2904,
+      "sha256": "5121b7ba5932e191c0bbc04793f3cf5e0e81ddec51f78a97f206bba192162189"
+    },
+    {
+      "path": "opk_rag/agentic_v2/tool_executor.py",
+      "size_bytes": 3981,
+      "sha256": "56780e15c41d30b01a80b71c598d8b5c974b719578e5251af609645e5d9103bd"
+    },
+    {
+      "path": "opk_rag/agentic_v2/tool_metrics.py",
+      "size_bytes": 1509,
+      "sha256": "28cc17d53a02f2d1287376648e571a40cf85229b1d1308d8e63439fb4e90386a"
+    },
+    {
+      "path": "opk_rag/agentic_v2/tool_registry.py",
+      "size_bytes": 1646,
+      "sha256": "271813207a2cc8fd52c434c41269bd3ffcc7f6f562946bc6760bcfd6ce9c7bf3"
+    },
+    {
+      "path": "opk_rag/agentic_v2/tool_trace.py",
+      "size_bytes": 973,
+      "sha256": "086081a7513dde941feb8c24a0f108a8e1f3db772bdfc2a88f8f6c9bd4acb612"
+    },
+    {
+      "path": "opk_rag/agentic_v2/tools.py",
+      "size_bytes": 7827,
+      "sha256": "df588b3bcf0b2bfa0eb4fd9c8ad1c3f207354fed35bf459f8273158b2e3cf140"
+    },
+    {
+      "path": "opk_rag/answer/__init__.py",
+      "size_bytes": 308,
+      "sha256": "7a429a8429e05e31c0f49d7f64b5dd51db8d82f1f7d2b3457f2796e55c23d78f"
+    },
+    {
+      "path": "opk_rag/answer/answerability.py",
+      "size_bytes": 300,
+      "sha256": "f53b24dce51ddab8416c9820811f63e5729151ba48a8d4ebac78f7dca8e7fdaf"
+    },
+    {
+      "path": "opk_rag/answer/citation_parser.py",
+      "size_bytes": 2094,
+      "sha256": "40a2394b43d9de27fe0e2e5964f420ca81fa11a244681744d366cb018f44fdec"
+    },
+    {
+      "path": "opk_rag/answer/config.py",
+      "size_bytes": 7723,
+      "sha256": "83dfcbc424235294b35c4f6113bc0d2478bee878b7315707443f2cc4ad05a509"
+    },
+    {
+      "path": "opk_rag/answer/evidence_context.py",
+      "size_bytes": 10980,
+      "sha256": "69030a17afe4426cd60f79231d82f752d15668a59b41a0a103990b4381d74f50"
+    },
+    {
+      "path": "opk_rag/answer/grounding.py",
+      "size_bytes": 11815,
+      "sha256": "5ca0d15bd99b5fef953a253609fea4802e05ee4ea03ce367c3d70b9ea042038c"
+    },
+    {
+      "path": "opk_rag/answer/models.py",
+      "size_bytes": 4333,
+      "sha256": "eb338effbd70c0ce7ff052eac390dc2b6e15fab0fcc73d074b7260c31b157275"
+    },
+    {
+      "path": "opk_rag/answer/negative_semantics.py",
+      "size_bytes": 26736,
+      "sha256": "4a7abc070e5e71e96ad141f5431afeb31c0f1b588f4d89467100bf358cde07fa"
+    },
+    {
+      "path": "opk_rag/answer/prompt.py",
+      "size_bytes": 11278,
+      "sha256": "acf11e9503d9d7cf741986a5929d6201ae941967db069d04809f9792abdae645"
+    },
+    {
+      "path": "opk_rag/answer/provider.py",
+      "size_bytes": 15761,
+      "sha256": "8dd66aa3ba575f8d04b040f11a604be0c0b54a410bd25ec8de9a0d00bee5e848"
+    },
+    {
+      "path": "opk_rag/answer/refusal.py",
+      "size_bytes": 2206,
+      "sha256": "0ead4ab1e545dd86c7ae17388486754e2f2f2ec9b2b671f56765d12840d215d7"
+    },
+    {
+      "path": "opk_rag/answer/scope_execution.py",
+      "size_bytes": 11761,
+      "sha256": "e1c9ed83361fc42a5d21bd00a5764acdee2e23f43e5c5137da5c90f7d9ad973d"
+    },
+    {
+      "path": "opk_rag/answer/service.py",
+      "size_bytes": 29314,
+      "sha256": "95f4b478899477e7e3437804e48ef385a0027839cb4c5cd4fd88e2036ae6240f"
+    },
+    {
+      "path": "opk_rag/answer/validation.py",
+      "size_bytes": 14323,
+      "sha256": "8cb4be007a0a310ed7a5bdaa7d9134755486b625f667aeb5ac5747efc6a9d291"
+    },
+    {
+      "path": "opk_rag/answerability/__init__.py",
+      "size_bytes": 349,
+      "sha256": "3bf6084a8afd51c609906bee9eef7f9206459d153d2f92c45aeef2bc7267111b"
+    },
+    {
+      "path": "opk_rag/answerability/decision.py",
+      "size_bytes": 23581,
+      "sha256": "857e6329de45aa6082ae4e4e54f054254cef6476c41fbdfe1a3a5216eb85b884"
+    },
+    {
+      "path": "opk_rag/answerability/evaluator.py",
+      "size_bytes": 659,
+      "sha256": "78c9947294c0246962a31dc853ff2744af9df55b9b892e4c65bfd97790471e7d"
+    },
+    {
+      "path": "opk_rag/answerability/models.py",
+      "size_bytes": 4902,
+      "sha256": "afd5962dc2ff56ee833502e1ae207bd7e33c97fa582e1f5a8c9485db5959f2a3"
+    },
+    {
+      "path": "opk_rag/chunking/__init__.py",
+      "size_bytes": 1166,
+      "sha256": "5d76beebf66f0d706fd3071c3bbca27d804a259453fca27437cee03ae51488b5"
+    },
+    {
+      "path": "opk_rag/chunking/chunker.py",
+      "size_bytes": 8863,
+      "sha256": "6d2fc18e1ce0ca7cd48eba3f6d41a376a14ccd34f6074dc7d38e7f676f43dbfa"
+    },
+    {
+      "path": "opk_rag/chunking/models.py",
+      "size_bytes": 1564,
+      "sha256": "22d45c581cba7c69cb08930088b6452b946348ea277dea0908206049c2d1a159"
+    },
+    {
+      "path": "opk_rag/chunking/parser.py",
+      "size_bytes": 5279,
+      "sha256": "2ff7780497f95adf90abcf1326919352b4c67be3e367d6085fe23c13c99e1d8b"
+    },
+    {
+      "path": "opk_rag/chunking/representation.py",
+      "size_bytes": 14105,
+      "sha256": "e177bf21b0be4a3b3d91075e7f15ae43aa8c4a23dea1d752fba2969412b0890c"
+    },
+    {
+      "path": "opk_rag/chunking/service.py",
+      "size_bytes": 3422,
+      "sha256": "550987a03e001c56434f9b6a1a1664c7b47e517cde430ca491e1a38fbb575eeb"
+    },
+    {
+      "path": "opk_rag/cli.py",
+      "size_bytes": 52881,
+      "sha256": "6e8ecae98deba0eab63028a81799998bba3800ece4b985b1cd6db8fb82755733"
+    },
+    {
+      "path": "opk_rag/conversation/__init__.py",
+      "size_bytes": 795,
+      "sha256": "85964dfad82402d1a3975ab563b564a3ab46b8453bc06676f0011f189147432c"
+    },
+    {
+      "path": "opk_rag/conversation/context.py",
+      "size_bytes": 2341,
+      "sha256": "3e8a8cd4348165d488f4bb6225b9927e5116e59344be8f4c9c2d59ab2e106e90"
+    },
+    {
+      "path": "opk_rag/conversation/models.py",
+      "size_bytes": 3747,
+      "sha256": "916e9e6a49cf63f6e21fe6f29938fd9734e3d7c1f761cd3f9360db61c4a6552d"
+    },
+    {
+      "path": "opk_rag/conversation/repository.py",
+      "size_bytes": 28232,
+      "sha256": "69efc03d00afe7cb040464c4daebcf24917836e403e878945bb88bf701d5da2b"
+    },
+    {
+      "path": "opk_rag/conversation/resolver.py",
+      "size_bytes": 22369,
+      "sha256": "8c3c83891bf6558936b7163d78158bb3adfabfc12038c1ba6b8b2a54253618d1"
+    },
+    {
+      "path": "opk_rag/conversation/service.py",
+      "size_bytes": 9395,
+      "sha256": "21c2685ab0df096c19551fc02894f3505f46356baaedca22c7705547f8f40a58"
+    },
+    {
+      "path": "opk_rag/core_tools/__init__.py",
+      "size_bytes": 1168,
+      "sha256": "68d535f0cfaf577801fa0fbb835e65768e5348b7c345b7cbbcf637ee93c3cbc9"
+    },
+    {
+      "path": "opk_rag/core_tools/contracts.py",
+      "size_bytes": 5411,
+      "sha256": "182fbf5853cd34b65908faf1ab27f2481a137bd8d511d3369c22e70f0494f26e"
+    },
+    {
+      "path": "opk_rag/core_tools/registry.py",
+      "size_bytes": 5004,
+      "sha256": "a8ae427b3e6829b84aacce3cac515142ff9037a58676d280c8c4fd5241ffa797"
+    },
+    {
+      "path": "opk_rag/core_tools/runtime.py",
+      "size_bytes": 6073,
+      "sha256": "c33f26b73e4cf1604d84d22d56425bf49b2c9163654b47befb1686bf32b89012"
+    },
+    {
+      "path": "opk_rag/core_tools/serialization.py",
+      "size_bytes": 8111,
+      "sha256": "82c8dd1dcd83fbb5829392bae2cebcd18db2e93d965caab2e262e932d004f1e6"
+    },
+    {
+      "path": "opk_rag/core_tools/tools.py",
+      "size_bytes": 7523,
+      "sha256": "9c81af249c300c09e0cef0eff8d05e6551cd3e024552aee920c1b9a1e316bf80"
+    },
+    {
+      "path": "opk_rag/db/__init__.py",
+      "size_bytes": 2054,
+      "sha256": "bcdc06a6b7736292a1ccfad8c418ead9f7e6b098cab151abd98664dba4647ff4"
+    },
+    {
+      "path": "opk_rag/db/config.py",
+      "size_bytes": 3966,
+      "sha256": "26d6e8be722ef9d047904e2856de43a94c82324a848a347052cc564d3752bc90"
+    },
+    {
+      "path": "opk_rag/db/connection.py",
+      "size_bytes": 795,
+      "sha256": "023ba10e0fe553639ef47181e17ce3955970ba503ed7747d6ec2f49a29829bf6"
+    },
+    {
+      "path": "opk_rag/db/health.py",
+      "size_bytes": 2923,
+      "sha256": "c469af23b5178072f736edde8f97015f84a6256b33a83de718ae0f9910a6bead"
+    },
+    {
+      "path": "opk_rag/db/migrations.py",
+      "size_bytes": 2882,
+      "sha256": "906a0612a4aed40c9087d512593243577fd9920e0f0ae4e805e5926eae2b4183"
+    },
+    {
+      "path": "opk_rag/db/models.py",
+      "size_bytes": 2888,
+      "sha256": "68dd262be4c21e74633d36190e0d405f9d5ed3d854af7176e5269ae964ae24c0"
+    },
+    {
+      "path": "opk_rag/db/repositories.py",
+      "size_bytes": 56016,
+      "sha256": "7dc63c3c45927c4f12f3c60ab4f49bdaaf3fc58db080f64d2fdb224a030c9177"
+    },
+    {
+      "path": "opk_rag/doctor/__init__.py",
+      "size_bytes": 238,
+      "sha256": "fa2934766befa61249a87da2e783ba97642e5afc205f41344790395e24af71fa"
+    },
+    {
+      "path": "opk_rag/doctor/models.py",
+      "size_bytes": 1717,
+      "sha256": "c93ae4282efbe04f2029ecad1cfa9863902999369a5ea7306061eca45488b90f"
+    },
+    {
+      "path": "opk_rag/doctor/service.py",
+      "size_bytes": 60615,
+      "sha256": "d7b3b5dbde5659e7c0a424de5880a302f8461c07a5d6c77b334afb4e00878b1c"
+    },
+    {
+      "path": "opk_rag/document_adapters/__init__.py",
+      "size_bytes": 933,
+      "sha256": "25b0c50b40b0840d48989a6972391347e540905fe2c9c83e22b684401e7d3981"
+    },
+    {
+      "path": "opk_rag/document_adapters/base.py",
+      "size_bytes": 4765,
+      "sha256": "f34a5a747204c1a912c60532f638f68ae21540e5142f42a745d2ec7cf2f3fc4c"
+    },
+    {
+      "path": "opk_rag/document_adapters/errors.py",
+      "size_bytes": 330,
+      "sha256": "ebcec140b46781bc7db89616409f15ec5315d186f1333773139e5c1cdc6cad04"
+    },
+    {
+      "path": "opk_rag/document_adapters/html.py",
+      "size_bytes": 8271,
+      "sha256": "3ac54243fea358a24a89ea4ba9b2b0d5353003688125cca7927be781c2b341a6"
+    },
+    {
+      "path": "opk_rag/document_adapters/markdown.py",
+      "size_bytes": 5981,
+      "sha256": "e9b7732c3a349af9f8c8034992ab51c89b2d28865599e1dcadfd71862f632c75"
+    },
+    {
+      "path": "opk_rag/document_adapters/pdf.py",
+      "size_bytes": 9087,
+      "sha256": "cf32f9c6ddd58be047e42372253d470332efcceb0fd56eaea38dafd88f200da8"
+    },
+    {
+      "path": "opk_rag/document_adapters/registry.py",
+      "size_bytes": 1309,
+      "sha256": "ddd0c3f32fd5a89001d8654f21c8b93a00ca560083de13f6b31fdc5120ff7b09"
+    },
+    {
+      "path": "opk_rag/document_adapters/tex.py",
+      "size_bytes": 6540,
+      "sha256": "713cb7a4645106c011e72144542b7c964c3d50fac617c7025e458502fa66c366"
+    },
+    {
+      "path": "opk_rag/document_ir/__init__.py",
+      "size_bytes": 1290,
+      "sha256": "c6856e8289fafa4075be0039c3334a2f28101bb5925a4e57006c8dec05a46cef"
+    },
+    {
+      "path": "opk_rag/document_ir/chunking_adapter.py",
+      "size_bytes": 5508,
+      "sha256": "22584b6f550319c07746b55357a76f22713423295952a8a4831d31831e3e7f5c"
+    },
+    {
+      "path": "opk_rag/document_ir/digest.py",
+      "size_bytes": 348,
+      "sha256": "7dd18285d97d4c6bb100c73ce6d030ab04fe4617a987897d923f4ccf9b1c8096"
+    },
+    {
+      "path": "opk_rag/document_ir/identity.py",
+      "size_bytes": 2862,
+      "sha256": "f7c179ca349745a4801d6cb5d4b10bf4631ac0d4ccf61a84142c53d54ff06477"
+    },
+    {
+      "path": "opk_rag/document_ir/models.py",
+      "size_bytes": 3833,
+      "sha256": "33503997763f5cd9944543c16539f8be3a817f554f0765f44b95669c3e6743df"
+    },
+    {
+      "path": "opk_rag/document_ir/serialization.py",
+      "size_bytes": 5547,
+      "sha256": "819b10bfdbe3d492cb2b2df9b0f31876e82f4dab4b71f07dd95ee05f3bdfbaa5"
+    },
+    {
+      "path": "opk_rag/document_ir/validation.py",
+      "size_bytes": 8945,
+      "sha256": "3af973915463779cbcfe19feb9524446c0b32a378c4e0230fc778cef1bd0f0f7"
+    },
+    {
+      "path": "opk_rag/embedding/__init__.py",
+      "size_bytes": 1227,
+      "sha256": "017a1fc9d10f9e26e3de1ef67c7e9ad4244c0239fa76cf9ec18c8a735216306e"
+    },
+    {
+      "path": "opk_rag/embedding/cache_authority.py",
+      "size_bytes": 5096,
+      "sha256": "1f6dc62c349c34cf22cced0c3f85af821753639a63cec4fd16410a44ee7a23ef"
+    },
+    {
+      "path": "opk_rag/embedding/config.py",
+      "size_bytes": 7771,
+      "sha256": "92337565c44887f616476f35f3cf374b39ae220e0f84f9611fa2d9fa1fbdc451"
+    },
+    {
+      "path": "opk_rag/embedding/input.py",
+      "size_bytes": 5288,
+      "sha256": "891e848effb4e26f6c258347efcdacf6992715eaeb6d30a6a1c915c6cf481144"
+    },
+    {
+      "path": "opk_rag/embedding/provider.py",
+      "size_bytes": 922,
+      "sha256": "01b04dfe42061473995102952c5b689cf29bfbe7e5e194e3809fbe4f858a4ac4"
+    },
+    {
+      "path": "opk_rag/embedding/query.py",
+      "size_bytes": 3388,
+      "sha256": "d63846a79600544d701e9eead75401ba017f298146ad82de9bbd5e331ef5470b"
+    },
+    {
+      "path": "opk_rag/embedding/qwen.py",
+      "size_bytes": 5294,
+      "sha256": "b8207eae24719c8e091b6c42d20821f121e3603bf035cd4ab380d87e597f760b"
+    },
+    {
+      "path": "opk_rag/embedding/service.py",
+      "size_bytes": 10772,
+      "sha256": "b18c1654bf15f6a85fb9e78d1038accfd8897297fc83b12283e6b5cc78f54284"
+    },
+    {
+      "path": "opk_rag/evaluation/__init__.py",
+      "size_bytes": 84,
+      "sha256": "77217689158aacd7ca8e46cf150ef199519fb9eb7269589e0c70dff83b5de74d"
+    },
+    {
+      "path": "opk_rag/evaluation/agent_recovery_experiment.py",
+      "size_bytes": 59117,
+      "sha256": "3741de80750788bca82c70cbd5950effa90f30ef99c7e6d19e6d9f81821ae1b8"
+    },
+    {
+      "path": "opk_rag/evaluation/candidate_injection.py",
+      "size_bytes": 9296,
+      "sha256": "395f0a91f2f3b5dcfcf16c5ecf903c2b70b4cd33936357083f2f35b87c257adf"
+    },
+    {
+      "path": "opk_rag/evaluation/candidate_retrieval_baseline.py",
+      "size_bytes": 50809,
+      "sha256": "0e45ae2616b24080ad04b6e679f8366fd6528a5d50b106b6d60d0196a586aac5"
+    },
+    {
+      "path": "opk_rag/evaluation/canonical_chunk_identity.py",
+      "size_bytes": 19552,
+      "sha256": "e8cbc9f04e93e49db7cfee797c93ef890a3541700a6ab2f574caa16259eb8bbf"
+    },
+    {
+      "path": "opk_rag/evaluation/chunk_localization.py",
+      "size_bytes": 40176,
+      "sha256": "048cc29bf18ba56b397c2a304e1c62afe29738c0644044fff2f98ba5dba71256"
+    },
+    {
+      "path": "opk_rag/evaluation/chunk_representation_experiment.py",
+      "size_bytes": 118030,
+      "sha256": "55c18d839c21c4cc86efb96b3dd5b0322eca9de3f9a1e40bad12790ae25e2f22"
+    },
+    {
+      "path": "opk_rag/evaluation/classification_stability.py",
+      "size_bytes": 18734,
+      "sha256": "68ee15667617e2c5e23812eb2cf69f3e3e3e5f4ce0c659801798c01f79b4da4b"
+    },
+    {
+      "path": "opk_rag/evaluation/compare.py",
+      "size_bytes": 4056,
+      "sha256": "fef0a361aa8505e3be196126af6238f9d1533aebdea5de984e31801e880f1c93"
+    },
+    {
+      "path": "opk_rag/evaluation/core_rag_benchmark.py",
+      "size_bytes": 123262,
+      "sha256": "933133fe9edd3c0c1d3d9d9f3a51f94a6defc911606ef9a66ab2db31e6925eba"
+    },
+    {
+      "path": "opk_rag/evaluation/corpus_snapshot.py",
+      "size_bytes": 31432,
+      "sha256": "02cb135407081902b462bba208c76151a38562dc74de75d06b5df786bb6ae5e5"
+    },
+    {
+      "path": "opk_rag/evaluation/evidence_conversion.py",
+      "size_bytes": 56238,
+      "sha256": "ba04b061fa8765b7852eb913ff93ec1924b1136fc088a456d8e3ee74e1b36df0"
+    },
+    {
+      "path": "opk_rag/evaluation/evidence_identity.py",
+      "size_bytes": 18397,
+      "sha256": "6de91597addaa60a1bda4a0474ce0c93890e435eb4a1265cbe3ad369723e9928"
+    },
+    {
+      "path": "opk_rag/evaluation/failure_attribution.py",
+      "size_bytes": 5424,
+      "sha256": "5e58d1702b821846417c5bdab9331c36f4cb5b3634255da8514cac5d5bfeb8f6"
+    },
+    {
+      "path": "opk_rag/evaluation/fixed_evidence_replay.py",
+      "size_bytes": 37491,
+      "sha256": "4e36e9f9038e145693b76b4d8ad6399bb7e60e903cd39a123955937e58c15a8e"
+    },
+    {
+      "path": "opk_rag/evaluation/fixtures.py",
+      "size_bytes": 2782,
+      "sha256": "dea84987be5fc2f53a2ab4a45ad6109267fe40723afd777c20e2f5173f8686e7"
+    },
+    {
+      "path": "opk_rag/evaluation/generation_abstention.py",
+      "size_bytes": 7907,
+      "sha256": "b2c03b91e9dc740bb384839d6ec1ccbe1a8804a2cde4bafc3e54638df394cc28"
+    },
+    {
+      "path": "opk_rag/evaluation/generation_contracts.py",
+      "size_bytes": 12962,
+      "sha256": "53d3e72459df50222cd4d5442151ad0e39c1dbc0304b3a516d210b0eb489e6be"
+    },
+    {
+      "path": "opk_rag/evaluation/generation_conversion.py",
+      "size_bytes": 53962,
+      "sha256": "d9f038b77b32904e2dd20759459736578e5f5dcb9420da28313f1815e0a459fd"
+    },
+    {
+      "path": "opk_rag/evaluation/generation_retry_experiment.py",
+      "size_bytes": 76510,
+      "sha256": "e0b7eece3a211e655596732cf10b7ad72b37c113771cd293e8d4238840d28348"
+    },
+    {
+      "path": "opk_rag/evaluation/generation_retry_mismatch_diagnosis.py",
+      "size_bytes": 55085,
+      "sha256": "2dfbe97e142e0cb94d1ee8cb568f86789afe693d06e3d141eda584d9c8326a1f"
+    },
+    {
+      "path": "opk_rag/evaluation/generation_retry_utility.py",
+      "size_bytes": 2375,
+      "sha256": "f3d9cf4ae73d9651ee741a6dd00326db3e7478960c0880594a8b6ee406a902d8"
+    },
+    {
+      "path": "opk_rag/evaluation/generation_stability.py",
+      "size_bytes": 43557,
+      "sha256": "3a89dbd163f03ba46e4fe031c83aabd700847883c227c30d4b5524e0d71eee03"
+    },
+    {
+      "path": "opk_rag/evaluation/graph_link_resolution.py",
+      "size_bytes": 14486,
+      "sha256": "6954880019c3a0a8c869178bb09bee98b0ee76fd8c615b5ab0c1bd163e07abc4"
+    },
+    {
+      "path": "opk_rag/evaluation/graph_sensitive_benchmark.py",
+      "size_bytes": 43486,
+      "sha256": "1fa2af86825b11c5a5a3a193746baa6df7d510352051e7cb4fbf83b2331c67ba"
+    },
+    {
+      "path": "opk_rag/evaluation/graphrag_readiness.py",
+      "size_bytes": 52711,
+      "sha256": "ad37b1e276850c156e7a51ac46d4c969e0cdb9df2e22cdb173bc349f1b11bb4e"
+    },
+    {
+      "path": "opk_rag/evaluation/hierarchical_retrieval.py",
+      "size_bytes": 55185,
+      "sha256": "1a8b01f36f7eb6db4bb263864fa98b92c1215b926df50e3379ea9638872daf25"
+    },
+    {
+      "path": "opk_rag/evaluation/holdout_exposure_governance.py",
+      "size_bytes": 4527,
+      "sha256": "8c91f1c9afcb72b23a7f0a672655eb0aee25201b292156ce50a2c9728773b394"
+    },
+    {
+      "path": "opk_rag/evaluation/indexed_corpus_reconciliation.py",
+      "size_bytes": 54172,
+      "sha256": "1e19164ebe4cc0a567f7121bd7bd2216562274efe84eb76b07c729fbca998789"
+    },
+    {
+      "path": "opk_rag/evaluation/parent_child_retrieval.py",
+      "size_bytes": 43971,
+      "sha256": "aee89bd49e4cbd56b8d9b89c1d064d2ddc9fa08591c0b84ef3ffa9d257ed8989"
+    },
+    {
+      "path": "opk_rag/evaluation/phase2_governance.py",
+      "size_bytes": 50448,
+      "sha256": "4018db780ad861e0bb0ecca21d9d1c214857689277559d372fc96e592d2b8211"
+    },
+    {
+      "path": "opk_rag/evaluation/phase2_holdout.py",
+      "size_bytes": 40351,
+      "sha256": "c760962913dc218ca93e5cd46af530fce30194f7c6b72099fab6e0e2fc0fbfeb"
+    },
+    {
+      "path": "opk_rag/evaluation/phase2_scoring.py",
+      "size_bytes": 39344,
+      "sha256": "edd569a67aab832f4ec7cd24df9dea9a7819e605736cb6a8893bfbf2cfddeba1"
+    },
+    {
+      "path": "opk_rag/evaluation/phase2_sealed_baseline.py",
+      "size_bytes": 39165,
+      "sha256": "6cdedafde71dc448ad13fd1c4a2c2db2021d1ba6de68705326994ad20143782c"
+    },
+    {
+      "path": "opk_rag/evaluation/phase2_stage_acceptance.py",
+      "size_bytes": 33207,
+      "sha256": "075111fcaa92bdebd508e47b0ccaa0fb56b731cad7bb9b65df30c10e8edc50fd"
+    },
+    {
+      "path": "opk_rag/evaluation/post_generation_failure_classification.py",
+      "size_bytes": 25362,
+      "sha256": "bcb7dcd4b808c0b57f13c946497b9aad947fa953007f798987a9354c3d6b8cbf"
+    },
+    {
+      "path": "opk_rag/evaluation/post_generation_instability_diagnosis.py",
+      "size_bytes": 68092,
+      "sha256": "7521d2885d746970c326662213eeebd9bc59518e0faf7aee87ed4a4b36282ce9"
+    },
+    {
+      "path": "opk_rag/evaluation/production_chunking_parity.py",
+      "size_bytes": 40882,
+      "sha256": "a28d38fef72dff15ccfb1fa67d3228a18210d655878933216f2afc1d2a0093a9"
+    },
+    {
+      "path": "opk_rag/evaluation/qwen_embedding_execution.py",
+      "size_bytes": 23938,
+      "sha256": "43d4472c8073fb5b52056ac6443334256977efa154edcdbd7c47b899a31333ae"
+    },
+    {
+      "path": "opk_rag/evaluation/real_reranker_validation.py",
+      "size_bytes": 54281,
+      "sha256": "c4fec771d0646330a0d2b9c27b7d96ed1a3960eb9c41602f23958ffb4997756e"
+    },
+    {
+      "path": "opk_rag/evaluation/real_vault_dogfooding.py",
+      "size_bytes": 67840,
+      "sha256": "3dedf6aff70b7e3935d24312e5c90b576b9748a5087de452911f73a86ebdb4cb"
+    },
+    {
+      "path": "opk_rag/evaluation/recovery_eligibility_diagnosis.py",
+      "size_bytes": 64068,
+      "sha256": "613d9c7b5334bd0e0c9cc99995d8febff20d78d11ddb7ceedea798615ff73573"
+    },
+    {
+      "path": "opk_rag/evaluation/reference_runtime_stability.py",
+      "size_bytes": 35252,
+      "sha256": "2707fc66261e36bb49672202601ea2b283d118595af68823e64b6c2d09cf191c"
+    },
+    {
+      "path": "opk_rag/evaluation/required_evidence_diagnostics.py",
+      "size_bytes": 27709,
+      "sha256": "df79cd879593ddc6a63e0ba72bc5cdef00892d2dbd6f3d80446c669f7561990a"
+    },
+    {
+      "path": "opk_rag/evaluation/reranked_e2e_validation.py",
+      "size_bytes": 23042,
+      "sha256": "ce83bd79492c87115c3f2feddffdd0f7a23762749385fcf9a183575b3958c155"
+    },
+    {
+      "path": "opk_rag/evaluation/reranking_experiment.py",
+      "size_bytes": 50329,
+      "sha256": "4eae3f919ae6674e37f2cf986a5619c8f71dcb3bcece3a67d93778bd72542760"
+    },
+    {
+      "path": "opk_rag/evaluation/residual_abstention.py",
+      "size_bytes": 16295,
+      "sha256": "04b4bee613e95a823d47a441b41516a9487f2c9830fdf099e0ce5648ff8519c0"
+    },
+    {
+      "path": "opk_rag/evaluation/retrieval.py",
+      "size_bytes": 13661,
+      "sha256": "6a900629317b8c0a50eaa6b64937da57abf09ad1c31b71dd509301140a0dee88"
+    },
+    {
+      "path": "opk_rag/evaluation/retrieval_localization.py",
+      "size_bytes": 52389,
+      "sha256": "51d533e6a170d5adafd1c4cc77f19605df2ccc24916036cec1306614b8891a00"
+    },
+    {
+      "path": "opk_rag/evaluation/retrieval_promotion.py",
+      "size_bytes": 36345,
+      "sha256": "f01f5bb87223fec7f0dfec441cb5a51059fb683bb5a0a6d6dfe71342ab470afd"
+    },
+    {
+      "path": "opk_rag/evaluation/retriever_complementarity.py",
+      "size_bytes": 40902,
+      "sha256": "087d4fed96008cf96ba4bc5012fba8a5e10347005d4bb605a216e9d145636b25"
+    },
+    {
+      "path": "opk_rag/evaluation/scope_aware_chunking_experiment.py",
+      "size_bytes": 165206,
+      "sha256": "42080816ca1c5992a28174a4d02a377efcb44e5f13c6688450d11191c9c83424"
+    },
+    {
+      "path": "opk_rag/evaluation/scope_retrieval_experiment.py",
+      "size_bytes": 73598,
+      "sha256": "c668bd362d5e5bb13dde3d52788d769706f12a72224ca51dc1f6cbb5daa44f48"
+    },
+    {
+      "path": "opk_rag/evaluation/scope_structure_audit.py",
+      "size_bytes": 17169,
+      "sha256": "647d2acc0c737e5b99a790639c9e67244d6466bd0d05a341584a7a557b65916a"
+    },
+    {
+      "path": "opk_rag/evaluation/source_evidence_span.py",
+      "size_bytes": 19947,
+      "sha256": "a80021810ebfb00e4c7a27b6183a22bc744868e308b5565daf047fecb64b4bcf"
+    },
+    {
+      "path": "opk_rag/evaluation/stable_generation_retry_eligibility.py",
+      "size_bytes": 13334,
+      "sha256": "cfb324ae56c947d1238f1fdc996ec7944a90e7523b0a1d1fea674f7bb351a125"
+    },
+    {
+      "path": "opk_rag/evaluation/supported_scope.py",
+      "size_bytes": 8904,
+      "sha256": "e041d1dd37d076b2ddd699ba359e72cd995cda590c56f8c1d3f9445e4bca1d51"
+    },
+    {
+      "path": "opk_rag/evaluation/task0089_canonical_identity_bridge.py",
+      "size_bytes": 28874,
+      "sha256": "724e42ca5fadf4a3858b6bee5db540484a593cf4a9f685d8e5adc26d0136cf0f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0090_runtime_v2_replay.py",
+      "size_bytes": 36952,
+      "sha256": "6e5c07c0df2985150fa6ba7bd30c3fb355095a6f368b6f5bc1ffefafc7e453d8"
+    },
+    {
+      "path": "opk_rag/evaluation/task0091_reranker_replay_benchmark.py",
+      "size_bytes": 28182,
+      "sha256": "f9c0ee7a4225a8f628b923d172aeea2bcc308853aabb61df9e9c09e84c189a51"
+    },
+    {
+      "path": "opk_rag/evaluation/task0092_reranker_downstream_validation.py",
+      "size_bytes": 37690,
+      "sha256": "1d8e1780352c5017730ad883ebdb89a6892879e56cbcccfe40fdb612317474eb"
+    },
+    {
+      "path": "opk_rag/evaluation/task0093_reranker_guarded_mitigation.py",
+      "size_bytes": 39194,
+      "sha256": "ff9daef4a2970aa3603bed016257e40c4dd59ef4999cd2483964281434f04913"
+    },
+    {
+      "path": "opk_rag/evaluation/task0094_reranker_runtime_promotion.py",
+      "size_bytes": 36876,
+      "sha256": "fd9e517a75a87e81ca611c8b122731101e7fcd500f9a5585d9c623cd6bfb8b3c"
+    },
+    {
+      "path": "opk_rag/evaluation/task0095_default_reranker_promotion_freeze.py",
+      "size_bytes": 31985,
+      "sha256": "9e629c61af2e0d96fea43435de83b6047d9e88feb3d8d27c64a9ede552bfdc66"
+    },
+    {
+      "path": "opk_rag/evaluation/task0096_reranker_model_benchmark.py",
+      "size_bytes": 47131,
+      "sha256": "39e2fc1315eaf12729f98794f97785c09b3f62b37c47289fa3b659930822561a"
+    },
+    {
+      "path": "opk_rag/evaluation/task0097_zerank_vs_rank_fusion_benchmark.py",
+      "size_bytes": 89398,
+      "sha256": "c2e4713919e986eb3d2c9208a57ff8cfd128077b0cfc2a9f482f447cd542b0fb"
+    },
+    {
+      "path": "opk_rag/evaluation/task0098_project_rebaseline.py",
+      "size_bytes": 7976,
+      "sha256": "35d8f4c559437a1be074132f08505aaf39e9590d283ccb060a2b22f278896562"
+    },
+    {
+      "path": "opk_rag/evaluation/task0099_pdfqa_dataset_authority.py",
+      "size_bytes": 17677,
+      "sha256": "c4db67a30b9a10df608e67220e9a3e3e264c19eae4736a2e021593d32b0695fe"
+    },
+    {
+      "path": "opk_rag/evaluation/task0102_pdf_parser_candidate_freeze.py",
+      "size_bytes": 14624,
+      "sha256": "27eb245e7b30a1bed0e85aba7c70256c5e3cd02b075618ef65958f7625f32d02"
+    },
+    {
+      "path": "opk_rag/evaluation/task0103_pdf_parser_bakeoff.py",
+      "size_bytes": 93926,
+      "sha256": "12077cf11c00df218897bc41eff87a2ea4c8cab92026861ad459f044874597a9"
+    },
+    {
+      "path": "opk_rag/evaluation/task0104_canonical_pdf_adapter.py",
+      "size_bytes": 26591,
+      "sha256": "ae031fe81d55011c8112621142936569002424a0ae230c52543e019738b9f563"
+    },
+    {
+      "path": "opk_rag/evaluation/task0105_representation_aware_chunking.py",
+      "size_bytes": 35621,
+      "sha256": "823c1d00895c2c0d74bc95781df256069bc795479e9432607997dddc77f4a25e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0106_canonical_chunk_retrieval_localization.py",
+      "size_bytes": 63777,
+      "sha256": "5fa95a319ef17f3c051d8c759ad334ec67824298fd46ff41d98a1753307d6ff1"
+    },
+    {
+      "path": "opk_rag/evaluation/task0107_benchmark_difficulty_gap.py",
+      "size_bytes": 49539,
+      "sha256": "73f5e33eb1add0f74fc77d55d056b925158e1bd48c309f38fc58f364a599cce0"
+    },
+    {
+      "path": "opk_rag/evaluation/task0108_chunking_metric_reconciliation.py",
+      "size_bytes": 52394,
+      "sha256": "de7378bf3d8def427751f4448a9d6ebd7215ad55065b57fc79506283361fc31a"
+    },
+    {
+      "path": "opk_rag/evaluation/task0109_representation_aware_chunking.py",
+      "size_bytes": 43103,
+      "sha256": "6a273c9f5303cec9e08cc1cb899e60423cf22596fc969d29f87679025252c75b"
+    },
+    {
+      "path": "opk_rag/evaluation/task0110_heading_context_runtime_promotion.py",
+      "size_bytes": 25974,
+      "sha256": "59385a06fc07436aa159646a8263919ed2660ba3d3a0aa823d60a6248bfc831e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0111_heading_context_benefit_scope.py",
+      "size_bytes": 62419,
+      "sha256": "a2360c9d3c56fa97182cbfe93e20b7a8b291a7558701c3404c856b4c9f47d5e1"
+    },
+    {
+      "path": "opk_rag/evaluation/task0112_reranker_strategy_matrix.py",
+      "size_bytes": 66400,
+      "sha256": "d91446244accfdbb584a17efb87820e833a85b9229a6a7118cdd04726135a132"
+    },
+    {
+      "path": "opk_rag/evaluation/task0113_retrieval_failure_taxonomy_v2.py",
+      "size_bytes": 35225,
+      "sha256": "68e31d7af53bc5815c6fd4783db00e83b211e1ca962d9b6feb1d7477097f72fe"
+    },
+    {
+      "path": "opk_rag/evaluation/task0114_governed_multi_query_retrieval_ablation.py",
+      "size_bytes": 41398,
+      "sha256": "073af78304d1a02f2640df07e112b06e2c5936e3932e3f1072963fab191db11f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0115_retrieval_addressability_gap_diagnosis.py",
+      "size_bytes": 54046,
+      "sha256": "d201e41fd7e565542681856f2380ced4a58c01be88367b95b323488726f20a65"
+    },
+    {
+      "path": "opk_rag/evaluation/task0116_governed_late_interaction_retrieval_ablation.py",
+      "size_bytes": 55412,
+      "sha256": "168f4bc22f1d17bcf0455680e31be4889cc842c95a80d93c73c2eaf3732c929c"
+    },
+    {
+      "path": "opk_rag/evaluation/task0117_late_interaction_runtime_promotion.py",
+      "size_bytes": 21175,
+      "sha256": "4dc10545d8b69a9772233bf4272e0526ab0dbee93f8e48bf34a130e66cbb70de"
+    },
+    {
+      "path": "opk_rag/evaluation/task0118_late_interaction_leakage_remediation_clean_revalidation.py",
+      "size_bytes": 48573,
+      "sha256": "77ce48f58ccd2c3a3cb1db9a60bdd808ded46d010f15f89bf861c4eff7d98fe4"
+    },
+    {
+      "path": "opk_rag/evaluation/task0119_clean_late_interaction_runtime_promotion.py",
+      "size_bytes": 52034,
+      "sha256": "ea76e3d850b02095655152ad7bd1fa41d1c172b6f7a5274d7db827dded531408"
+    },
+    {
+      "path": "opk_rag/evaluation/task0120_dense_retrieval_failure_signal_diagnosis.py",
+      "size_bytes": 48153,
+      "sha256": "7959fbfdbe67367eb32937345f36e90bdf7a20cb7858adac375cdcb2605cb068"
+    },
+    {
+      "path": "opk_rag/evaluation/task0121_deterministic_guard_v2_runtime_promotion.py",
+      "size_bytes": 44589,
+      "sha256": "553980c28fd04afe435ad99a4ff8071b5d919acebfec8bda881bcb5e86246d50"
+    },
+    {
+      "path": "opk_rag/evaluation/task0122_guard_v2_downstream_regression_diagnosis.py",
+      "size_bytes": 40670,
+      "sha256": "cfc16b53822b3e6d2aae29f85122ad89e0ad1779f2433e1d143fec7fcd1cdfbf"
+    },
+    {
+      "path": "opk_rag/evaluation/task0123_retriever_aware_fusion_mitigation.py",
+      "size_bytes": 45484,
+      "sha256": "b3dd7557ba4a24d5c7af455b23ce1097b6ca483fc183c33fa81ff6ee5d1a732e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0124_retriever_aware_fusion_failure_diagnosis.py",
+      "size_bytes": 52990,
+      "sha256": "97f01799a4989d3df346d1da8988b741b5540fd01aea00121a3849908463e2e7"
+    },
+    {
+      "path": "opk_rag/evaluation/task0125_multi_lane_candidate_composition_ablation.py",
+      "size_bytes": 47125,
+      "sha256": "36b66ca2136960021f6b55c231a67736ea0cbf8a674aa5399162027d20373e65"
+    },
+    {
+      "path": "opk_rag/evaluation/task0126_multi_lane_promotion_gap_diagnosis.py",
+      "size_bytes": 40451,
+      "sha256": "2e0697c7a2baa438b5fab19ff0af9434e7377667f546133cfa913f8c766751d9"
+    },
+    {
+      "path": "opk_rag/evaluation/task0127_multi_lane_evidence_conversion_failure_diagnosis.py",
+      "size_bytes": 51062,
+      "sha256": "4de16fd927547c93bb673991cfc0cde2321e737a396765312db64f2aaf8faf2b"
+    },
+    {
+      "path": "opk_rag/evaluation/task0128_evidence_budgeted_composition_mitigation.py",
+      "size_bytes": 36236,
+      "sha256": "cd758a0870f9a126b3b496077f58901d1bfaf1f3169cff16dee66c9c0138fddf"
+    },
+    {
+      "path": "opk_rag/evaluation/task0129_evidence_budgeted_composition_promotion_blocker_diagnosis.py",
+      "size_bytes": 32477,
+      "sha256": "9c04b2534d815bc4a8e812f10549fdea3940c866c406db9bf7cfc80ff2181681"
+    },
+    {
+      "path": "opk_rag/evaluation/task0130_targeted_composition_regression_mitigation.py",
+      "size_bytes": 39885,
+      "sha256": "12215e3a248c6e98d16cac2768bbc8c379cc58b643ac2e7c682da8a6b85f4915"
+    },
+    {
+      "path": "opk_rag/evaluation/task0131_targeted_evidence_composition_runtime_promotion.py",
+      "size_bytes": 27860,
+      "sha256": "8d2531cf91ade9c46754b94b395c54311f9d8b83c8656453bbbdaac67c8b45b8"
+    },
+    {
+      "path": "opk_rag/evaluation/task0132_post_promotion_residual_failure_rebaseline.py",
+      "size_bytes": 41290,
+      "sha256": "687d83eeef74ba5508a49dd6939557177d62194150a134a1427cc659a0dd8203"
+    },
+    {
+      "path": "opk_rag/evaluation/task0133_residual_ranking_failure_diagnosis.py",
+      "size_bytes": 48838,
+      "sha256": "7cc8c91e1a99f5be8f0400ea5807d252fc0192b13bbe5aae56876300180ccde0"
+    },
+    {
+      "path": "opk_rag/evaluation/task0134_existing_signal_ranking_mitigation.py",
+      "size_bytes": 46234,
+      "sha256": "450478c3c66d5dfa872eed472b753766598fa4feaa76203cc2a077424be81ec3"
+    },
+    {
+      "path": "opk_rag/evaluation/task0135_new_ranking_signal_experiment.py",
+      "size_bytes": 48633,
+      "sha256": "c5631b4c7582a5d16f8b9db423e9fe2e8f774dce5505779b2a4163dedf2c92cb"
+    },
+    {
+      "path": "opk_rag/evaluation/task0136_ranking_to_evidence_utility_boundary_diagnosis.py",
+      "size_bytes": 55152,
+      "sha256": "80d7d768b9b98f9fdb681823121e31b13ebcd944bb4e56f0cce370ffb8fa170b"
+    },
+    {
+      "path": "opk_rag/evaluation/task0137_graph_sensitive_retrieval_experiment.py",
+      "size_bytes": 53356,
+      "sha256": "1e13cdfe794ecb22163621fe970176f86bb7f5d7abf8959bd8d816a91130d1f0"
+    },
+    {
+      "path": "opk_rag/evaluation/task0138_graph_sensitive_retrieval_runtime_promotion.py",
+      "size_bytes": 35275,
+      "sha256": "6e83416649462d99a8f9d8b347040d6e4f68ebfea4b8c76e21a6a98e9e4ca6fd"
+    },
+    {
+      "path": "opk_rag/evaluation/task0139_graph_retrieval_activation_routing_experiment.py",
+      "size_bytes": 23596,
+      "sha256": "cab7523710917e30d78ad641a07d6b2dbbd4f671b88df12bad6c17f58f37d812"
+    },
+    {
+      "path": "opk_rag/evaluation/task0140_graph_retrieval_activation_runtime_promotion.py",
+      "size_bytes": 28475,
+      "sha256": "cc090f767830c649bb7b40771d3dcbe860d1a686cf6646537d09c6d84d88df24"
+    },
+    {
+      "path": "opk_rag/evaluation/task0141_bounded_multi_hop_path_retrieval_experiment.py",
+      "size_bytes": 29872,
+      "sha256": "f9fd5f1ffa044baba72d560ca86ab255cab60b58bc4c2fe7de4672049b8b2b92"
+    },
+    {
+      "path": "opk_rag/evaluation/task0142_one_hop_graph_residual_evidence_gap_diagnosis.py",
+      "size_bytes": 35143,
+      "sha256": "1c783199926234126968e24c1eb2827b162bb13e16e8a92adcb5fdbb7060417e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0143_initial_retrieval_residual_candidate_recovery_experiment.py",
+      "size_bytes": 40118,
+      "sha256": "e206efff8710a9910dac048b68b4a7a80e0775e11b1e6b62b3c3570f32b2845c"
+    },
+    {
+      "path": "opk_rag/evaluation/task0144_structure_aware_initial_retrieval_promotion_gate.py",
+      "size_bytes": 44439,
+      "sha256": "f03e726d2607f0856cf93651e1f2597e6bc73b1aea1a88d8066ab2356b083158"
+    },
+    {
+      "path": "opk_rag/evaluation/task0145_task0143_regression_authority_reconciliation_and_causal_replay.py",
+      "size_bytes": 35165,
+      "sha256": "66e5c45dd2bca7296f52dda613482656010d159af3c230be8648887ec5f6cfea"
+    },
+    {
+      "path": "opk_rag/evaluation/task0146_reconciled_structure_aware_retrieval_promotion_selection.py",
+      "size_bytes": 46159,
+      "sha256": "99a6c8edfa6c78bf14564d3669ec8dc5f522b281df462b4f074d4917fc4fb5ee"
+    },
+    {
+      "path": "opk_rag/evaluation/task0147_guarded_structure_aware_initial_retrieval_runtime_promotion.py",
+      "size_bytes": 41715,
+      "sha256": "dc91190758ab2380cb00ccee83ae1a698adcb2189ccb933461b0a6ee1b93b5de"
+    },
+    {
+      "path": "opk_rag/evaluation/task0148_graph_retrieval_v1_freeze_readiness_and_multihop_necessity.py",
+      "size_bytes": 48438,
+      "sha256": "2aa4999e8066cf61393e2127335d35964213105fbc7ca50eda6c4172a6601b85"
+    },
+    {
+      "path": "opk_rag/evaluation/task0149_graph_retrieval_v1_freeze_and_authoritative_baseline_seal.py",
+      "size_bytes": 50441,
+      "sha256": "f7058b20b2259fe421591ed520e857198131e8074f787b4785e01bcddbe602e1"
+    },
+    {
+      "path": "opk_rag/evaluation/task0150_multihop_sensitive_benchmark_gap_assessment_and_v2_spec.py",
+      "size_bytes": 36711,
+      "sha256": "e9be6e20d88d41ab42f719daadac58b3b4461d0c934b9c67a8ccd1362977ab41"
+    },
+    {
+      "path": "opk_rag/evaluation/task0151_multihop_sensitive_graph_benchmark_authoring_and_review.py",
+      "size_bytes": 36921,
+      "sha256": "dc61bff89170d0e66f08fc8be61244798c8e360d948ccca700dfa50790aab8db"
+    },
+    {
+      "path": "opk_rag/evaluation/task0152_multihop_capable_corpus_graph_coverage_and_path_authorability_diagnosis.py",
+      "size_bytes": 45656,
+      "sha256": "f4a14cace1a667a62e2ba6fef47a14cab1a62ea07453b83bd393c6dfd13a6e87"
+    },
+    {
+      "path": "opk_rag/evaluation/task0153_two_hop_graph_identity_resolution_repair_and_path_recovery.py",
+      "size_bytes": 34526,
+      "sha256": "b31a8c425e025f887d61dcc3838e18ee9a89d6437b56606f0e539fb618f488ef"
+    },
+    {
+      "path": "opk_rag/evaluation/task0154_missing_graph_target_document_provenance_and_corpus_snapshot_coverage_diagnosis.py",
+      "size_bytes": 43388,
+      "sha256": "f460bb73e97a6b91b438db4122c1df216a1e7ed7eb1458e81a4e4b57b55a155a"
+    },
+    {
+      "path": "opk_rag/evaluation/task0155_multihop_capable_corpus_authority_gap_assessment_and_v2_viability_decision.py",
+      "size_bytes": 43701,
+      "sha256": "c940bd5317a684a329030fecfa9a4473988772296647693d35987743e00dc674"
+    },
+    {
+      "path": "opk_rag/evaluation/task0156_corpus_graph_hygiene_and_dangling_reference_impact_audit.py",
+      "size_bytes": 37814,
+      "sha256": "8243497214fae5a6979c395b464f9c32f2009ca5b990e472312782730b0d66a8"
+    },
+    {
+      "path": "opk_rag/evaluation/task0157_graph_retrieval_v1_stage_closeout_and_engineering_authority_summary.py",
+      "size_bytes": 47103,
+      "sha256": "891cd66d0179325e213abeb71887e7f60695a3514c281ca577082025baaa0981"
+    },
+    {
+      "path": "opk_rag/evaluation/task0158_graph_v2_corpus_authority_repair.py",
+      "size_bytes": 34201,
+      "sha256": "0aaca6d015c1feef3ca3748073324d22fa50a107818f9eef64980d7d473ad658"
+    },
+    {
+      "path": "opk_rag/evaluation/task0159_graph_v2_authoritative_source_gap_registry_and_intake_contract.py",
+      "size_bytes": 35298,
+      "sha256": "986a583a5905dd7b12a9bc368eb7b1dd21fbf2d39532366bf7b0394ff3693318"
+    },
+    {
+      "path": "opk_rag/evaluation/task0160_graph_v2_candidate_source_intake_and_authority_review.py",
+      "size_bytes": 41863,
+      "sha256": "5cec05056a866ae52da7df78e9658b8b9b7a2aa4f11a630413e143607ff75584"
+    },
+    {
+      "path": "opk_rag/evaluation/task0161_graph_v2_external_authoritative_source_acquisition_boundary_and_owner_approval_contract.py",
+      "size_bytes": 50552,
+      "sha256": "70d85c8edc17c3b776ba580443e0ca6310e1c9de287b62f422e06dd812fd497c"
+    },
+    {
+      "path": "opk_rag/evaluation/task0162_graph_provenance_and_corpus_consistency_baseline.py",
+      "size_bytes": 38839,
+      "sha256": "9d9f099a3417883f486b7989863fdffac4d6684dfb43adce447e06b7e3e24684"
+    },
+    {
+      "path": "opk_rag/evaluation/task0163_graph_snapshot_to_corpus_revision_binding_baseline.py",
+      "size_bytes": 46752,
+      "sha256": "1c6d054594974e22fc946996264cab426ee8011de54c3740aff4e0a732e98d35"
+    },
+    {
+      "path": "opk_rag/evaluation/task0164_authoritative_graph_reseal_or_rebuild_with_native_corpus_revision_binding.py",
+      "size_bytes": 43247,
+      "sha256": "9ffca6d4c55e723a55f895b416838d2e17b2b1f7161bf35d46dc0012fb97424e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0165_graph_freshness_detection_and_staleness_policy.py",
+      "size_bytes": 42371,
+      "sha256": "4430adbe2a6cc97c2750ef0da0e3d05772c73ebfe7c9cbb5c58eaafac67004c5"
+    },
+    {
+      "path": "opk_rag/evaluation/task0166_corpus_change_impact_analysis_for_graph_lifecycle.py",
+      "size_bytes": 57996,
+      "sha256": "896979bf0e12d05f2f8cd12bc46feabdc7ff51f0588d7afd85caac5ab187dce9"
+    },
+    {
+      "path": "opk_rag/evaluation/task0167_controlled_incremental_graph_repair_and_reseal.py",
+      "size_bytes": 49809,
+      "sha256": "248f256cf00575f3d1340f91c431175bfaf32d6cd57b24d109530a30e7737e78"
+    },
+    {
+      "path": "opk_rag/evaluation/task0168_graph_lifecycle_runtime_integration_and_guarded_repair_activation.py",
+      "size_bytes": 45149,
+      "sha256": "d8095d6b6a9d46443665ce23e01c74ea39f8a965217bad7cfd8481bcd49476c3"
+    },
+    {
+      "path": "opk_rag/evaluation/task0169_graph_lifecycle_v1_freeze_and_engineering_authority_closeout.py",
+      "size_bytes": 55914,
+      "sha256": "4c3f934bd8d2f8dfafb8edd31f7cbc38ba53213d61f8fdc084062916dc4c8580"
+    },
+    {
+      "path": "opk_rag/evaluation/task0170_cold_start_reproducibility_baseline.py",
+      "size_bytes": 65365,
+      "sha256": "086b2699a240920d1fbacc6a392e9786a52c98f68c1de0bde77f8c913fc6ae86"
+    },
+    {
+      "path": "opk_rag/evaluation/task0171_cold_start_database_configuration_and_isolation_bootstrap.py",
+      "size_bytes": 35236,
+      "sha256": "21772cf7efaa8a1fef8cd44a78f7455b14dd3653e588e6899af37c598e2fb46a"
+    },
+    {
+      "path": "opk_rag/evaluation/task0172_cold_start_schema_scoped_database_runtime_integration.py",
+      "size_bytes": 26928,
+      "sha256": "fdcaa805e59b0c359bfc4436e1bd38d6ec1a95194927f9ea769669156b2a179f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0173_cold_start_embedding_cuda_runtime_failure_diagnosis.py",
+      "size_bytes": 28550,
+      "sha256": "63965e2ec43de6c007ab18e39c806ea137159304d918bc75f24c9df1ba8c3e42"
+    },
+    {
+      "path": "opk_rag/evaluation/task0174_cold_start_embedding_model_cache_authority_remediation.py",
+      "size_bytes": 8205,
+      "sha256": "7f649fed1803b8f0ffffbd06f5ff929b93aa14c73bbef11b5a2f97f3beb61cca"
+    },
+    {
+      "path": "opk_rag/evaluation/task0175_pinned_embedding_model_cache_materialization_and_authority_revalidation.py",
+      "size_bytes": 13818,
+      "sha256": "165a1563bfe96da19fb8d0e23ce67fc99d05bb2deaf5c8a2d5978a2d767b8d6e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0176_same_machine_cold_start_full_revalidation.py",
+      "size_bytes": 36247,
+      "sha256": "215968e8ea90409ec8ad431a270d39f4bc2c3360498a379fcf9baefbca7b1dfd"
+    },
+    {
+      "path": "opk_rag/evaluation/task0177_candidate_retrieval_machine_readable_output_contract_remediation.py",
+      "size_bytes": 3929,
+      "sha256": "2c855051c7608c7f87d51fb66e1fc50a32f831584c34d7e6cdd7b2c06208cf55"
+    },
+    {
+      "path": "opk_rag/evaluation/task0178_cold_start_database_schema_timeout_diagnosis.py",
+      "size_bytes": 30019,
+      "sha256": "972bf541689a31f186c22b776ed63364b7ae597954370d1a55685677cc36ee17"
+    },
+    {
+      "path": "opk_rag/evaluation/task0179_same_machine_cold_start_revalidation_after_transient_database_timeout.py",
+      "size_bytes": 32527,
+      "sha256": "2b6037e2848c6779a25e621a053724a152414f517ed6241ad71642d0078ea462"
+    },
+    {
+      "path": "opk_rag/evaluation/task0180_cold_start_zero_chunk_diagnosis_and_repair.py",
+      "size_bytes": 20648,
+      "sha256": "5139c2ba6db1574b18341033b84cd007508e78e2007e410be4536dd47ada1934"
+    },
+    {
+      "path": "opk_rag/evaluation/task0181_canonical_document_to_chunking_input_contract_repair.py",
+      "size_bytes": 18125,
+      "sha256": "88ce6186bb402081859aa01714dee4c2ac15a38ae85d73d0c869732612bcf698"
+    },
+    {
+      "path": "opk_rag/evaluation/task0182_cold_start_embedding_materialization_failure_diagnosis.py",
+      "size_bytes": 27803,
+      "sha256": "6c168e234912af9c73573a62dfc372ec21f489774c9fc014760de203786ec30e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0183_cold_start_vector_index_materialization_diagnosis.py",
+      "size_bytes": 37133,
+      "sha256": "3638081bbda0bf66649a262c196d1229217514b0c975d469d2b41600f8789199"
+    },
+    {
+      "path": "opk_rag/evaluation/task0184_cold_start_retrieval_runtime_validation_and_diagnosis.py",
+      "size_bytes": 45360,
+      "sha256": "52808b53c4ab531661c5e96031728b2b4d3b4b8819bc1698d03b6764799d4f3c"
+    },
+    {
+      "path": "opk_rag/evaluation/task0185_cold_start_reranking_runtime_validation_and_diagnosis.py",
+      "size_bytes": 45729,
+      "sha256": "e06b45b677fa380432d7478b71eb9311fbb4d3c4f35cafbbfee1ef1302881f45"
+    },
+    {
+      "path": "opk_rag/evaluation/task0186_cold_start_evidence_composition_runtime_validation_and_diagnosis.py",
+      "size_bytes": 40780,
+      "sha256": "c269e001a09fd6ab9668c1154536fb134621bc62571aa7629526fb6fa51e053f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0187_cold_start_generation_runtime_validation_and_diagnosis.py",
+      "size_bytes": 49147,
+      "sha256": "1325c3ca1912b151e73a3170a3b1180c1bcb7566478563bd96182666acfe80db"
+    },
+    {
+      "path": "opk_rag/evaluation/task0188_cold_start_end_to_end_q01_q07_validation.py",
+      "size_bytes": 45377,
+      "sha256": "df37537df43905d4b67448ee953ddb1442a57edf3bd9775854d62760d0c06b13"
+    },
+    {
+      "path": "opk_rag/evaluation/task0189_q05_negative_control_expected_behavior_mismatch_diagnosis.py",
+      "size_bytes": 40179,
+      "sha256": "e5639eebfa24470236263e8ea96a605cd98599bc921d7562034a7969515d24b5"
+    },
+    {
+      "path": "opk_rag/evaluation/task0190_q05_generation_grounding_unsupported_claims_refusal_repair.py",
+      "size_bytes": 24998,
+      "sha256": "efefd97ec3bc196b983ca3e0b0ca071b772062dc0aa1d1a738ae22d1a94354d2"
+    },
+    {
+      "path": "opk_rag/evaluation/task0191_cold_start_deployment_stage_closeout.py",
+      "size_bytes": 28672,
+      "sha256": "f21adf4a444b5808593ff6e9446562b93a237c091fc59ed6032a2ba1046751c3"
+    },
+    {
+      "path": "opk_rag/evaluation/task0192_full_suite_governance_configuration_drift_diagnosis.py",
+      "size_bytes": 20247,
+      "sha256": "b715fd470564c8bdf76cfe1439a92fc8669ebcf9bbc03e05898fb1a05e78e08b"
+    },
+    {
+      "path": "opk_rag/evaluation/task0193_bounded_governance_configuration_drift_reconciliation.py",
+      "size_bytes": 21961,
+      "sha256": "055a968a97dfc2df1a5b1f897e67f450cc22c6ce9c9e471813c30031a9de17bd"
+    },
+    {
+      "path": "opk_rag/evaluation/task0194_deployment_stage_final_freeze_replay.py",
+      "size_bytes": 32483,
+      "sha256": "36472ab3c967981a54be1c24a593e3f33ed5e83d72ff9f9c3bb1d9e1d62f88c6"
+    },
+    {
+      "path": "opk_rag/evaluation/task0195_native_vector_database_evaluation_baseline.py",
+      "size_bytes": 57144,
+      "sha256": "2576892eb04eac71a018e9d33d60af629a3cecba9083618aede62e3632d5522e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0196_qdrant_native_vector_backend_runtime_experiment.py",
+      "size_bytes": 49938,
+      "sha256": "cece6e79139f9a6d417fd88f793f281c04757253a373fd9225708aa554a78f85"
+    },
+    {
+      "path": "opk_rag/evaluation/task0197_qdrant_server_environment_provisioning.py",
+      "size_bytes": 51962,
+      "sha256": "ccb7cd3f37157efa22553a29c5c4f578306f5c5a92805ba0346ea878a70a41a2"
+    },
+    {
+      "path": "opk_rag/evaluation/task0198_qdrant_native_vector_backend_runtime_experiment_replay.py",
+      "size_bytes": 60889,
+      "sha256": "0d14b9b34576b2d3a1c8b0808d5e74126a8a22b195a13b17555f337faa779514"
+    },
+    {
+      "path": "opk_rag/evaluation/task0199_qdrant_shadow_runtime_integration.py",
+      "size_bytes": 42845,
+      "sha256": "cb83aa66f6abb536f8837321dcc72a22dac6d4635448a5479a5ac0c170314d78"
+    },
+    {
+      "path": "opk_rag/evaluation/task0200_qdrant_controlled_promotion_readiness.py",
+      "size_bytes": 55729,
+      "sha256": "5c2adcce00ec4e3aa72f98dfba9f3d2023127a10ebce5d1b570bec2d0285126c"
+    },
+    {
+      "path": "opk_rag/evaluation/task0201_qdrant_controlled_production_promotion.py",
+      "size_bytes": 45012,
+      "sha256": "565391fe4ea3e5e852fe9f100f956b66c0c8b0b4d44e7c3f8e5337cc37278523"
+    },
+    {
+      "path": "opk_rag/evaluation/task0202_qdrant_production_stabilization_and_migration_freeze.py",
+      "size_bytes": 63678,
+      "sha256": "44d7e98d85ea982c7f91a7dea978ecd993ff6fc02551488294f1fdc820dd27de"
+    },
+    {
+      "path": "opk_rag/evaluation/task0203_post_migration_project_state_consolidation.py",
+      "size_bytes": 51563,
+      "sha256": "6d4dd04ef950a81f9a18a4e74048587c6717f8fa3e6bdb204fc42e79cbcaad9c"
+    },
+    {
+      "path": "opk_rag/evaluation/task0204_post_migration_release_acceptance_and_rollback_drill.py",
+      "size_bytes": 26791,
+      "sha256": "476079bda55af85481d3aba0d7bef2d70177a158c473315f2b2260fd647aea85"
+    },
+    {
+      "path": "opk_rag/evaluation/task0205_qdrant_production_performance_baseline_and_reseal.py",
+      "size_bytes": 55578,
+      "sha256": "008f9120d02dbdf3de3149d3d3367969d831e0aaf0e4d78522436f8259560dc9"
+    },
+    {
+      "path": "opk_rag/evaluation/task0206_retrieval_latency_bottleneck_attribution.py",
+      "size_bytes": 43300,
+      "sha256": "5984c354ead5de5133441887f957ebca7ba5a8af9e843e729dc44b02911f01c7"
+    },
+    {
+      "path": "opk_rag/evaluation/task0207_reranker_model_execution_optimization_experiment.py",
+      "size_bytes": 29126,
+      "sha256": "9168705d9a82dca0b48acef9e55a0e184d8c9d6fdc10b86da3b317556638ab8f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0208_reranker_hardware_execution_profiling_and_device_authority.py",
+      "size_bytes": 59056,
+      "sha256": "e6f44fc4c49eafab77548cf3e8ac7728a4824bfa36c07a26847bb925edd8ed7f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0209_reranker_cuda_precision_optimization_experiment.py",
+      "size_bytes": 51195,
+      "sha256": "b2ac65860d577e7bf60a2d9dea792a262a83f63dfd7f9a5a29c01fc55c71c52e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0210_reranker_cross_task_latency_authority_reconciliation_and_production_replay.py",
+      "size_bytes": 61938,
+      "sha256": "ec2ff9e9e4b8c2715bb9518bdb4778c984db396da7efe953bd1c23cac57b3185"
+    },
+    {
+      "path": "opk_rag/evaluation/task0211_production_gpu_model_residency_and_memory_headroom_authority_baseline.py",
+      "size_bytes": 50446,
+      "sha256": "195a8459dfa68026d7d21c492f6918b52b6179b73d7ce68b3d195ca2a89c5720"
+    },
+    {
+      "path": "opk_rag/evaluation/task0212_search_scoped_fp16_autocast_reranker_production_integration.py",
+      "size_bytes": 27956,
+      "sha256": "8ef23c32bb968dcb39cb2cb568053e2a6453aba33279b38b52edc32069511c1a"
+    },
+    {
+      "path": "opk_rag/evaluation/task0213_production_search_stage_latency_profiling_and_dominant_bottleneck_diagnosis.py",
+      "size_bytes": 40173,
+      "sha256": "eefeba9e16c95deeade76d7cdc8be6473492657e405c1d5ff5d48e5c3da9120b"
+    },
+    {
+      "path": "opk_rag/evaluation/task0214_project_showcase_delivery_stage_entry_and_authority_baseline.py",
+      "size_bytes": 48229,
+      "sha256": "3ebdd1b4eb74aade368596ee89627e5d85965367776230ddecf05a8fdee04cc9"
+    },
+    {
+      "path": "opk_rag/evaluation/task0215_showcase_demo_execution_baseline.py",
+      "size_bytes": 24066,
+      "sha256": "f4469459c685ea087a313068ec13fd6ab1485d6e6ee76d4e6bfadcd928e0aa9e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0216_showcase_runtime_authority_alignment_and_observability_repair.py",
+      "size_bytes": 36224,
+      "sha256": "21ba923679fc3f6fa269f329311a6eefa03237280654ef26dbb68acf25c47ff1"
+    },
+    {
+      "path": "opk_rag/evaluation/task0217_public_production_search_guarded_structure_aware_graph_v1_runtime_integration.py",
+      "size_bytes": 39136,
+      "sha256": "623c616ecbb2a4a59e82a2db0f76b353fc516bd063e6ae4a78ef6a5def82f218"
+    },
+    {
+      "path": "opk_rag/evaluation/task0218_showcase_scenario_and_demo_query_freeze.py",
+      "size_bytes": 25158,
+      "sha256": "84c7195cc14773eb981259e7f2dc3e1a46cb1965b6faa4d150f471f935c6b835"
+    },
+    {
+      "path": "opk_rag/evaluation/task0219_unified_showcase_demo_entry_point.py",
+      "size_bytes": 19291,
+      "sha256": "a2816021dfaabf60ffa6d3fc47db652f16f45289a9dd4d93dee7e6e1a7f1a057"
+    },
+    {
+      "path": "opk_rag/evaluation/task0220_showcase_graph_retrieval_visualization.py",
+      "size_bytes": 21928,
+      "sha256": "af804b9914f2c4415700d8bbfc3bcf49c55031d4511d875cb25fd87ab0151ba1"
+    },
+    {
+      "path": "opk_rag/evaluation/task0221_showcase_guarded_agent_decision_trace.py",
+      "size_bytes": 21379,
+      "sha256": "0f18bdc5e0036cbfb9e5ccdf08bb25e47b748b5071618c694252334d79d4ee6e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0222_showcase_end_to_end_rag_architecture_storyboard.py",
+      "size_bytes": 21500,
+      "sha256": "78db961b56a512c875f5d5228fc7fc0fd3f9cc52c066228669d540446a793d05"
+    },
+    {
+      "path": "opk_rag/evaluation/task0223_showcase_recording_readiness_and_demo_asset_freeze.py",
+      "size_bytes": 33500,
+      "sha256": "a18cf2534d12632f445756a568cd2a81ccd39e5df4bbd05e70454f76405f6764"
+    },
+    {
+      "path": "opk_rag/evaluation/task0224_showcase_v2_visual_explainability_stage_activation.py",
+      "size_bytes": 17129,
+      "sha256": "b91daafdd741c71df14163e73e121bbe03d9929af7d35e332c534f44a456379d"
+    },
+    {
+      "path": "opk_rag/evaluation/task0225_rag_runtime_trace_contract.py",
+      "size_bytes": 30048,
+      "sha256": "a28cfb95c306cc79e030835b7c6c96c64a14f5615bdfcbaff563dbd9e2637555"
+    },
+    {
+      "path": "opk_rag/evaluation/task0226_runtime_trace_instrumentation.py",
+      "size_bytes": 21235,
+      "sha256": "6576f2a551615c7687a866547719262c4aeeb1e7b7f80a23b4c39effa8567b4f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0227_showcase_api_and_event_stream.py",
+      "size_bytes": 20527,
+      "sha256": "b126e5a0a54ccbcc7a8fcd6a375d1628e7735aa0f2c11b4134d27b60e23f550f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0228_showcase_ui_foundation.py",
+      "size_bytes": 20834,
+      "sha256": "ce64884f07e47cd6117c7248d32533ec2c8ed4bd624a0effe19bc3c3f4ad65f2"
+    },
+    {
+      "path": "opk_rag/evaluation/task0229_showcase_v2_chinese_localization_and_executive_view.py",
+      "size_bytes": 17845,
+      "sha256": "7514dafd12a75c1e03aea3363c4a3f075dcfcb8b84c77e47dd17fcc701fdd8c9"
+    },
+    {
+      "path": "opk_rag/evaluation/task0230_showcase_v2_retrieval_and_guard_decision_visualization.py",
+      "size_bytes": 7939,
+      "sha256": "82ab73c38ce900966fedd776e9cae7082a8847958b6cdd7201b91aa80b4f6e34"
+    },
+    {
+      "path": "opk_rag/evaluation/task0231_showcase_v2_interactive_graph_retrieval_visualization.py",
+      "size_bytes": 18192,
+      "sha256": "b99bac3d75c382c4f1ded9eae052bf2c2a212c94e786346fbea130a5e87ee05c"
+    },
+    {
+      "path": "opk_rag/evaluation/task0232_showcase_v2_candidate_rerank_evidence_deep_visualization.py",
+      "size_bytes": 18417,
+      "sha256": "13c31163ef2b40d89d72a8beb47e2a9976f4fe0ac75b2a4d0a9fb59e39da5e27"
+    },
+    {
+      "path": "opk_rag/evaluation/task0233_showcase_v2_answerability_generation_grounding_citation_visualization.py",
+      "size_bytes": 16950,
+      "sha256": "ab8fc5a695846a820b4f770a3f8b439a18b980f1ae6d828ef0a90ce00f5e7236"
+    },
+    {
+      "path": "opk_rag/evaluation/task0234_showcase_v2_end_to_end_presentation_polish_and_recording_freeze.py",
+      "size_bytes": 22434,
+      "sha256": "7757c53ff0e913f6a46e5e329989877efd25deda60b83a83d53ee646b010aa2e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0235_showcase_end_to_end_dry_run_and_recording_readiness.py",
+      "size_bytes": 26372,
+      "sha256": "2629679d040e32d6c6fe73a5b9c18484677e4ef04375cdadf95522c29cd9d66f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0236_formal_showcase_video_recording.py",
+      "size_bytes": 19844,
+      "sha256": "6154021e756d2023c6ae16d2b70d149cc6a728db3b5c2d1b761554f498403de2"
+    },
+    {
+      "path": "opk_rag/evaluation/task0237_showcase_video_editing_packaging_and_final_delivery.py",
+      "size_bytes": 27278,
+      "sha256": "3d4082474e6674bf8d1c733a56d41f0f7f85e304dc451b367a9ff29e12189192"
+    },
+    {
+      "path": "opk_rag/evaluation/task0238_guarded_rag_pre_llm_agentic_baseline_freeze_and_stage_transition.py",
+      "size_bytes": 19776,
+      "sha256": "38afb79107a70566ee8ee48e10b8fdaa00430210d9d8869b1655a7f981511acb"
+    },
+    {
+      "path": "opk_rag/evaluation/task0239_historical_agent_runtime_reconciliation_and_llm_agentic_v2_architecture_authority.py",
+      "size_bytes": 1953,
+      "sha256": "70f9488fbe3d3e6d158e878054c423ead43ee4b409d0c76fdb21c8a0b9648114"
+    },
+    {
+      "path": "opk_rag/evaluation/task0240_llm_agentic_rag_typed_contracts_and_pydantic_foundation.py",
+      "size_bytes": 7652,
+      "sha256": "137405f5d94100a98b1f66ad1a666c0d6aabf7a4d819c9cb947b31c2415e6cbd"
+    },
+    {
+      "path": "opk_rag/evaluation/task0241_llm_agent_policy_provider_and_structured_decision_runtime.py",
+      "size_bytes": 15952,
+      "sha256": "86bb5de57b1b5d940e899aa4aa547125824bf3006d360cbd0111d37386cf691e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0242_deterministic_agent_guard_and_decision_to_action_validation.py",
+      "size_bytes": 24174,
+      "sha256": "b0d69cbf6d73870c97cf1e8d6705c24abbbb497631ef53157ca9183b6e8acd96"
+    },
+    {
+      "path": "opk_rag/evaluation/task0243_agentic_v2_tool_registry_and_guarded_tool_executor.py",
+      "size_bytes": 11417,
+      "sha256": "4433e01f6916384f5a73ed01209db245d7466791b1c22d2cdb4275ed83936acb"
+    },
+    {
+      "path": "opk_rag/evaluation/task0244_agentic_v2_state_transition_and_tool_result_observation_runtime.py",
+      "size_bytes": 24847,
+      "sha256": "559231558df16a46051b6515aad3bae0f0d4daac98a7895e5643d7edb20382bc"
+    },
+    {
+      "path": "opk_rag/evaluation/task0245_agentic_v2_bounded_observe_decide_guard_act_loop.py",
+      "size_bytes": 15203,
+      "sha256": "99d9bd9eb2a84672a005fb56deeb0968783a934c01fa4f26d82c7405173cba42"
+    },
+    {
+      "path": "opk_rag/evaluation/task0246_agentic_v2_real_provider_contract_stabilization_and_agent_benchmark_baseline.py",
+      "size_bytes": 19347,
+      "sha256": "548f36f22c59598c205d617659eb83a9c96b35df210bcc8259f1e9c449c711af"
+    },
+    {
+      "path": "opk_rag/evaluation/task0246_runtime_support.py",
+      "size_bytes": 8870,
+      "sha256": "23677d3d8af3bd737b09d92084c601c78a0030b193fcf12d573439906b189dfc"
+    },
+    {
+      "path": "opk_rag/evaluation/task0247_agentic_v2_candidate_rejection_gap_analysis_and_recovery_plan.py",
+      "size_bytes": 19175,
+      "sha256": "bdb35b007d8a3068d83d27612089874edafd8e2519e5db134c45b36be50a1e32"
+    },
+    {
+      "path": "opk_rag/evaluation/task0247_selective_runtime.py",
+      "size_bytes": 12767,
+      "sha256": "f4a6b0178c16184a7eec89f8a69f1304021731c74f44e279ec7ca19e94c1c35a"
+    },
+    {
+      "path": "opk_rag/evaluation/task0248_selective_agent_abstention_veto_and_ambiguity_rewrite_integration.py",
+      "size_bytes": 16429,
+      "sha256": "51e86082752401646700675465cd2150babe197d20dd34f65db9ca6fcc94e0e1"
+    },
+    {
+      "path": "opk_rag/evaluation/task0248_selective_runtime.py",
+      "size_bytes": 11670,
+      "sha256": "16142e0c8dfd13a114bda9d95ce42b0593cb0e5b1259da9d0713ebfbe240a055"
+    },
+    {
+      "path": "opk_rag/evaluation/task0249_selective_agent_structured_output_reliability_and_conflict_policy_gap_closure.py",
+      "size_bytes": 15083,
+      "sha256": "230bdf87369f96fe60bfaa8f76e7da0d3afd16520da75cbd3245871ab6d64c17"
+    },
+    {
+      "path": "opk_rag/evaluation/task0249_selective_reliability_and_conflict.py",
+      "size_bytes": 15519,
+      "sha256": "14fa497165dda445178c318ec0944b8b4066278b0f3d48c0ddc1d1fd5b247f0f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0250_selective_agent_shadow_readiness_and_shadow_evaluation.py",
+      "size_bytes": 21581,
+      "sha256": "2b68e2c9497367a7082b1beead38aeac34c5a7eac319129bdf9ab38598e7c126"
+    },
+    {
+      "path": "opk_rag/evaluation/task0251_selective_agent_live_traffic_shadow_observation_and_controlled_promotion_gate.py",
+      "size_bytes": 32107,
+      "sha256": "3599e4ed41209082cc681c60d1550e78835f062f697858194bc768b4816bb02f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0252_selective_agent_controlled_promotion_readiness_and_canary_plan.py",
+      "size_bytes": 38005,
+      "sha256": "b07462b5f846ac703c0eb9b89eb12a9950770e7d8225d3e8938f9d3af65788b2"
+    },
+    {
+      "path": "opk_rag/evaluation/task0253_selective_agent_bounded_production_canary_execution_and_rollback_validation.py",
+      "size_bytes": 13262,
+      "sha256": "a7140d0dab0058aa944baab23b6c134d5d48c7629b0c05171d0f543da4a0eed3"
+    },
+    {
+      "path": "opk_rag/evaluation/task0254_selective_agent_production_promotion_review_and_release_freeze.py",
+      "size_bytes": 27129,
+      "sha256": "7b0cc1609211b38dda8e63229ca9d5033075c70387cc0234429d526a4c9ff1c1"
+    },
+    {
+      "path": "opk_rag/evaluation/task0255_selective_agent_production_post_release_monitoring_stability_authority_and_stage_closeout.py",
+      "size_bytes": 27981,
+      "sha256": "a408d99a6cc463c52c1751dbde96012e5fa8dad2618f103feb1cfcfcbc397bef"
+    },
+    {
+      "path": "opk_rag/evaluation/task0256_project_open_source_release_governance_stage_entry_and_public_release_readiness_baseline.py",
+      "size_bytes": 37546,
+      "sha256": "9c5a7074746770f9438bcd525d63423b6b6c4bfb4fdb8ba20c653fff94711daa"
+    },
+    {
+      "path": "opk_rag/evaluation/task0257_controlled_realistic_dogfooding_traffic_and_selective_agent_evidence_bridge.py",
+      "size_bytes": 23519,
+      "sha256": "10d165a93f237ab86ffe129e6e52c004f62d86008a2f5dbc81ff83c8f632da81"
+    },
+    {
+      "path": "opk_rag/evaluation/task0258_controlled_dogfooding_provider_reliability_and_false_abstain_repair.py",
+      "size_bytes": 41476,
+      "sha256": "6ad4be9752e022c208905b94560a63599f55ff86a502e13655e39e645e9aa73e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0258_runtime_support.py",
+      "size_bytes": 15650,
+      "sha256": "3e5e892029f101b6df4617d9bbe8a614ab3c106dfdcd9a7ce8c08616c5fe51de"
+    },
+    {
+      "path": "opk_rag/evaluation/task0259_controlled_negative_answer_semantics_and_evidence_policy_review.py",
+      "size_bytes": 30520,
+      "sha256": "83b2c6fc0fa54f45853a2aed3603c017abd5f25c880a8d1b0557ccfc4dadbede"
+    },
+    {
+      "path": "opk_rag/evaluation/task0260_supported_negative_generation_stability_and_semantic_generalization_revalidation.py",
+      "size_bytes": 30611,
+      "sha256": "6c0e5195e6ba8b03a7e32f636ef6435afc6ce91e7bbacb77f7d88417ef39cd8f"
+    },
+    {
+      "path": "opk_rag/evaluation/task0261_supported_negative_repeated_stability_authority_and_metric_reconciliation.py",
+      "size_bytes": 22737,
+      "sha256": "4e8d53ff391e07a2b735ee9cf85ed1cf540955b340374a996a8e65b9540aaeb4"
+    },
+    {
+      "path": "opk_rag/evaluation/task0262_system_wide_agentic_rag_regression_and_shadow_governance_gate.py",
+      "size_bytes": 29936,
+      "sha256": "6afb942b8d7e54da569441dd8e61ccea5764be0508641e103373faae1622ac6a"
+    },
+    {
+      "path": "opk_rag/evaluation/task0263_controlled_agentic_rag_promotion_requalification.py",
+      "size_bytes": 21010,
+      "sha256": "4970bd7e9c4cf14788bf4d93b901f15e4a75cb5b6a09ca1a765a0c0b03bcd96a"
+    },
+    {
+      "path": "opk_rag/evaluation/task0263_external_generalization_followup.py",
+      "size_bytes": 15749,
+      "sha256": "5284d5e05d6a57744c8429a91a233dd20522b7e206753c2db1cd60f0544dc642"
+    },
+    {
+      "path": "opk_rag/evaluation/task0264_bounded_agentic_rag_production_canary_execution_and_rollback_validation.py",
+      "size_bytes": 16199,
+      "sha256": "854552fe354d822152c9d73596f599d4b80244f9dec2ab9269249eb81f3e49a8"
+    },
+    {
+      "path": "opk_rag/evaluation/task0266_controlled_realistic_single_and_multi_turn_rag_stability_evaluation.py",
+      "size_bytes": 65170,
+      "sha256": "712799f8f35aed0023ca5c18324377757d6a45b57704bc561903aff2929e0930"
+    },
+    {
+      "path": "opk_rag/evaluation/task0267_conversation_resolver_provider_structured_output_compatibility_repair.py",
+      "size_bytes": 40608,
+      "sha256": "09c5851c5bd8c4f31d0c1487829061bbb56c6f378a9277e603460d4dd298d85c"
+    },
+    {
+      "path": "opk_rag/evaluation/task0268_semantic_quality_requalification.py",
+      "size_bytes": 71598,
+      "sha256": "117f6a9b0ddad6e1e96c3ef74c665603efbd63cf6b375cfb7a829d35fe396392"
+    },
+    {
+      "path": "opk_rag/evaluation/task0269_modern_control_center_ui_stage_activation.py",
+      "size_bytes": 18018,
+      "sha256": "67c8a82b3b8aa240b88d83effb1dcc971e05f8ac32df990f4b5c35fda1e3d32d"
+    },
+    {
+      "path": "opk_rag/evaluation/task0270_control_center_shell_and_design_system.py",
+      "size_bytes": 10567,
+      "sha256": "54bdb06352338ad3482f067e3fe4300178d25556c43d50b747000033b641e734"
+    },
+    {
+      "path": "opk_rag/evaluation/task0271_knowledge_base_and_runtime_status_dashboard.py",
+      "size_bytes": 6156,
+      "sha256": "7c80d31f41b304b17e9f48e51803511b16733b15ce8480083b60a2d39c34e004"
+    },
+    {
+      "path": "opk_rag/evaluation/task0272_query_and_conversation_workspace.py",
+      "size_bytes": 10560,
+      "sha256": "a7aab1f338d5409bcf93a23c629d48444170a7e57df9408fe3beb1399c1a518c"
+    },
+    {
+      "path": "opk_rag/evaluation/task0273_retrieval_candidate_reranking_inspector.py",
+      "size_bytes": 7603,
+      "sha256": "ff8305032ba5f2e2f8fe73813c382af4acb826c5336d60c7b2857b9522199615"
+    },
+    {
+      "path": "opk_rag/evaluation/task0274_guarded_agent_and_recovery_trace_visualization.py",
+      "size_bytes": 11397,
+      "sha256": "2faaee7d93a3f7b73d0b24fcbdb7cf37b334f60b993ca7e97adbff6d3f50b956"
+    },
+    {
+      "path": "opk_rag/evaluation/task0275_graph_retrieval_interactive_inspector.py",
+      "size_bytes": 11210,
+      "sha256": "c93d1ae03474085bdd7e7ec7ea4a3752eeb76b31f136e0e86838aea2cf853b6e"
+    },
+    {
+      "path": "opk_rag/evaluation/task0276_evidence_answerability_grounding_citation_inspector.py",
+      "size_bytes": 10157,
+      "sha256": "950f8c1b88ca4dd1accbda989cafa754e0200635d18faff35f1ecf6d49acc9af"
+    },
+    {
+      "path": "opk_rag/evaluation/task0277_end_to_end_control_center_integration.py",
+      "size_bytes": 9489,
+      "sha256": "d62aaffe051aa25c73f906e5a058a9617dc0f19700fdc4cb43b93533d87caf41"
+    },
+    {
+      "path": "opk_rag/evaluation/task0278_showcase_executive_view.py",
+      "size_bytes": 10003,
+      "sha256": "e512873db13e507dbdcb5184454ffd1924813f694c4520d58674d47e302c151b"
+    },
+    {
+      "path": "opk_rag/evaluation/task0279_ui_polish_recording_freeze_and_final_acceptance.py",
+      "size_bytes": 8865,
+      "sha256": "e33deed7ecac828c07753d88643f58a86464951a310b790f4a23d7bccee53920"
+    },
+    {
+      "path": "opk_rag/evaluation/task0280_formal_modern_control_center_video_recording.py",
+      "size_bytes": 7520,
+      "sha256": "0a8964caba692919934bff3061cf20a7b4de57112466b5ddbb317b9dadddd0fe"
+    },
+    {
+      "path": "opk_rag/evaluation/task0281_modern_control_center_video_editing_packaging_and_final_delivery.py",
+      "size_bytes": 11425,
+      "sha256": "14669fcf43d4d099c35842b6bd988f7683c23194ee9a518aff036853a9fbf286"
+    },
+    {
+      "path": "opk_rag/evaluation/task0282_opk_rag_open_source_release_readiness_and_repository_finalization.py",
+      "size_bytes": 14757,
+      "sha256": "6e6c6924482bfe3475b13b84e60a374c147a83cccb428e111e9104e5e74b1874"
+    },
+    {
+      "path": "opk_rag/indexing/__init__.py",
+      "size_bytes": 687,
+      "sha256": "2e683fe28c2dad3e47c114280f16209f0d6f7f1d564bf503a9bab8c524d13c82"
+    },
+    {
+      "path": "opk_rag/indexing/chunk_variants.py",
+      "size_bytes": 13216,
+      "sha256": "14abf90a51a93d57cf032a3760d7e04788a6791242af0b69c6502acb5fff5055"
+    },
+    {
+      "path": "opk_rag/indexing/models.py",
+      "size_bytes": 1625,
+      "sha256": "0a4ce6dbc7f985e589f535e7f4ff1e9f1c1fc85b4b5b23315183e1021fabf016"
+    },
+    {
+      "path": "opk_rag/indexing/orchestrator.py",
+      "size_bytes": 8075,
+      "sha256": "256fdea404bc74ee25b320ca77b69670a9407ee966538d0a6dddea38cf23ea61"
+    },
+    {
+      "path": "opk_rag/indexing/planner.py",
+      "size_bytes": 3705,
+      "sha256": "a558dd66b9b6704a2e5b422f181fc7d1c0a0bc2373238596a571c670657fd354"
+    },
+    {
+      "path": "opk_rag/indexing/sync.py",
+      "size_bytes": 5961,
+      "sha256": "475ab41b9af3d38be715da958a9525bb01e01bdd1c07bc303c8a57eafa5dc549"
+    },
+    {
+      "path": "opk_rag/lexical/__init__.py",
+      "size_bytes": 314,
+      "sha256": "1720fcab3ca3517eefef940e23b12257aa21fc27dc32f1163ae1c518008a5e3b"
+    },
+    {
+      "path": "opk_rag/lexical/config.py",
+      "size_bytes": 1072,
+      "sha256": "049674034ce3432397d8bc0a45d4c2c2e65707f814615a458900cbd86a2a774b"
+    },
+    {
+      "path": "opk_rag/lexical/service.py",
+      "size_bytes": 6831,
+      "sha256": "bfae2dce590be53aa51df4b42e358d008b90e84f074cd55f4d975a8b48af75bf"
+    },
+    {
+      "path": "opk_rag/lexical/tokenizer.py",
+      "size_bytes": 2994,
+      "sha256": "84fde90e6e3d967bc8b0b21593f8cbccd495e12876693b559dbe9d80834e8f22"
+    },
+    {
+      "path": "opk_rag/reranking/__init__.py",
+      "size_bytes": 204,
+      "sha256": "e453b2ed1afe31da094715968510cd4d0ff042ef9f796962ce549e6ef93401b8"
+    },
+    {
+      "path": "opk_rag/reranking/bge.py",
+      "size_bytes": 9149,
+      "sha256": "cdf7ce19e17908bbfe920d45fbfead86df9ac56b69f0b302f1c4b206c05b34c6"
+    },
+    {
+      "path": "opk_rag/reranking/config.py",
+      "size_bytes": 5689,
+      "sha256": "66bedaad689c7fb446512acbf0749e93568b021e4ef1e1c31167dfdb5ead1864"
+    },
+    {
+      "path": "opk_rag/reranking/input.py",
+      "size_bytes": 463,
+      "sha256": "adca7429c9c7131a52cedc6cae807853b144566977e2ac6b28f2990fb3974dd7"
+    },
+    {
+      "path": "opk_rag/reranking/provider.py",
+      "size_bytes": 1128,
+      "sha256": "c4c44c5aa5220f3086c72af0f6e21c5346eeaf53ebbcef7f94879a71610547dd"
+    },
+    {
+      "path": "opk_rag/reranking/qwen.py",
+      "size_bytes": 5217,
+      "sha256": "6fea925015fb0108ecd60d6b16fd710f4f5b55927845eae0e3e2b0cd07bed127"
+    },
+    {
+      "path": "opk_rag/reranking/zerank.py",
+      "size_bytes": 6987,
+      "sha256": "b4c3bca6a16bfdfe4d956f271100bc0b7571e23c9a7671d8020239374b4fed14"
+    },
+    {
+      "path": "opk_rag/retrieval/__init__.py",
+      "size_bytes": 64,
+      "sha256": "73c7de334509aced3c5ef1e460eec69717a0a80aee8f09f3bfcd8837ebf111a8"
+    },
+    {
+      "path": "opk_rag/retrieval/multi_query.py",
+      "size_bytes": 4811,
+      "sha256": "e9fe74fab0e543707daec0bf19ab76691849ec29b2ec75b1238903dccf635f33"
+    },
+    {
+      "path": "opk_rag/runtime/__init__.py",
+      "size_bytes": 153,
+      "sha256": "a738a473f09ec216280fba25dd185ddb9fa6d7a88e8daf6b39c528529f47dde3"
+    },
+    {
+      "path": "opk_rag/runtime/config_sources.py",
+      "size_bytes": 1624,
+      "sha256": "eb2ab8b9c517c2b248428cd861a07250077c6e6142b67d90d6098a4e161e459d"
+    },
+    {
+      "path": "opk_rag/runtime/dotenv.py",
+      "size_bytes": 1672,
+      "sha256": "9b7646ccacbbbeabbf88c668d56d62686b89321b4eaf4d039ab34d56cec1160b"
+    },
+    {
+      "path": "opk_rag/runtime_v2/__init__.py",
+      "size_bytes": 285,
+      "sha256": "38241885912b4e19885b7c18e85d27d85c2da4e4edc18b804e77e28ad56ba3a0"
+    },
+    {
+      "path": "opk_rag/runtime_v2/chunk_identity.py",
+      "size_bytes": 1181,
+      "sha256": "239f90c6e205d03a4b8ee14de60cf2a94414b39a4d17e5ff358897db6519753e"
+    },
+    {
+      "path": "opk_rag/runtime_v2/corpus.py",
+      "size_bytes": 3815,
+      "sha256": "bae1c1b061916ad1cb6b1984e7245cf206dbe7070ca1250daecd1072b55e9ccb"
+    },
+    {
+      "path": "opk_rag/runtime_v2/evidence_composition.py",
+      "size_bytes": 14802,
+      "sha256": "f58166ef9c2e56b7cce7d8ce0096478e7d881efdf9108eb50cde434e300e57e3"
+    },
+    {
+      "path": "opk_rag/runtime_v2/evidence_context.py",
+      "size_bytes": 2012,
+      "sha256": "067520fa96bfa12b9d18679e2b477f97744c18842e353d3120c5379ecd423718"
+    },
+    {
+      "path": "opk_rag/runtime_v2/graph_activation.py",
+      "size_bytes": 11481,
+      "sha256": "4ee5b8eb5b1f60488dec2a7be840fceb767af9c8287bc67b7c344363c04f615e"
+    },
+    {
+      "path": "opk_rag/runtime_v2/graph_path_retrieval.py",
+      "size_bytes": 11217,
+      "sha256": "e885de8bbdfd354292d5ba91c43c741bcc043e45ddc0df38fb56517ff8d6450d"
+    },
+    {
+      "path": "opk_rag/runtime_v2/graph_retrieval.py",
+      "size_bytes": 14237,
+      "sha256": "5b6c119c6cf3a51859449b612cc1cd021304b6deca73da10335f61c4b2eef5ee"
+    },
+    {
+      "path": "opk_rag/runtime_v2/initial_retrieval.py",
+      "size_bytes": 10391,
+      "sha256": "721ad5432af3b4391e6989d6070053d98d7210fc53aab3ffe79de6fe48bca6b5"
+    },
+    {
+      "path": "opk_rag/runtime_v2/late_interaction_policy.py",
+      "size_bytes": 17606,
+      "sha256": "5495112242fd214a08070a8cb39fa5a22fdec8444f0782e05d1894392bcdb6d3"
+    },
+    {
+      "path": "opk_rag/runtime_v2/models.py",
+      "size_bytes": 2801,
+      "sha256": "d089ba99d4fbd6402437aa037d661920f69628ed33fb86add2e75b3098184009"
+    },
+    {
+      "path": "opk_rag/runtime_v2/multi_lane_candidate_composition.py",
+      "size_bytes": 7671,
+      "sha256": "84607b66d84dbe6967c13615c079d535e6fbdaece66a69b3fd9556030fe4edc8"
+    },
+    {
+      "path": "opk_rag/runtime_v2/public_search_runtime.py",
+      "size_bytes": 21166,
+      "sha256": "55c2c2e98c6f069cb4bf388306940bc814904f71c467f7db20be8335b642db87"
+    },
+    {
+      "path": "opk_rag/runtime_v2/rank_fusion.py",
+      "size_bytes": 2576,
+      "sha256": "28256d993a18ae7243939f3ea7bec0a821d0d2becbeba40ea926c64ec0ef5a4c"
+    },
+    {
+      "path": "opk_rag/runtime_v2/reranker.py",
+      "size_bytes": 6063,
+      "sha256": "640e1b0f9dbca6be4561aef06280920a02c2505333799d1a0e287f04bd1e9749"
+    },
+    {
+      "path": "opk_rag/runtime_v2/retriever_aware_fusion.py",
+      "size_bytes": 4224,
+      "sha256": "293cb469eef2a3ec275281f1525586469d9585388029cf21395ee0586a5e9576"
+    },
+    {
+      "path": "opk_rag/runtime_v2/vector_retriever.py",
+      "size_bytes": 1600,
+      "sha256": "1b8f6789976ad24a278eaa4ccc14f9e7ddd30860dbbce9ba5127bd2d125d613e"
+    },
+    {
+      "path": "opk_rag/search/__init__.py",
+      "size_bytes": 439,
+      "sha256": "f518c3021e05effc14cf197a6b5e347e20d4ba67dd9414995fc7ea11eaa7d7e2"
+    },
+    {
+      "path": "opk_rag/search/config.py",
+      "size_bytes": 8169,
+      "sha256": "b53de30c0988ddefae5d67502e495e9b3f714ac1be51e6234495592d1c1e2b6a"
+    },
+    {
+      "path": "opk_rag/search/context_tokens.py",
+      "size_bytes": 1815,
+      "sha256": "e56e06dfd91b211d06880aee43fef4e5c4b43681eb13089f55fb35ee18141fb4"
+    },
+    {
+      "path": "opk_rag/search/models.py",
+      "size_bytes": 4481,
+      "sha256": "7318a59dfa2902832f8fa61621e5d0a3701f79c17d17090829236f5786b1bed5"
+    },
+    {
+      "path": "opk_rag/search/retrieval_timing.py",
+      "size_bytes": 5870,
+      "sha256": "4e3ee47e192515d955121d75433b0b2855e89028b74ba849d5600f74cfd1a7ba"
+    },
+    {
+      "path": "opk_rag/search/service.py",
+      "size_bytes": 44981,
+      "sha256": "a47c3814a54e6eb18e0618e9bdbc0404630a62b1e1c745191cc5d763ca51110f"
+    },
+    {
+      "path": "opk_rag/showcase/__init__.py",
+      "size_bytes": 63,
+      "sha256": "1d696ae2b4b853abca1dd09109a9fa75cfcb3bc33df4c335008eff24e6c8bcbc"
+    },
+    {
+      "path": "opk_rag/showcase/agent_trace.py",
+      "size_bytes": 20319,
+      "sha256": "8edbf814f9160a43c67fc7fece7b911d7ac547c74e46f5b574be7c5c5a03641f"
+    },
+    {
+      "path": "opk_rag/showcase/api/__init__.py",
+      "size_bytes": 126,
+      "sha256": "e970e5b36bc2f16be365f6465bf4c1680f7c11ae23c22e8e640cabc8dee38fdd"
+    },
+    {
+      "path": "opk_rag/showcase/api/app.py",
+      "size_bytes": 10741,
+      "sha256": "baeb8d6f3b107d3713d12cbb2c0511b051ee7d26cd80885d8851d03a56088c28"
+    },
+    {
+      "path": "opk_rag/showcase/api/events.py",
+      "size_bytes": 2636,
+      "sha256": "9db5fa4d5133d215c51625669c8b081d689c61dfe1788116978fb43b5164213a"
+    },
+    {
+      "path": "opk_rag/showcase/api/execution.py",
+      "size_bytes": 35446,
+      "sha256": "54197fe802b326b6ba41e09ce01079d7ab1b8f1387cbfe7b026c68354e14c0cd"
+    },
+    {
+      "path": "opk_rag/showcase/api/models.py",
+      "size_bytes": 1848,
+      "sha256": "58ecc00e1428726b3f6d96fcd728a6a7e4daba6718d5622b56d71c7d7a606bbf"
+    },
+    {
+      "path": "opk_rag/showcase/api/registry.py",
+      "size_bytes": 3388,
+      "sha256": "9b0dd6f675590fd42b775b74fe0f378d7a72962da0a6592c590bcd1acd447b37"
+    },
+    {
+      "path": "opk_rag/showcase/api/safety.py",
+      "size_bytes": 2402,
+      "sha256": "0db87143341e2e7a64134278807968b2f1597332d4d68a09e4e781ee66e5ceb4"
+    },
+    {
+      "path": "opk_rag/showcase/bounded_agentic_canary.py",
+      "size_bytes": 18061,
+      "sha256": "9ffc2953455eceeeb58e965fca6dfec8b2c47bdacaee2b4e9a0c269d8fc99cec"
+    },
+    {
+      "path": "opk_rag/showcase/conversation_workspace.py",
+      "size_bytes": 11356,
+      "sha256": "ec9ecec951bd36e6eb8bbc737693beb2e14b1e97fcd258558b35212b7b8e48bd"
+    },
+    {
+      "path": "opk_rag/showcase/demo.py",
+      "size_bytes": 26172,
+      "sha256": "0ffe375fc3759c6cd0c998cc622f28d8f15068c25d1f0d086a24379b83f31052"
+    },
+    {
+      "path": "opk_rag/showcase/end_to_end_storyboard.py",
+      "size_bytes": 37552,
+      "sha256": "0cad5d1273c4a1f7add0c38b36bde3a2960b5a24b466beb70babfee11a225b00"
+    },
+    {
+      "path": "opk_rag/showcase/graph_visualization.py",
+      "size_bytes": 21455,
+      "sha256": "dcca60d5d4f38d2b60d90d86592f8365fa913f8f5465dd85ba0a0f4e4c2e93f6"
+    },
+    {
+      "path": "opk_rag/showcase/live_selective_agent_shadow.py",
+      "size_bytes": 30415,
+      "sha256": "95edbf13eef66564b57c659a960f0b3e643d2e1a3dea6bd291190e24b5bbdaee"
+    },
+    {
+      "path": "opk_rag/showcase/recording_pack.py",
+      "size_bytes": 28527,
+      "sha256": "dbb490c5c3df4fc83b8fc31ae3a28ecdfbb3992daa78fb121d889abbc0d75406"
+    },
+    {
+      "path": "opk_rag/showcase/runtime_status.py",
+      "size_bytes": 9334,
+      "sha256": "e063d1ef352fa2661b5636e246f20d765b3fb3eb730c9e8146518673687a1485"
+    },
+    {
+      "path": "opk_rag/showcase/runtime_trace.py",
+      "size_bytes": 56351,
+      "sha256": "49f899ed844464c6dad94fe57e96b3c4421535035120e6371c63eea4f0980a38"
+    },
+    {
+      "path": "opk_rag/showcase/selective_agent_canary.py",
+      "size_bytes": 12700,
+      "sha256": "2dba2f83058cac933f35ef539d8bf4a62f901234efc8acc48354dabbeaae28fd"
+    },
+    {
+      "path": "opk_rag/showcase/selective_agent_production.py",
+      "size_bytes": 10203,
+      "sha256": "d213dda6eb5fc702cc56e191f8786126e3408a1467bf907526a59896403fffb9"
+    },
+    {
+      "path": "opk_rag/showcase/selective_agent_production_monitoring.py",
+      "size_bytes": 15071,
+      "sha256": "93da56e0dfa15614ebf72baf65fa744d069e5d60b1e92a15665326a04c2c89ba"
+    },
+    {
+      "path": "opk_rag/showcase/selective_agent_shadow.py",
+      "size_bytes": 8681,
+      "sha256": "f72df0c009e0d0a5dd5a6192e18853d0d29a82fb83510717b77176a455520fa0"
+    },
+    {
+      "path": "opk_rag/vault/__init__.py",
+      "size_bytes": 702,
+      "sha256": "84c0238dda00a7bfb26276edfebceeec01a3121367bac7be3a20a16beeb03e5b"
+    },
+    {
+      "path": "opk_rag/vault/changes.py",
+      "size_bytes": 1225,
+      "sha256": "184c4163152ee308491bb929b6e4e65302f2ee0693796dd72edbb1b735c34684"
+    },
+    {
+      "path": "opk_rag/vault/ignore.py",
+      "size_bytes": 1351,
+      "sha256": "3f0583334956f5deea4de1c6460c1961cab0ed984bdcdeff7e988b17401add65"
+    },
+    {
+      "path": "opk_rag/vault/models.py",
+      "size_bytes": 1621,
+      "sha256": "53cf642640f5087f7a20468e4fc6cf0f3816d7424d7f0ebecbeff757b431ffdd"
+    },
+    {
+      "path": "opk_rag/vault/paths.py",
+      "size_bytes": 1425,
+      "sha256": "855db7da3bbbc3be1899ee17f8dc6a218bfea181614c0dfe4130c6e574c4eecc"
+    },
+    {
+      "path": "opk_rag/vault/scanner.py",
+      "size_bytes": 7243,
+      "sha256": "f0e3511c4ad5aad771f8e56d7a532af1b6b7bf613472c7d968028018aebc928f"
+    },
+    {
+      "path": "opk_rag/vector_backends/__init__.py",
+      "size_bytes": 681,
+      "sha256": "af99a98790077e936d991c5f1d9c2e34c17c2d61febd8cd5ef706977dafa6751"
+    },
+    {
+      "path": "opk_rag/vector_backends/base.py",
+      "size_bytes": 2611,
+      "sha256": "25a794f96c63a99b95b0cbd1e31011a15057b5d3fe9876137c855ba7341dd3b6"
+    },
+    {
+      "path": "opk_rag/vector_backends/qdrant_backend.py",
+      "size_bytes": 9866,
+      "sha256": "4272b819f7a6fc65eecdabb6797f7b32656bff7a40d1beace5d5f24c9fdff474"
+    },
+    {
+      "path": "opk_rag/vector_backends/shadow.py",
+      "size_bytes": 11614,
+      "sha256": "8d4f44edf822203340639ebd3421e89662856f3bc98561e86873b693f3725a25"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 1213,
+      "sha256": "da75c6632068587bb9a63ce6b84c16d284c1606bfa8f7e4c915c0b4158a6f0e0"
+    },
+    {
+      "path": "release/evidence/third_party_license_inventory.json",
+      "size_bytes": 2280,
+      "sha256": "23b3544144c9876b68851332fbedd04332cd8a2bced8c0329a481d7e99754d1a"
+    },
+    {
+      "path": "release/evidence/verified_metrics.json",
+      "size_bytes": 2226,
+      "sha256": "3dfe17502bb59617c2e120bce88ccdc238581ce8f522113b6a352bd0660dfe2e"
+    },
+    {
+      "path": "scripts/export_public_release.py",
+      "size_bytes": 9576,
+      "sha256": "844a9c8ee01d633f9b032c5598628c653050527e3d024233a9855d5db179b889"
+    },
+    {
+      "path": "scripts/validate_public_release_snapshot.py",
+      "size_bytes": 2480,
+      "sha256": "6feeaed11d2b6796853ef69a9fa20b1620765644e829d50966ba6f4cf9b5f1ad"
+    },
+    {
+      "path": "showcase-ui/.env.example",
+      "size_bytes": 65,
+      "sha256": "da7b56854ccedaf6ba01d9d773d9867dc05c7d85461bde5b0c9428cbdc43670e"
+    },
+    {
+      "path": "showcase-ui/index.html",
+      "size_bytes": 318,
+      "sha256": "e4e21094fc56b640cf8a028a8bec64faa98c1424f7a399169d43b1f790cdbf13"
+    },
+    {
+      "path": "showcase-ui/package-lock.json",
+      "size_bytes": 124574,
+      "sha256": "9a9ec7d716e0149f54c679e7d3f8e00f305e685561df713591494b17cab1f200"
+    },
+    {
+      "path": "showcase-ui/package.json",
+      "size_bytes": 815,
+      "sha256": "6f17d5a60fb804f8125ba11716340ab1ed0a3272cabf1b1d65494c9ce40f7fc1"
+    },
+    {
+      "path": "showcase-ui/src/App.tsx",
+      "size_bytes": 4043,
+      "sha256": "93b26a32694b1387c2fda98f9bb541b1818fd1dbe938f1b17ebde74db817f195"
+    },
+    {
+      "path": "showcase-ui/src/components/AnswerCitationPanel.tsx",
+      "size_bytes": 1667,
+      "sha256": "a840ddffcfb47f65c1eff546c7a3fadb69b4c9435708e3d5e2cdc4ee44a2bf7e"
+    },
+    {
+      "path": "showcase-ui/src/components/AnswerValidationPanel.tsx",
+      "size_bytes": 10958,
+      "sha256": "e7282437e7009a151c7a03c6dedd1d0c35ca4c1cdf4a9241b9930be58c774959"
+    },
+    {
+      "path": "showcase-ui/src/components/CandidateEvidencePanel.tsx",
+      "size_bytes": 3227,
+      "sha256": "43b229d9d9a3ba3dc5e2e622cbf4de42cb478d7483b2052146be3ecb18a472d9"
+    },
+    {
+      "path": "showcase-ui/src/components/CandidateRerankEvidencePanel.tsx",
+      "size_bytes": 12192,
+      "sha256": "bb13ae8387df8cf82062c5c41d91681c0c9dbdcec12923e7e464bb36a7a5b789"
+    },
+    {
+      "path": "showcase-ui/src/components/EndToEndOverview.tsx",
+      "size_bytes": 2876,
+      "sha256": "83edf2c6b1a60566dd8cac1b8806954b7e305afd18c698b8cd4cc7b281805eb2"
+    },
+    {
+      "path": "showcase-ui/src/components/ExecutiveView.tsx",
+      "size_bytes": 5718,
+      "sha256": "b60cfd141bd75d092a3936ac78c5537734d873a9730ac7e3567f8105e73c3a4c"
+    },
+    {
+      "path": "showcase-ui/src/components/GuardDecisionPanel.tsx",
+      "size_bytes": 1560,
+      "sha256": "284faadebaf11c68e37290c34eab04506b153f5d0f7b8efb5da62a11f4ae3636"
+    },
+    {
+      "path": "showcase-ui/src/components/KnowledgeGraphPanel.tsx",
+      "size_bytes": 12202,
+      "sha256": "5269bd4e2ddac00060941ed41130bfcafa15813082c683d1380f7f05eca00a19"
+    },
+    {
+      "path": "showcase-ui/src/components/PresentationToolbar.tsx",
+      "size_bytes": 1774,
+      "sha256": "a42c56c68d17af10c30e4cbe6aa14066acfbf5bc1c7c0d0fc0ac21dc839d1d6e"
+    },
+    {
+      "path": "showcase-ui/src/components/RetrievalGuardPipeline.tsx",
+      "size_bytes": 6731,
+      "sha256": "2b7b1956180a5d4f1b0f37c57d1a1e78e00ded25d0b14591010819fd394126f0"
+    },
+    {
+      "path": "showcase-ui/src/components/RetrievalTracePanel.tsx",
+      "size_bytes": 1840,
+      "sha256": "b926143df702df3c61985f8971d0cf3a5cfb6f85669b362d29277b8f8ac9c846"
+    },
+    {
+      "path": "showcase-ui/src/components/RuntimeMetricsPanel.tsx",
+      "size_bytes": 1436,
+      "sha256": "67f57450ee6e69714d608f6137135c5043522f14ddcaf4e2972ba79672577e9d"
+    },
+    {
+      "path": "showcase-ui/src/components/RuntimeStatus.tsx",
+      "size_bytes": 2739,
+      "sha256": "48e01f669cddf19401b40d82e5afa4ffb306b9324d70a019f42e3825b998d759"
+    },
+    {
+      "path": "showcase-ui/src/components/ScenarioSelector.tsx",
+      "size_bytes": 3602,
+      "sha256": "874a5a86d1e71e852f1c48b76c4ce46a8ed5122b5b40406bf8c1f5e39dd81baa"
+    },
+    {
+      "path": "showcase-ui/src/components/ScenarioSpotlight.tsx",
+      "size_bytes": 1190,
+      "sha256": "86fe1c977319b279dd5a16aa04ce49da0ad6f14f51fafc011ad1199cf1acd7fb"
+    },
+    {
+      "path": "showcase-ui/src/components/TraceHeader.tsx",
+      "size_bytes": 1272,
+      "sha256": "7ec52ade69668760b65e668495c3242d2b5e87d54ceebf18a3f04e969114f50d"
+    },
+    {
+      "path": "showcase-ui/src/components/TraceTimeline.tsx",
+      "size_bytes": 1910,
+      "sha256": "28fc7e6ddf5ec0dc8596ff89f2c0605e340c35cc6ec0e84c022790a4676d2972"
+    },
+    {
+      "path": "showcase-ui/src/components/common.tsx",
+      "size_bytes": 823,
+      "sha256": "1b63045bcd2ec6cec9929288abe112e1f0c63f8840ed00b0f0707eed1c68fecb"
+    },
+    {
+      "path": "showcase-ui/src/control-center/ControlCenterShell.tsx",
+      "size_bytes": 506,
+      "sha256": "2a67623ace079263c758fa7ef7d6724f4a53475681cb6dc07bd510b03e46c415"
+    },
+    {
+      "path": "showcase-ui/src/control-center/adapters/endToEndRuntime.ts",
+      "size_bytes": 6600,
+      "sha256": "b5dd4add3c24f72692fe266898310676c8d87a9fecc9514911e54cd8573b85c7"
+    },
+    {
+      "path": "showcase-ui/src/control-center/adapters/evidenceRuntime.ts",
+      "size_bytes": 8189,
+      "sha256": "1b1d49691014eccee924315c68fe0a64f274efbd48a0864af2f6f69c1b1f8943"
+    },
+    {
+      "path": "showcase-ui/src/control-center/adapters/executiveRuntime.ts",
+      "size_bytes": 8181,
+      "sha256": "8a10367a907ddd7f2e421f9e01bf53738cb2be0cc0cb44e44f69ef2ecf5783b8"
+    },
+    {
+      "path": "showcase-ui/src/control-center/adapters/graphRuntime.ts",
+      "size_bytes": 5904,
+      "sha256": "61f2e3c8c74469a6a2bb4787d2ed8719e2ca546ce849563a12f67081a2fd67f3"
+    },
+    {
+      "path": "showcase-ui/src/control-center/adapters/runtimeTrace.ts",
+      "size_bytes": 2856,
+      "sha256": "2cbf89f6f7f895e75354a6bdb50e77c46b0c1478f597d2eb245c34a68c0610f9"
+    },
+    {
+      "path": "showcase-ui/src/control-center/api/runtimeStatus.ts",
+      "size_bytes": 690,
+      "sha256": "016182076ff990a96b2920c1fdce7abed3bd3f0ca19341b31c5565123a6a86d2"
+    },
+    {
+      "path": "showcase-ui/src/control-center/app/ControlCenterApp.tsx",
+      "size_bytes": 1564,
+      "sha256": "8e0e3d53fd9a9b886f5233baa671748ec7a4404aa600628ba952e97e6a322b6b"
+    },
+    {
+      "path": "showcase-ui/src/control-center/app/routes.ts",
+      "size_bytes": 851,
+      "sha256": "08f9ab5e8893ab392121b47f7257bd0e58e53fe0f44b60a175d913e85ca192d6"
+    },
+    {
+      "path": "showcase-ui/src/control-center/architecture.ts",
+      "size_bytes": 1413,
+      "sha256": "afceaf875afc25f5205aa8a0e3bb1de194251eb64ef60d9704e645323780df95"
+    },
+    {
+      "path": "showcase-ui/src/control-center/components/ActiveExecutionBar.tsx",
+      "size_bytes": 1892,
+      "sha256": "323e0816e53f453f86d565b9fce2273239994edcb254caca679a7bf759f030b9"
+    },
+    {
+      "path": "showcase-ui/src/control-center/components/EvidenceValidationSummary.tsx",
+      "size_bytes": 2162,
+      "sha256": "6e431b44849b880819c3f3cb40a02c8cd1e0932d4084e29e5ac85bc61b0dc24d"
+    },
+    {
+      "path": "showcase-ui/src/control-center/components/GuardRecoveryControlPlane.tsx",
+      "size_bytes": 11979,
+      "sha256": "0fefc3b23da0302b32bd24906df16ab0d6addf7af768134c46b3ce17eadce547"
+    },
+    {
+      "path": "showcase-ui/src/control-center/components/Primitives.tsx",
+      "size_bytes": 2189,
+      "sha256": "63337938d560f8a2787403402ab481cbebc5fd1de6b38711f98958960fb4f5e4"
+    },
+    {
+      "path": "showcase-ui/src/control-center/components/RetrievalCandidateInspector.tsx",
+      "size_bytes": 7011,
+      "sha256": "7a70533d8706bb5d88e4d24b16cf4ef3e188f0dccee613d753faceb41e77bb39"
+    },
+    {
+      "path": "showcase-ui/src/control-center/components/TraceSelectionSynchronizer.tsx",
+      "size_bytes": 418,
+      "sha256": "53a7f5d7192d2333858fc9ae61736de1480264ed09794f1f5e0f5bc1e3317e96"
+    },
+    {
+      "path": "showcase-ui/src/control-center/layout/AppShell.tsx",
+      "size_bytes": 936,
+      "sha256": "4eb4bb93680dd47e00c8a3b783a080895c7289e460764612116868a5f54ba927"
+    },
+    {
+      "path": "showcase-ui/src/control-center/layout/Inspector.tsx",
+      "size_bytes": 45272,
+      "sha256": "a84c0644e4c300f084a1135a116fcec7126f4c5d9818baee99b42bae1a91599d"
+    },
+    {
+      "path": "showcase-ui/src/control-center/layout/Sidebar.tsx",
+      "size_bytes": 1534,
+      "sha256": "387ebbdd3f3a55fb2abe386bfc8d7d5fb5ea2d925d30b7f24453eeaa3d822d8c"
+    },
+    {
+      "path": "showcase-ui/src/control-center/layout/TopBar.tsx",
+      "size_bytes": 2125,
+      "sha256": "2e1dafcbbcc46ad86e46f55eeecbd0e67124cafba8eef70cfa1c14fce9c1c913"
+    },
+    {
+      "path": "showcase-ui/src/control-center/pages/EvidenceValidationPage.tsx",
+      "size_bytes": 11989,
+      "sha256": "c294ee358e3294feb88b32692df51139bda63643b5b02fbb3befbf3d8c1a7040"
+    },
+    {
+      "path": "showcase-ui/src/control-center/pages/GraphRetrievalPage.tsx",
+      "size_bytes": 12795,
+      "sha256": "24e84e54b2a61a8cd7fdeb96a3c3c0aa20ec79bd9e91f8b8e0060825a1b3129b"
+    },
+    {
+      "path": "showcase-ui/src/control-center/pages/PageSkeletons.tsx",
+      "size_bytes": 2498,
+      "sha256": "c2b73d4b75653ab025aa943127c44a9a37d75224e381dd5b1b7768a0d274aa53"
+    },
+    {
+      "path": "showcase-ui/src/control-center/pages/QueryWorkspacePage.tsx",
+      "size_bytes": 15360,
+      "sha256": "b694500828f0bfbaaea2b4c976af606790ca24f3a08130f5feaa5fbda0cc632c"
+    },
+    {
+      "path": "showcase-ui/src/control-center/pages/RuntimeDashboardPages.tsx",
+      "size_bytes": 10664,
+      "sha256": "5d73506152916c097b176e0655a7d4d02257501851b3911b80cd9a6d1441594e"
+    },
+    {
+      "path": "showcase-ui/src/control-center/pages/ShowcaseExecutivePage.tsx",
+      "size_bytes": 21297,
+      "sha256": "d2270b23ca4f959bbc41a631131a19b3cbfc7a63171427f037ad445eac2a6524"
+    },
+    {
+      "path": "showcase-ui/src/control-center/state/ControlCenterState.tsx",
+      "size_bytes": 7214,
+      "sha256": "d288e1d03a1cca9d1823712f865d5eb8ec335a92b3515440c38c4458ff6bba49"
+    },
+    {
+      "path": "showcase-ui/src/control-center/state/RuntimeStatusState.tsx",
+      "size_bytes": 1084,
+      "sha256": "9fd6455977d7573d940c4ae551059689d0b19c3d74452f174feb34be2d303505"
+    },
+    {
+      "path": "showcase-ui/src/control-center/styles/base.css",
+      "size_bytes": 3725,
+      "sha256": "172d8910644f1ac0d72d3f73c57325cc7e2f59607e6e7554d3a550b0120be218"
+    },
+    {
+      "path": "showcase-ui/src/control-center/styles/layout.css",
+      "size_bytes": 36566,
+      "sha256": "a8e5e9fb9c2b215d5c8198ecfeff2b7c6eb475d1508320b3432626ea39fa28a2"
+    },
+    {
+      "path": "showcase-ui/src/control-center/styles/tokens.css",
+      "size_bytes": 1251,
+      "sha256": "dff2505e817c8aae0c8dc6ac070642ce88f3daa1d58c8e96d6045ff115d99197"
+    },
+    {
+      "path": "showcase-ui/src/i18n/en.ts",
+      "size_bytes": 20170,
+      "sha256": "526c1bd8c9750188b1824268faae691bb657fd0309bb4b50ccdd484851b95bf5"
+    },
+    {
+      "path": "showcase-ui/src/i18n/index.tsx",
+      "size_bytes": 3885,
+      "sha256": "d2ab94468b5829f52e2615e2408ca972c5ab1598070826de9c11ebe823e0dfca"
+    },
+    {
+      "path": "showcase-ui/src/i18n/zh-CN.ts",
+      "size_bytes": 20308,
+      "sha256": "3bce592426d205d8b4d020f4f76b6bd2b8818839ffad2efd37d6a0b9b3f9ab54"
+    },
+    {
+      "path": "showcase-ui/src/lib/api.ts",
+      "size_bytes": 8889,
+      "sha256": "35d37a53ecf07e6803bc76c0698647c68f595ad3a6059bcec994e4fbbcd3ca5c"
+    },
+    {
+      "path": "showcase-ui/src/lib/format.ts",
+      "size_bytes": 1347,
+      "sha256": "7cc39f2bfa714625cd6bc38cc6b8987df391c7106cfe9904bb6e0dce1aebd523"
+    },
+    {
+      "path": "showcase-ui/src/lib/sse.ts",
+      "size_bytes": 2473,
+      "sha256": "cb9ab1a0b3729944eca7bfcf3344762309846c19533588fa738fc1efc04fa4e0"
+    },
+    {
+      "path": "showcase-ui/src/main.tsx",
+      "size_bytes": 209,
+      "sha256": "daedab8e601d5b57b2e2bf1b61a85ca18894c350e267b4ef260fec4f300e6318"
+    },
+    {
+      "path": "showcase-ui/src/presentation/answerValidation.ts",
+      "size_bytes": 8819,
+      "sha256": "00e633feab1de7b9126ba8383236889e26c8fafebb8205d0c8c5d56e782f3c13"
+    },
+    {
+      "path": "showcase-ui/src/presentation/candidateLifecycle.ts",
+      "size_bytes": 7394,
+      "sha256": "321441d20966cfd649296eb477a02b6096d80d6a386f88aa799bb87fb26f95d0"
+    },
+    {
+      "path": "showcase-ui/src/presentation/endToEnd.ts",
+      "size_bytes": 2402,
+      "sha256": "07821c0f8415ff53bcb55b28149e14209cc9e95539e4b30550ab7554bfc422ce"
+    },
+    {
+      "path": "showcase-ui/src/presentation/graphRecovery.ts",
+      "size_bytes": 6168,
+      "sha256": "8aed4de140aaca21deba51cfc46e4e42c50973225030eb19d2890979688a9e9b"
+    },
+    {
+      "path": "showcase-ui/src/presentation/narrative.ts",
+      "size_bytes": 2069,
+      "sha256": "ddf318b6457e5e0bdb0af743b9e1794b33c56d092187050fa72652fcf7696baf"
+    },
+    {
+      "path": "showcase-ui/src/presentation/retrievalGuard.ts",
+      "size_bytes": 7258,
+      "sha256": "0f22c52221f738a3f8ff85448d7d040bec2f2ea93631695bfeafe77d6284c104"
+    },
+    {
+      "path": "showcase-ui/src/state/ShowcaseState.tsx",
+      "size_bytes": 8268,
+      "sha256": "0edc6d4651b7bf27dd025f96853c795240e8207172e26aa11eb682902d2a8794"
+    },
+    {
+      "path": "showcase-ui/src/styles.css",
+      "size_bytes": 43543,
+      "sha256": "40bb38ec5bcad419edd811a3a07252ff5159a8fa700ad7c223dc42a4aaa9b8cc"
+    },
+    {
+      "path": "showcase-ui/src/test/answerValidation.test.tsx",
+      "size_bytes": 5693,
+      "sha256": "d17d79ecd1621e12f79ed7f36fd462408d6790c5885d527dba5bde82ce15ada6"
+    },
+    {
+      "path": "showcase-ui/src/test/api.test.ts",
+      "size_bytes": 2186,
+      "sha256": "9f6a67256583ec776431342cfa68765c0f657a03ce387a9af9d2d7dac281ef47"
+    },
+    {
+      "path": "showcase-ui/src/test/candidateRerankEvidence.test.tsx",
+      "size_bytes": 4450,
+      "sha256": "9f640c72f81807ccc9bb95fd5407a5695bee497298136032c75de5c9e86f8679"
+    },
+    {
+      "path": "showcase-ui/src/test/components.test.tsx",
+      "size_bytes": 2298,
+      "sha256": "7fabb60b9c581db2411ca619412f80e85c2384cb90edbc70c0d925711331ef63"
+    },
+    {
+      "path": "showcase-ui/src/test/controlCenterArchitecture.test.tsx",
+      "size_bytes": 1192,
+      "sha256": "ac6dfc62db9861b0d71e50fcd39411b38ad68795b224c2727a7385612ad1449e"
+    },
+    {
+      "path": "showcase-ui/src/test/controlCenterRecordingFreeze.test.tsx",
+      "size_bytes": 4466,
+      "sha256": "e66cc4d8ce00249a4e92a3f5d0974cb697375da2fa0c0cf91da18b55707c4fa6"
+    },
+    {
+      "path": "showcase-ui/src/test/controlCenterShell.test.tsx",
+      "size_bytes": 1560,
+      "sha256": "201201a81ad34f808523767fe11c260f370715cf0beb5157f5ba8b93ae33aae1"
+    },
+    {
+      "path": "showcase-ui/src/test/endToEndControlCenterIntegration.test.tsx",
+      "size_bytes": 8051,
+      "sha256": "a46dca45229929575f689c98b5cbd63fc3b14f05dc4d97dfa9a474a79a17aef2"
+    },
+    {
+      "path": "showcase-ui/src/test/evidenceValidationInspector.test.tsx",
+      "size_bytes": 11012,
+      "sha256": "aed136cd69158780a9caa4a7f47ae623a7001805724dc80d42826d5c16b334b5"
+    },
+    {
+      "path": "showcase-ui/src/test/fixtures.ts",
+      "size_bytes": 611,
+      "sha256": "3684e0b366933f36428ee3bb989c528f4a67323e34e4f5c93b920bccdb1110a2"
+    },
+    {
+      "path": "showcase-ui/src/test/graphRetrievalInspector.test.tsx",
+      "size_bytes": 8502,
+      "sha256": "e1b4dc760a62f5a9caf9778dd5faeee2092a072a39d5030d42f32d2976f91153"
+    },
+    {
+      "path": "showcase-ui/src/test/graphVisualization.test.tsx",
+      "size_bytes": 4530,
+      "sha256": "b1b757d189028cfc83c9b7728a6054ea398b8769c03c86c166619cc889d1ddab"
+    },
+    {
+      "path": "showcase-ui/src/test/guardRecoveryTrace.test.tsx",
+      "size_bytes": 5551,
+      "sha256": "12be05cfe65aa98509b38e37884263a0d0f840ffa58fedcb99d213dc4cc503eb"
+    },
+    {
+      "path": "showcase-ui/src/test/presentation.test.tsx",
+      "size_bytes": 3667,
+      "sha256": "10c590abb9d972ce59081701ce9d815330bc0c21a0e91f9bd3db0b42afd0d64b"
+    },
+    {
+      "path": "showcase-ui/src/test/presentationFreeze.test.tsx",
+      "size_bytes": 3248,
+      "sha256": "cfc37b29371a405c4126228e5c10810dd8f86a369f1b3f390cad067f1fdd063c"
+    },
+    {
+      "path": "showcase-ui/src/test/queryConversationWorkspace.test.tsx",
+      "size_bytes": 6576,
+      "sha256": "25df6e5691308aa0edd06b99ec49685a490c9433eaa172f516be2d6c6be5096c"
+    },
+    {
+      "path": "showcase-ui/src/test/retrievalCandidateInspector.test.tsx",
+      "size_bytes": 5371,
+      "sha256": "d11b854671bdc8ee06e6e148df19cb88a7eb79029a7ac1fbbe23b8bff38ca384"
+    },
+    {
+      "path": "showcase-ui/src/test/retrievalGuard.test.tsx",
+      "size_bytes": 2245,
+      "sha256": "6a4a2ea6761ceb44ff5dc3550ee03e8de7043e60cd82ea00501f2e53ce800860"
+    },
+    {
+      "path": "showcase-ui/src/test/runtimeStatusDashboard.test.tsx",
+      "size_bytes": 2235,
+      "sha256": "0b8c8349b776510cdbff92c4be4ab6206154e57b4c0ac2c9affbf6a9c9a070d6"
+    },
+    {
+      "path": "showcase-ui/src/test/runtimeTrace.test.ts",
+      "size_bytes": 3523,
+      "sha256": "fa9b4fade3b91f1631f8e83b7fe42b2d711bddc78f1c4bc25a4db954d472cabe"
+    },
+    {
+      "path": "showcase-ui/src/test/setup.ts",
+      "size_bytes": 43,
+      "sha256": "9b328c4843431fa76d8de00008fc159e95f99a840211085ff3b8f25e53d14409"
+    },
+    {
+      "path": "showcase-ui/src/test/showcaseExecutiveView.test.tsx",
+      "size_bytes": 7023,
+      "sha256": "d8778a0721b4a32edf8acd85f3a5c18722cd45d42c28003bfabbe88883661293"
+    },
+    {
+      "path": "showcase-ui/src/types/runtimeTrace.ts",
+      "size_bytes": 14362,
+      "sha256": "ceb38df65c75c38b9b0d19646ca55a35ec2334c783b315669d86693db8c1f566"
+    },
+    {
+      "path": "showcase-ui/tsconfig.app.json",
+      "size_bytes": 663,
+      "sha256": "d9b73e9e881a4abac53f2d9c92fa3255a6a8c73726bd34f9b0518c7d169c3f36"
+    },
+    {
+      "path": "showcase-ui/tsconfig.json",
+      "size_bytes": 119,
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+    },
+    {
+      "path": "showcase-ui/tsconfig.node.json",
+      "size_bytes": 392,
+      "sha256": "4b7197426d45b9b3cfdb21eb58decbe87e1bed3ad8d10b3fdcc53906aa95d10c"
+    },
+    {
+      "path": "showcase-ui/vite.config.ts",
+      "size_bytes": 309,
+      "sha256": "044bf58175f4c143a9b7d78b82e21c9a6fdc67f7038d1f85a63f98fce342d5a5"
+    },
+    {
+      "path": "showcase-ui/vitest.config.ts",
+      "size_bytes": 386,
+      "sha256": "a6b646f76dd5e4d866fc40ef7aa552926912f686515d005c84fcf424c39d320f"
+    },
+    {
+      "path": "supabase/migrations/202607170001_create_core_rag_schema.sql",
+      "size_bytes": 9470,
+      "sha256": "22d53d81014355c2fb57b714ae873212d0657fbd8b7071af60c9a5ebd0069c93"
+    },
+    {
+      "path": "supabase/migrations/20260717163839_secure_supabase_access_boundary.sql",
+      "size_bytes": 4133,
+      "sha256": "1b069477d9f4f758f3fefd4e2d3e4e04884db6c19178e6e264a74138e73cf6b6"
+    },
+    {
+      "path": "supabase/migrations/20260718034822_202607180001_allow_chunk_pre_embedding_state.sql",
+      "size_bytes": 2915,
+      "sha256": "3d6a8831fd7e39da0d0be39e9c191ac249be193b8e19c2d9098741f512abe520"
+    },
+    {
+      "path": "supabase/migrations/20260718082034_add_lexical_bm25_index.sql",
+      "size_bytes": 11743,
+      "sha256": "9a65e396e5d46dd3915c31ff2dba2e9f44aaf8ec6cc5676d871fad3e770f98e3"
+    },
+    {
+      "path": "supabase/migrations/20260718083528_refresh_lexical_corpus_on_chunk_delete.sql",
+      "size_bytes": 2103,
+      "sha256": "8c73027a0cc3f0ae08205087d67c2e312bc581b970c3945909dd595cfc1cf14b"
+    },
+    {
+      "path": "supabase/migrations/20260718155150_add_conversation_sessions.sql",
+      "size_bytes": 6941,
+      "sha256": "bfa728b467ae85f7eaad65e8f1c2039b9a212b2ed43a5500e98521f692900099"
+    },
+    {
+      "path": "tests/public/test_public_release_smoke.py",
+      "size_bytes": 1077,
+      "sha256": "681bfd2ebdebea4bc3aad0e40aaadef48ebbc04b4cb9305122986db92448c9b9"
+    },
+    {
+      "path": "uv.lock",
+      "size_bytes": 624245,
+      "sha256": "186c779d9b0ce1c27c1433407424fe8752d79808d8bdf09b3ab82fcc5404ffcd"
+    }
+  ],
+  "release_snapshot_valid": true,
+  "sanitized_replacement_count": 15,
+  "development_git_head": "5042052fda479b75600d090c2bee492add092716",
+  "output": "/data/envs/opk-rag/dist/opk-rag-public-release"
+}

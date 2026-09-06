@@ -1,0 +1,46 @@
+%% OPK-RAG 当前语义架构（中文展示版），用于 drawio-skill 转换与汇报。
+%% 保留关键英文技术名，中文作为主要讲解语言。
+flowchart LR
+
+  subgraph DATA["1 · 知识库与索引"]
+    direction TB
+    KB["Markdown / PDF / Obsidian 知识库"] --> IDX["结构感知 Chunking<br/>+ Qwen3 Embedding"]
+    IDX --> QD["Qdrant<br/>生产向量检索权威"]
+    IDX --> PG["PostgreSQL<br/>关系数据权威"]
+    IDX --> GRAPH["Graph 索引与生命周期<br/>受治理关系权威"]
+  end
+
+  subgraph RAG["2 · 受治理 RAG"]
+    direction TB
+    USER["用户 / Control Center<br/>搜索 · 问答 · 会话"] --> AMB{"确定性<br/>歧义门控"}
+    AMB -->|无歧义| RET["混合检索<br/>关键词 + Qdrant"]
+    AMB -->|存在歧义| REWRITE["LLM 歧义改写<br/>最多 1 次"] --> RET
+    QD --> RET
+    RET --> CAND["候选池（Candidate Pool）"]
+    CAND --> RR["BGE 重排序<br/>bge-reranker-v2-m3"]
+    RR --> EV["预算约束的证据（Evidence）组合"]
+    EV --> AN{"可回答性判断（Answerability）"}
+  end
+
+  subgraph AGENT["3 · 选择性 LLM Agent 控制平面"]
+    direction TB
+    AN --> NLLM{"必要 LLM 门控"}
+    NLLM -->|需要恢复| POLICY["LLM 恢复策略<br/>仅提出建议"]
+    POLICY --> GUARD["Pydantic 结构校验<br/>+ 确定性 Guard"]
+    GUARD --> REC["受限恢复<br/>混合 · 结构 · 单跳 Graph · 改写"]
+    GRAPH --> REC
+    REC --> RERUN["重新进入共享受治理 RAG<br/>重排 → 证据 → 可回答性"]
+  end
+
+  subgraph FINAL["4 · 验证与回答"]
+    direction TB
+    NLLM -->|可回答 · 0 次 Agent 调用| SAFE["冲突门控<br/>+ 可选 LLM 拒答 Veto"]
+    NLLM -->|明确拒答| REFUSE["受控拒答"]
+    RERUN --> SAFE
+    SAFE -->|保持回答| VALID["生成<br/>→ 证据对齐（Grounding）→ 引用校验"]
+    SAFE -->|仅允许 Finish → Abstain| REFUSE
+    VALID --> ANSWER["有依据的回答"]
+  end
+
+  LIMITS["冻结安全边界<br/>候选（Candidate）≠ 证据（Evidence）<br/>Graph 节点 ≠ 候选 · 无不受限 Planner · LLM 无 Finish 最终授权<br/>Graph 跳数 ≤ 1 · 恢复次数 ≤ 1"] -. 治理约束 .-> GUARD
+  LIMITS -. 治理约束 .-> SAFE

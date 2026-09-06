@@ -1,0 +1,11 @@
+psycopg[binary]==3.3.4
+qdrant-client>=1.15.1
+sentence-transformers==5.4.0
+pyyaml==6.0.2
+supabase==2.31.0
+jieba==0.42.1
+dotenv>=0.9.9
+ipython>=8.39.0
+fastapi>=0.141.1
+uvicorn>=0.52.4
+pydantic<3,>=2.13

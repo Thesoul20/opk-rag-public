@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: opk_rag
+      POSTGRES_PASSWORD: opk_rag
+      POSTGRES_DB: opk_rag
+    ports:
+      - "127.0.0.1:${OPK_RAG_PUBLIC_POSTGRES_PORT:-55432}:5432"
+    volumes:
+      - opk_rag_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U opk_rag -d opk_rag"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  qdrant:
+    image: qdrant/qdrant:v1.19.0
+    ports:
+      - "127.0.0.1:${OPK_RAG_PUBLIC_QDRANT_HTTP_PORT:-6333}:6333"
+      - "127.0.0.1:${OPK_RAG_PUBLIC_QDRANT_GRPC_PORT:-6334}:6334"
+    volumes:
+      - opk_rag_qdrant:/qdrant/storage
+volumes:
+  opk_rag_postgres:
+  opk_rag_qdrant:

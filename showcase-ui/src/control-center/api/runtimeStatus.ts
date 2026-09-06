@@ -1,0 +1,3 @@
+import { getApiBaseUrl } from "../../lib/api";
+export interface RuntimeStatusPayload { schema_version:string; observed_at:string; ui_decision_authority:boolean; graph_max_hop:number; recovery_max_attempts:number; health:{system_status:string;search_ready:boolean;ask_ready:boolean;generation_health:string}; knowledge_base:Record<string,any>; qdrant:Record<string,any>; graph:Record<string,any>; models:Record<string,Record<string,any>>; gpu:Record<string,any>; }
+export async function fetchRuntimeStatus():Promise<RuntimeStatusPayload>{const r=await fetch(`${getApiBaseUrl()}/system`);if(!r.ok) throw new Error(`runtime_status_${r.status}`);return await r.json() as RuntimeStatusPayload;}

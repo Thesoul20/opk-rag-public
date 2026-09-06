@@ -1,0 +1,13 @@
+export const CONTROL_CENTER_STAGE = "modern_control_center_ui" as const;
+export const CONTROL_CENTER_PRODUCT = "OPK-RAG Control Center" as const;
+export const CONTROL_CENTER_SUBTITLE = "Personal Knowledge Retrieval & Agent Runtime" as const;
+export const CONTROL_CENTER_NAV = ["overview","knowledge-base","query","runtime","graph","evidence","showcase","settings"] as const;
+export const CONTROL_CENTER_PIPELINE = ["conversation_resolution","initial_retrieval","guard_agent_decision","optional_recovery","candidate_pool","reranking","evidence_composition","answerability","generation","grounding","citation","outcome"] as const;
+export const FROZEN_AGENT_ACTIONS = ["hybrid_search","structure_search","graph_search","rewrite_query","inspect_evidence","finish","abstain"] as const;
+export const CONTROL_CENTER_LIMITS = { graphMaxHop:1, recoveryMaxAttempts:1, unrestrictedProductionAgent:false, uiDecisionAuthority:false } as const;
+export const CONTROL_CENTER_DEFAULT_ENTRY = "control-center" as const;
+export const LEGACY_SHOWCASE_QUERY = "?ui=legacy" as const;
+export type ControlCenterNavItem = (typeof CONTROL_CENTER_NAV)[number];
+export type ControlCenterMode = "operator" | "showcase";
+export type InspectorTab = "details" | "trace" | "evidence" | "source" | "metadata";
+export type RuntimeVisualStatus = "idle"|"checking"|"ready"|"running"|"completed"|"partial"|"refused"|"failed"|"unavailable"|"disabled";

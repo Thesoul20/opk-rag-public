@@ -1,0 +1,48 @@
+[project]
+name = "opk-rag"
+version = "0.1.0"
+description = "Local-first Chinese knowledge RAG with Qdrant, governed retrieval, Selective Agent, Evidence validation, and Runtime Trace."
+readme = "README.md"
+license = "MIT"
+keywords = ["rag", "qdrant", "graphrag", "agentic-rag", "knowledge-base"]
+requires-python = ">=3.10"
+dependencies = [
+    "psycopg[binary]==3.3.4",
+    "qdrant-client>=1.15.1",
+    "sentence-transformers==5.4.0",
+    "pyyaml==6.0.2",
+    "supabase==2.31.0",
+    "jieba==0.42.1",
+    "dotenv>=0.9.9",
+    "ipython>=8.39.0",
+    "fastapi>=0.141.1",
+    "uvicorn>=0.52.4",
+    "pydantic>=2.13,<3",
+]
+
+[project.scripts]
+opk-rag = "opk_rag.cli:main"
+
+[tool.uv]
+package = true
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[tool.setuptools.packages.find]
+include = ["opk_rag*"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "integration: tests that require a real PostgreSQL + pgvector database",
+    "model_integration: tests that require real local model weights and inference",
+    "remote_supabase: non-destructive tests against a deployed Supabase environment",
+]

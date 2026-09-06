@@ -1,0 +1,31 @@
+name: public-ci
+on:
+  push:
+  pull_request:
+jobs:
+  backend-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --dev --frozen
+      - run: uv run python -m compileall -q opk_rag
+      - run: uv run opk-rag --help
+      - run: uv run pytest tests/public -q
+  frontend-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: showcase-ui
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: showcase-ui/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build

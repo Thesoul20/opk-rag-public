@@ -1,0 +1,13 @@
+.env
+.venv/
+node_modules/
+dist/
+runtime/
+.private/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.mp4
+*.pt
+*.pth
+*.onnx

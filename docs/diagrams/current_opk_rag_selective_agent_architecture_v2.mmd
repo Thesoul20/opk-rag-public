@@ -1,0 +1,46 @@
+%% OPK-RAG current semantic architecture for drawio-skill conversion.
+%% Compact presentation source: preserve architecture authority, avoid code-level dependency noise.
+flowchart LR
+
+  subgraph DATA["1 · Knowledge & Indexing"]
+    direction TB
+    KB["Markdown / PDF / Obsidian Knowledge Base"] --> IDX["Structure-aware Chunking<br/>+ Qwen3 Embedding"]
+    IDX --> QD["Qdrant<br/>production vector authority"]
+    IDX --> PG["PostgreSQL<br/>relational authority"]
+    IDX --> GRAPH["Graph Index & Lifecycle<br/>governed relationship authority"]
+  end
+
+  subgraph RAG["2 · Governed RAG"]
+    direction TB
+    USER["User / Control Center<br/>Search · Ask · Conversation"] --> AMB{"Deterministic<br/>Ambiguity Gate"}
+    AMB -->|clear| RET["Hybrid Retrieval<br/>Lexical + Qdrant"]
+    AMB -->|ambiguous| REWRITE["LLM Ambiguity Rewrite<br/>max 1"] --> RET
+    QD --> RET
+    RET --> CAND["Candidate Pool"]
+    CAND --> RR["BGE Reranker<br/>bge-reranker-v2-m3"]
+    RR --> EV["Budgeted Evidence Composition"]
+    EV --> AN{"Answerability"}
+  end
+
+  subgraph AGENT["3 · Selective LLM Agent Control Plane"]
+    direction TB
+    AN --> NLLM{"Necessary-LLM Gate"}
+    NLLM -->|recovery needed| POLICY["LLM Recovery Policy<br/>proposal only"]
+    POLICY --> GUARD["Pydantic Validation<br/>+ Deterministic Guard"]
+    GUARD --> REC["Bounded Recovery<br/>Hybrid · Structure · one-hop Graph · Rewrite"]
+    GRAPH --> REC
+    REC --> RERUN["Re-enter Shared Governed RAG<br/>Rerank → Evidence → Answerability"]
+  end
+
+  subgraph FINAL["4 · Validation & Answer"]
+    direction TB
+    NLLM -->|clear answerable · zero Agent call| SAFE["Conflict Gate<br/>+ optional LLM Abstention Veto"]
+    NLLM -->|clear abstain| REFUSE["Controlled Refusal"]
+    RERUN --> SAFE
+    SAFE -->|keep finish| VALID["Generation<br/>→ Grounding → Citation"]
+    SAFE -->|Finish → Abstain only| REFUSE
+    VALID --> ANSWER["Grounded Answer"]
+  end
+
+  LIMITS["Frozen safety boundary<br/>Candidate ≠ Evidence · Graph Node ≠ Candidate<br/>No unrestricted Planner · No LLM Finish authority<br/>Graph hop ≤ 1 · Recovery ≤ 1"] -. governance .-> GUARD
+  LIMITS -. governance .-> SAFE

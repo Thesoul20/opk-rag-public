@@ -1,0 +1,53 @@
+{
+  "schema_version": "opk-rag.public-release.verified-metrics.v1",
+  "metrics": {
+    "graph_sensitive_required_evidence_recall": {
+      "baseline": 0.666667,
+      "retrieval_aware": 0.944444,
+      "sample_count": 9,
+      "source": "evaluation-data/results/task0140-graph-retrieval-activation-runtime-promotion/policy_comparison.json",
+      "source_sha256": "bb73f2b82636fba8db796f2d1e83a9645c5262bd83d67c2ba88622497ea69200"
+    },
+    "qdrant_backend_p95_ms": {
+      "value": 3.079226,
+      "benchmark_query_count": 47,
+      "scope": "backend-only",
+      "source": "evaluation-data/results/task0205-qdrant-production-performance-baseline-and-reseal/summary.json",
+      "source_sha256": "51b21ac98e47014126565669aff0883aac38e2cdc688f855b164be2b8b7aa87a"
+    },
+    "reranker_p95_ms": {
+      "fp32": 53.426573,
+      "fp16_autocast": 27.61415,
+      "reduction_ratio": 0.483138,
+      "top1_agreement": 1.0,
+      "top5_set_agreement": 1.0,
+      "measurement_count": 1880,
+      "source": "evaluation-data/results/task0212-search-scoped-fp16-autocast-reranker-production-integration/summary.json",
+      "source_sha256": "33a442f9403187dd119e02e6bdf2120cf96daa39566bfde8d072ababb0861dea"
+    },
+    "multi_turn_semantic_requalification": {
+      "correct": 37,
+      "total": 40,
+      "accuracy": 0.925,
+      "runtime_success_rate": 1.0,
+      "previously_correct_regressions": 1,
+      "hard_safety_violations": 0,
+      "source": "evaluation-data/results/task0268-semantic-quality-requalification/summary.json",
+      "source_sha256": "f1803e391f0d72a0b93c785c4f48643c48c40688f6cf336b263b657fe2c4e6dc"
+    },
+    "modern_video_delivery": {
+      "final_1080p_sha256": "423f463757f572bb4a076bc710749777b2b6fab70a079de79d652a4895a448f7",
+      "duration_seconds": 179.133333,
+      "ssim_vs_aligned_source": 0.999276,
+      "public_url_pending": true,
+      "source": "evaluation-data/showcase/delivery/task0281/delivery_manifest.json",
+      "source_sha256": "3204b1fb95d26cb26c7cefcd7b3ce3088aa6fda849a339ec35e267713fe8e858"
+    }
+  },
+  "claims": {
+    "unrestricted_autonomous_agent": false,
+    "multi_hop_graph_production": false,
+    "hallucination_free": false,
+    "guaranteed_correctness": false
+  }
+}

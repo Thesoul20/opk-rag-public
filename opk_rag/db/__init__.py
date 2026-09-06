@@ -1,0 +1,76 @@
+"""Database configuration and health helpers for opk-rag."""
+
+from .config import (
+    DatabaseConfig,
+    DatabaseConfigError,
+    PostgresConfig,
+    SupabaseApiConfig,
+    load_database_config,
+    load_postgres_config,
+    load_supabase_api_config,
+)
+from .connection import connect_from_config, connect_from_env, connect_postgres
+from .health import DatabaseHealthCheckError, HealthReport, check_database_health
+from .migrations import (
+    CORE_MIGRATION_PATH,
+    MIGRATIONS_DIR,
+    DatabaseMigrationError,
+    apply_all_migrations,
+    apply_sql_migration,
+    maintenance_database_url,
+    migration_paths,
+    recreate_database,
+    validate_test_database_url,
+)
+from .models import ChunkSearchRow, DocumentForChunking, IndexConfiguration, IndexRun, KnowledgeBase, StoredChunk
+from .repositories import (
+    ChunkRepository,
+    ChunkSearchRepository,
+    DocumentStateRepository,
+    IndexConfigurationNotFoundError,
+    IndexConfigurationRepository,
+    IndexRunRepository,
+    IndexRunStats,
+    KnowledgeBaseRepository,
+    RepositoryError,
+)
+
+__all__ = [
+    "CORE_MIGRATION_PATH",
+    "DatabaseConfig",
+    "DatabaseConfigError",
+    "DatabaseHealthCheckError",
+    "DatabaseMigrationError",
+    "HealthReport",
+    "MIGRATIONS_DIR",
+    "PostgresConfig",
+    "SupabaseApiConfig",
+    "DocumentStateRepository",
+    "DocumentForChunking",
+    "apply_all_migrations",
+    "apply_sql_migration",
+    "check_database_health",
+    "connect_from_config",
+    "connect_from_env",
+    "connect_postgres",
+    "IndexConfiguration",
+    "IndexConfigurationNotFoundError",
+    "IndexConfigurationRepository",
+    "IndexRun",
+    "IndexRunRepository",
+    "IndexRunStats",
+    "KnowledgeBase",
+    "KnowledgeBaseRepository",
+    "load_database_config",
+    "load_postgres_config",
+    "load_supabase_api_config",
+    "maintenance_database_url",
+    "migration_paths",
+    "recreate_database",
+    "RepositoryError",
+    "ChunkRepository",
+    "ChunkSearchRepository",
+    "ChunkSearchRow",
+    "StoredChunk",
+    "validate_test_database_url",
+]

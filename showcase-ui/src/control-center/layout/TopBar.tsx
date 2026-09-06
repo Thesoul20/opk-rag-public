@@ -1,0 +1,10 @@
+import { PanelRight, RefreshCw, Video } from "lucide-react";
+import { useOptionalPresentation } from "../../i18n";
+import { Badge, Button, StatusBadge } from "../components/Primitives";
+import { useControlCenter } from "../state/ControlCenterState";
+import { useRuntimeStatus } from "../state/RuntimeStatusState";
+export function TopBar(){
+  const {state:runtime,refresh}=useRuntimeStatus(); const {state,actions}=useControlCenter(); const presentation=useOptionalPresentation(); const recording=Boolean(presentation?.recordingMode); const p=runtime.status;
+  const apiStatus=runtime.error?"unavailable":runtime.loading&&!p?"checking":p?.health.search_ready?"ready":"partial";
+  return <header className="cc-topbar" aria-label="Control Center header" data-recording={recording}><div className="cc-topbar-left"><div className="cc-topbar-context"><strong>{p?.knowledge_base.knowledge_base_name??"Personal Knowledge Workspace"}</strong><span>{recording?"Modern Control Center · Recording View":p?.knowledge_base.available?`${p.knowledge_base.indexed_document_count??"--"} indexed docs · ${p.knowledge_base.chunk_count??"--"} chunks`:runtime.loading?"Loading runtime metadata":"Knowledge base unavailable"}</span></div></div><div className="cc-topbar-right"><StatusBadge status={apiStatus}/>{recording?<Badge tone="refused"><Video size={12}/> REC · 1920×1080</Badge>:<><StatusBadge status={p?.models.generation?.configured?"ready":"unavailable"} label="Provider"/><StatusBadge status={p?.gpu.gpu_available?"ready":"unavailable"} label={p?.gpu.gpu_available?"GPU":"GPU unavailable"}/><div className="cc-segmented" role="group" aria-label="Presentation mode"><button aria-pressed={state.mode==="operator"} onClick={()=>actions.setMode("operator")}>Operator</button><button aria-pressed={state.mode==="showcase"} onClick={()=>actions.setMode("showcase")}>Showcase</button></div><Button aria-label="Refresh runtime" onClick={()=>void refresh()}><RefreshCw size={15}/></Button><Button aria-label="Toggle inspector" onClick={()=>actions.setInspectorOpen(!state.inspectorOpen)}><PanelRight size={15}/></Button></>}</div></header>
+}
