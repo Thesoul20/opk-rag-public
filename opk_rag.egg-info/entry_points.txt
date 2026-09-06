@@ -1,2 +1,0 @@
-[console_scripts]
-opk-rag = opk_rag.cli:main
