@@ -1,8 +1,8 @@
 {
   "schema_version": "opk-rag.public-release.snapshot-manifest.v1",
   "file_count": 609,
-  "total_bytes": 13081712,
-  "snapshot_content_sha256": "5549ba9bf817a6d0c16942759064925a1c32f9a4caacf9ee7e19b0318f028097",
+  "total_bytes": 13082358,
+  "snapshot_content_sha256": "a28514e42058a882e595900fcdddc42ada62a4aada13828fae9afd54d5c0516c",
   "max_file_bytes_policy": 5242880,
   "checks": {
     "no_personal_absolute_paths": true,
@@ -58,8 +58,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 6499,
-      "sha256": "a1cbaa48676819be65da4b739fb57d12d04c8838b220d0a9b9bf4b110f354efe"
+      "size_bytes": 7145,
+      "sha256": "ef40c618c8223332d1b8ba52a9801eb2a221ddeb20f8632bbc3c0f078105dd66"
     },
     {
       "path": "SECURITY.md",
@@ -3074,8 +3074,8 @@
   ],
   "release_snapshot_valid": true,
   "sanitized_replacement_count": 15,
-  "development_git_head": "64dfec14b4fbd14c4125ec6a2219aa409979159a",
+  "development_git_head": "703c1a90df2eedb1e25045ee9143f8bc992e22f5",
   "development_worktree_clean": false,
-  "development_worktree_change_count": 1,
-  "output": "/tmp/opk-rag-public-export"
+  "development_worktree_change_count": 4,
+  "output": "/tmp/opk-rag-public-snapshot"
 }

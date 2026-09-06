@@ -33,6 +33,45 @@ Control Center 是运行时可观测与展示层，不拥有独立的 Retrieval 
 
 ![Video cover](docs/assets/video-cover.jpg)
 
+## GitHub Preview
+
+The repository landing page is designed around a clear portfolio flow:
+
+- Architecture overview
+- Runtime Control Center demonstration
+- Verified metrics
+- Quick Start and technical documentation
+
+Social preview design guidance is documented in [docs/GITHUB_SOCIAL_PREVIEW.md](docs/GITHUB_SOCIAL_PREVIEW.md).
+
+## Demo Flow
+
+```text
+User Query
+
+↓
+
+Hybrid Retrieval
+
+↓
+
+Evidence Evaluation
+
+↓
+
+Necessary-LLM Gate
+
+↓
+
+Recovery Decision
+
+↓
+
+Answer Generation / Refusal
+```
+
+该流程展示 OPK-RAG 的核心原则：LLM Agent 不替代 Retrieval，而是在受控边界内参与 Recovery Proposal 与 Abstention Veto。
+
 ## 已验证结果
 
 以下只列可追溯到冻结 artifact 的指标；公开版汇总见 [`release/evidence/verified_metrics.json`](release/evidence/verified_metrics.json)。
