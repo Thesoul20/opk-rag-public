@@ -1,74 +1,14 @@
+<div align="center">
 
-## Technical Showcase
+# 🧠 OPK-RAG
 
-### Architecture Flow
+### Selective Agentic RAG for Personal Knowledge Bases
 
-```text
-User Query
-    ↓
-Hybrid Retrieval
-    ↓
-Evidence Evaluation
-    ↓
-Selective Agent Gate
-    ↓
-Controlled Recovery (optional)
-    ↓
-Reranking
-    ↓
-Grounded Answer
-```
+A local-first AI assistant architecture for Obsidian-style knowledge bases with controlled agent recovery, evidence governance, and grounded generation.
 
-### Showcase
+[Architecture](#架构) · [Demo](#modern-control-center) · [Quick Start](#quick-start)
 
-The system exposes inspectable runtime traces including retrieval decisions, controlled recovery actions, evidence selection, and grounded generation.
-
-### Performance Highlights
-
-- Graph Recall improvement: `0.667 → 0.944`
-- Vector database migration: `pgvector → Qdrant`
-- Reranker optimization: FP16 inference path
-
-## Documentation
-
-- Architecture
-- Quick Start
-- Showcase
-- Performance
-- Release
-
-
-## OPK-RAG: Selective Agentic RAG for Personal Knowledge Bases
-
-OPK-RAG is a local-first Selective Agentic RAG system designed for Obsidian-style personal knowledge bases. It combines retrieval, controlled recovery, evidence evaluation, and grounded generation into an inspectable RAG workflow.
-
-## Highlights
-
-✨ **Selective Agentic Recovery** — bounded agent decisions instead of uncontrolled planning.
-
-🔍 **Structure-aware Retrieval** — combines semantic, lexical, and structural knowledge signals.
-
-🕸 **One-hop Graph Recovery** — improves recall while controlling retrieval noise.
-
-🛡 **Evidence-grounded Generation** — answers are generated through evidence and grounding checks.
-
-⚡ **Local-first Architecture** — designed for private knowledge bases and self-hosted workflows.
-
-## Architecture Overview
-
-```text
-User Query
-    ↓
-Hybrid Retrieval
-    ↓
-Evidence Evaluation
-    ↓
-Selective Agent Gate
-    ↓
-Controlled Recovery (optional)
-    ↓
-Grounded Answer
-```
+</div>
 
 # OPK-RAG
 
@@ -79,6 +19,33 @@ Local-first Chinese Knowledge RAG with Qdrant, Structure-aware Retrieval, bounde
 
 [快速开始](docs/QUICK_START.md) · [公开发布策略](docs/OPEN_SOURCE_RELEASE.md) · [安全策略](SECURITY.md) · [贡献指南](CONTRIBUTING.md)
 
+
+## Why OPK-RAG?
+
+Traditional RAG systems often follow a fixed pipeline:
+
+```text
+Query → Retrieve → Generate
+```
+
+OPK-RAG introduces a controlled Selective Agentic workflow:
+
+```text
+Query
+ ↓
+Retrieval
+ ↓
+Evidence Evaluation
+ ↓
+Selective Agent Gate
+ ↓
+Bounded Recovery
+ ↓
+Grounded Answer
+```
+
+The Agent does not replace retrieval. It operates inside a constrained action space with deterministic guards, evidence validation, and fail-closed behavior.
+
 ## 30 秒理解
 
 - **Qdrant**：生产向量候选检索 authority；PostgreSQL 保留文档/Chunk/Graph/会话等 relational authority，pgvector 是回滚后端。
@@ -86,6 +53,25 @@ Local-first Chinese Knowledge RAG with Qdrant, Structure-aware Retrieval, bounde
 - **Selective LLM Agent**：Necessary-LLM Gate 只在需要时调用模型；LLM 输出是 proposal，仍需 Pydantic/Deterministic Guard；不宣称 unrestricted Planner 或直接 Finish authority。
 - **Candidate ≠ Evidence**：所有 Initial/Recovery Candidate 都回到统一 BGE Reranking / Evidence / Answerability 链路。
 - **Runtime Trace + Modern Control Center**：Retrieval、Candidate、Graph、Evidence、Grounding/Citation 可沿同一 authoritative trace 检查。
+
+
+## Design Principles
+
+### Retrieval First
+
+The system retrieves and evaluates evidence before generation.
+
+### Controlled Agency
+
+The Agent proposes bounded recovery actions instead of unrestricted planning.
+
+### Evidence Grounding
+
+Candidates are transformed into validated evidence before answering.
+
+### Fail Closed
+
+Invalid decisions, unsafe recovery paths, or insufficient evidence fall back safely.
 
 ## 架构
 
