@@ -1,3 +1,75 @@
+
+## Technical Showcase
+
+### Architecture Flow
+
+```text
+User Query
+    ↓
+Hybrid Retrieval
+    ↓
+Evidence Evaluation
+    ↓
+Selective Agent Gate
+    ↓
+Controlled Recovery (optional)
+    ↓
+Reranking
+    ↓
+Grounded Answer
+```
+
+### Showcase
+
+The system exposes inspectable runtime traces including retrieval decisions, controlled recovery actions, evidence selection, and grounded generation.
+
+### Performance Highlights
+
+- Graph Recall improvement: `0.667 → 0.944`
+- Vector database migration: `pgvector → Qdrant`
+- Reranker optimization: FP16 inference path
+
+## Documentation
+
+- Architecture
+- Quick Start
+- Showcase
+- Performance
+- Release
+
+
+## OPK-RAG: Selective Agentic RAG for Personal Knowledge Bases
+
+OPK-RAG is a local-first Selective Agentic RAG system designed for Obsidian-style personal knowledge bases. It combines retrieval, controlled recovery, evidence evaluation, and grounded generation into an inspectable RAG workflow.
+
+## Highlights
+
+✨ **Selective Agentic Recovery** — bounded agent decisions instead of uncontrolled planning.
+
+🔍 **Structure-aware Retrieval** — combines semantic, lexical, and structural knowledge signals.
+
+🕸 **One-hop Graph Recovery** — improves recall while controlling retrieval noise.
+
+🛡 **Evidence-grounded Generation** — answers are generated through evidence and grounding checks.
+
+⚡ **Local-first Architecture** — designed for private knowledge bases and self-hosted workflows.
+
+## Architecture Overview
+
+```text
+User Query
+    ↓
+Hybrid Retrieval
+    ↓
+Evidence Evaluation
+    ↓
+Selective Agent Gate
+    ↓
+Controlled Recovery (optional)
+    ↓
+Grounded Answer
+```
+
 # OPK-RAG
 
 **中文个人知识库 Selective Agentic RAG**<br>
@@ -171,3 +243,35 @@ uv run python scripts/export_public_release.py --output dist/opk-rag-public-rele
 ## License / Third Party
 
 OPK-RAG-authored source与 public demo material 使用 **MIT License**。第三方依赖、模型和服务保留各自许可证/条款；本项目不重新分发模型权重。详见 [docs/THIRD_PARTY.md](docs/THIRD_PARTY.md)。
+
+## Installation
+
+Recommended environment:
+- Python 3.11+
+- uv package manager
+- Optional GPU acceleration
+
+## Configuration
+
+Configure embedding models, reranker, LLM provider, and vector database through environment settings.
+
+## Contributing
+
+Issues, feature requests, and pull requests are welcome. Please read CONTRIBUTING.md before submitting changes.
+
+## Roadmap
+
+Completed:
+- Hybrid Retrieval
+- Structure-aware Retrieval
+- Guarded Agent
+- Public Release
+
+Future:
+- More Agent Evaluation
+- More UI Features
+- Community Extensions
+
+## Releases
+
+Latest Release: v0.1.1
