@@ -35,14 +35,16 @@ The exporter copies an explicit allowlist, sanitizes known developer-specific pa
 
 ## Video
 
-The current homepage Showcase is the accepted V2.1 presentation produced after visual-observability review and an owner-approved comprehension-QA waiver. The MP4 remains outside Git history and is published as a GitHub Release asset:
+The current homepage Showcase is the accepted V2.1 presentation produced after visual-observability review and an owner-approved comprehension-QA waiver. The README uses a Git-tracked **animated WebP** as an inline autoplay preview, following the same presentation pattern as `chatgpt-swaync-inbox`; the 1080p MP4 remains outside Git history and is published as a GitHub Release asset.
 
+- Inline README preview: `docs/assets/showcase-video-v2.1-preview.webp`
+- Preview contract: animated WebP, 960×540, 5 FPS sampling, full 73-second story, SHA-256 `d0995f3988508dfc5c6623d504612a09d77724f6a4a6b9131ed00529e1dcb9ac`, 2,040,334 bytes.
 - Release: `https://github.com/Thesoul20/opk-rag-public/releases/tag/v0.1.1`
-- Asset: `https://github.com/Thesoul20/opk-rag-public/releases/download/v0.1.1/showcase-video-v2.1-visual-delta-candidate.mp4`
-- SHA-256: `b6c287c60b2c73ade7bafd52ad427543aad002bb80644472869b37460acbf48a`
-- Media contract: H.264, 1920×1080, 30 FPS, 2190 frames / 73 seconds, no audio stream.
+- MP4 asset: `https://github.com/Thesoul20/opk-rag-public/releases/download/v0.1.1/showcase-video-v2.1-visual-delta-candidate.mp4`
+- MP4 SHA-256: `b6c287c60b2c73ade7bafd52ad427543aad002bb80644472869b37460acbf48a`
+- Master contract: H.264, 1920×1080, 30 FPS, 2190 frames / 73 seconds, no audio stream.
 
-Historical TASK-0281 assets remain governed evidence, but they are no longer the README showcase authority.
+The preview is lightweight enough to remain inside the public snapshot's 5 MiB per-file policy. Historical TASK-0281 assets remain governed evidence, but they are no longer the README showcase authority.
 
 ## Release procedure
 

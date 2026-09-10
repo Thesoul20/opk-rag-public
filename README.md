@@ -56,15 +56,25 @@ The Agent does not replace retrieval. It operates inside a constrained action sp
 
 ## Showcase Video
 
-[![OPK-RAG Showcase Video V2.1](docs/assets/showcase-video-v2.1-cover.png)](https://github.com/Thesoul20/opk-rag-public/releases/download/v0.1.1/showcase-video-v2.1-visual-delta-candidate.mp4)
+<p align="center">
+  <a href="https://github.com/Thesoul20/opk-rag-public/releases/download/v0.1.1/showcase-video-v2.1-visual-delta-candidate.mp4">
+    <img src="docs/assets/showcase-video-v2.1-preview.webp" alt="OPK-RAG V2.1 showcase: deterministic RAG path, Necessary-LLM selection, guarded Graph Recovery, Evidence and Grounding" width="920">
+  </a>
+</p>
 
-**▶ [观看 / 下载 73 秒 1080p Showcase Video V2.1](https://github.com/Thesoul20/opk-rag-public/releases/download/v0.1.1/showcase-video-v2.1-visual-delta-candidate.mp4)** · [GitHub Release](https://github.com/Thesoul20/opk-rag-public/releases/tag/v0.1.1)
+<p align="center">
+  <strong>README 内直接预览完整 73 秒 V2.1 流程</strong><br>
+  <a href="https://github.com/Thesoul20/opk-rag-public/releases/download/v0.1.1/showcase-video-v2.1-visual-delta-candidate.mp4"><strong>1080p MP4</strong></a>
+  ·
+  <a href="https://github.com/Thesoul20/opk-rag-public/releases/tag/v0.1.1">GitHub Release</a>
+</p>
 
 这支最终展示片使用真实 Showcase V3 / Runtime Trace 证据，重点演示普通确定性路径、Necessary-LLM 条件选择、受控 Graph Recovery、Deterministic Guard，以及 Candidate → Evidence → Citation → Grounding 的治理链路。
 
 > **LLM 提供语义能力，确定性规则保留系统控制权。**
 
-`1920×1080 · H.264 · 30 FPS · 73 s · Chinese-first · no audio`
+`README preview: animated WebP · 960×540 · 5 FPS · full 73 s`<br>
+`Master: H.264 · 1920×1080 · 30 FPS · 73 s · Chinese-first · no audio`
 
 
 ## Design Principles
@@ -99,7 +109,7 @@ Invalid decisions, unsafe recovery paths, or insufficient evidence fall back saf
 
 Control Center 是运行时可观测与展示层，不拥有独立的 Retrieval / Agent / Graph / Answer 决策权。它沿同一个 `opk-rag.runtime-trace.v1` 展示 Query → Retrieval → Guard/Recovery → Rerank → Evidence → Validation → Answer/Refuse。
 
-当前首页 Showcase 使用已完成视觉可观测性验收与 Owner review 的 V2.1 版本。MP4 继续保持不进入 Git history，而是作为公开 GitHub Release asset 发布；首页入口见上方 [Showcase Video](#showcase-video)。
+当前首页 Showcase 使用已完成视觉可观测性验收与 Owner review 的 V2.1 版本。README 采用完整 73 秒 animated WebP 内联预览，1080p MP4 继续保持不进入 Git history，而是作为公开 GitHub Release asset 发布；首页入口见上方 [Showcase Video](#showcase-video)。
 
 ## GitHub Preview
 

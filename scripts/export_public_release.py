@@ -33,6 +33,7 @@ DOC_FILES = [
     "docs/diagrams/current_opk_rag_selective_agent_architecture_v2_zh.drawio",
     "docs/diagrams/current_opk_rag_selective_agent_architecture_v2_zh.png",
     "docs/assets/control-center-executive.jpg", "docs/assets/video-cover.jpg",
+    "docs/assets/showcase-video-v2.1-preview.webp",
 ]
 SCRIPT_FILES = ["scripts/export_public_release.py", "scripts/validate_public_release_snapshot.py"]
 SKIP_PARTS = {".git", ".venv", "node_modules", "dist", "coverage", "__pycache__", ".pytest_cache"}
