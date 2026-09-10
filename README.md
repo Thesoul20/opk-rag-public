@@ -6,7 +6,7 @@
 
 A local-first AI assistant architecture for Obsidian-style knowledge bases with controlled agent recovery, evidence governance, and grounded generation.
 
-[Architecture](#架构) · [Demo](#modern-control-center) · [Quick Start](#quick-start)
+[Showcase](#showcase-video) · [Architecture](#架构) · [Demo](#modern-control-center) · [Quick Start](#quick-start)
 
 </div>
 
@@ -54,6 +54,18 @@ The Agent does not replace retrieval. It operates inside a constrained action sp
 - **Candidate ≠ Evidence**：所有 Initial/Recovery Candidate 都回到统一 BGE Reranking / Evidence / Answerability 链路。
 - **Runtime Trace + Modern Control Center**：Retrieval、Candidate、Graph、Evidence、Grounding/Citation 可沿同一 authoritative trace 检查。
 
+## Showcase Video
+
+[![OPK-RAG Showcase Video V2.1](docs/assets/showcase-video-v2.1-cover.png)](https://github.com/Thesoul20/opk-rag-public/releases/download/v0.1.1/showcase-video-v2.1-visual-delta-candidate.mp4)
+
+**▶ [观看 / 下载 73 秒 1080p Showcase Video V2.1](https://github.com/Thesoul20/opk-rag-public/releases/download/v0.1.1/showcase-video-v2.1-visual-delta-candidate.mp4)** · [GitHub Release](https://github.com/Thesoul20/opk-rag-public/releases/tag/v0.1.1)
+
+这支最终展示片使用真实 Showcase V3 / Runtime Trace 证据，重点演示普通确定性路径、Necessary-LLM 条件选择、受控 Graph Recovery、Deterministic Guard，以及 Candidate → Evidence → Citation → Grounding 的治理链路。
+
+> **LLM 提供语义能力，确定性规则保留系统控制权。**
+
+`1920×1080 · H.264 · 30 FPS · 73 s · Chinese-first · no audio`
+
 
 ## Design Principles
 
@@ -87,9 +99,7 @@ Invalid decisions, unsafe recovery paths, or insufficient evidence fall back saf
 
 Control Center 是运行时可观测与展示层，不拥有独立的 Retrieval / Agent / Graph / Answer 决策权。它沿同一个 `opk-rag.runtime-trace.v1` 展示 Query → Retrieval → Guard/Recovery → Rerank → Evidence → Validation → Answer/Refuse。
 
-正式 1080p Showcase 已在 TASK-0281 完成发布打包；MP4 不进入 Git history，计划作为 GitHub Release asset 发布。**公开 URL 尚未创建，不在 README 中伪造链接。**
-
-![Video cover](docs/assets/video-cover.jpg)
+当前首页 Showcase 使用已完成视觉可观测性验收与 Owner review 的 V2.1 版本。MP4 继续保持不进入 Git history，而是作为公开 GitHub Release asset 发布；首页入口见上方 [Showcase Video](#showcase-video)。
 
 ## GitHub Preview
 

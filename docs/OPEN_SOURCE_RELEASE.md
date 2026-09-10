@@ -35,15 +35,22 @@ The exporter copies an explicit allowlist, sanitizes known developer-specific pa
 
 ## Video
 
-TASK-0281 produced a Git-ignored 1080p delivery asset and a 720p preview. Their checksums are recorded in the release evidence. A public GitHub Release URL is intentionally pending until explicitly created; documentation must not invent one.
+The current homepage Showcase is the accepted V2.1 presentation produced after visual-observability review and an owner-approved comprehension-QA waiver. The MP4 remains outside Git history and is published as a GitHub Release asset:
+
+- Release: `https://github.com/Thesoul20/opk-rag-public/releases/tag/v0.1.1`
+- Asset: `https://github.com/Thesoul20/opk-rag-public/releases/download/v0.1.1/showcase-video-v2.1-visual-delta-candidate.mp4`
+- SHA-256: `b6c287c60b2c73ade7bafd52ad427543aad002bb80644472869b37460acbf48a`
+- Media contract: H.264, 1920×1080, 30 FPS, 2190 frames / 73 seconds, no audio stream.
+
+Historical TASK-0281 assets remain governed evidence, but they are no longer the README showcase authority.
 
 ## Release procedure
 
-1. Finish TASK-0282 verification with zero release blockers.
-2. Export the public snapshot.
+1. Finish release verification with zero release blockers.
+2. Export or update the public snapshot.
 3. Inspect the generated manifest and file listing.
 4. Initialize/push the snapshot as the public repository or release-source tree.
-5. Upload the TASK-0281 video as a GitHub Release asset if desired.
-6. Create a release tag/version only after explicit user approval.
+5. Publish large showcase binaries separately as GitHub Release assets and record their digest/URL.
+6. Create or change release tags/versions only after explicit user approval.
 
 TASK-0282 itself does not push, rewrite development history, change repository visibility or create a GitHub Release.
